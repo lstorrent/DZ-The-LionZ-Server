@@ -1,0 +1,11 @@
+﻿{
+  "agentId": 2,
+  "agentName": "DESKTOP-9AU3MP0",
+  "poolId": 1,
+  "poolName": "Default",
+  "serverUrl": "https://pipelinesghubeus22.actions.githubusercontent.com/ZHu9ir2N6AzayZEGHbpEDha06Tlf8u31oYxfDDxGSBToUwFpvq/",
+  "gitHubUrl": "https://github.com/lstorrent/DZ-The-LionZ-Server",
+  "workFolder": "_work",
+  "useV2Flow": true,
+  "serverUrlV2": "https://broker.actions.githubusercontent.com/"
+}

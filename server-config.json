@@ -1,0 +1,21 @@
+{
+  "server": {
+    "name": "The LionZ Server",
+    "paths": {
+      "dayz_server": "D:\\SteamLibrary\\steamapps\\common\\DayZServer",
+      "backup": "D:\\Backups\\DayZServer"
+    },
+    "auto_restart": false,
+    "backup_before_deploy": true
+  },
+  "deploy": {
+    "folders": [
+      "mpmissions",
+      "profiles"
+    ],
+    "exclude": [
+      "*.log",
+      "*.tmp"
+    ]
+  }
+}
