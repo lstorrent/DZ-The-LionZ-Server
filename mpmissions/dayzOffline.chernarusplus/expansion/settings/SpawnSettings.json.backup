@@ -283,14 +283,47 @@
         "Headgear": [],
         "Glasses": [],
         "Masks": [],
-        "Tops": [],
+        "Tops": [
+            "TShirt_Green",
+            "TShirt_Blue",
+            "TShirt_Black",
+            "TShirt_Beige",
+            "TShirt_Red",
+            "TShirt_OrangeWhiteStripes",
+            "TShirt_White",
+            "TShirt_Red",
+            "TShirt_Grey",
+            "TShirt_RedBlackStripes"
+        ],
         "Vests": [],
         "Gloves": [],
-        "Pants": [],
+        "Pants": [
+            "CanvasPants_Beige",
+            "CanvasPants_Blue",
+            "CanvasPants_Grey",
+            "CanvasPants_Red",
+            "CanvasPants_Violet",
+            "CanvasPantsMidi_Beige",
+            "CanvasPantsMidi_Blue",
+            "CanvasPantsMidi_Grey",
+            "CanvasPantsMidi_Red",
+            "CanvasPantsMidi_Violet"
+        ],
         "Belts": [],
-        "Shoes": [],
+        "Shoes": [
+            "AthleticShoes_Blue",
+            "AthleticShoes_Grey",
+            "AthleticShoes_Brown",
+            "AthleticShoes_Green",
+            "AthleticShoes_Black"
+        ],
         "Armbands": [],
-        "Backpacks": []
+        "Backpacks": [
+            "TaloonBag_Blue",
+            "TaloonBag_Green",
+            "TaloonBag_Orange",
+            "TaloonBag_Violet"
+        ]
     },
     "EnableSpawnSelection": 1,
     "SpawnOnTerritory": 0,
@@ -298,20 +331,37 @@
         "EnableStartingGear": 1,
         "ApplyEnergySources": 1,
         "SetRandomHealth": 1,
-        "UpperGear": [],
+        "UpperGear": [
+            {
+                "ClassName": "Rag",
+                "Quantity": 4,
+                "Attachments": []
+            },
+            {
+                "ClassName": "Apple",
+                "Quantity": -1,
+                "Attachments": []
+            }
+        ],
         "PantsGear": [],
         "BackpackGear": [],
         "VestGear": [],
-        "PrimaryWeapon": {
-                "ClassName": "StoneKnife",
-                "Quantity": -1,
-                "Attachments": []
-        },
+        "PrimaryWeapon": {},
         "SecondaryWeapon": {}
     },
     "UseLoadouts": 0,
-    "MaleLoadouts": [],
-    "FemaleLoadouts": [],
+    "MaleLoadouts": [
+        {
+            "Loadout": "PlayerSurvivorLoadout",
+            "Chance": 1.0
+        }
+    ],
+    "FemaleLoadouts": [
+        {
+            "Loadout": "PlayerSurvivorLoadout",
+            "Chance": 1.0
+        }
+    ],
     "SpawnHealthValue": 100.0,
     "SpawnEnergyValue": 500.0,
     "SpawnWaterValue": 500.0,

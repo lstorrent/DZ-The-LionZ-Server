@@ -54,9 +54,7 @@
 	"WorldsData":
 	{
 		"lightingConfig": 0,
-		"objectSpawnersArr": [
-			"custom_maps/GreenMountain.json"
-		],
+		"objectSpawnersArr": [],
 		"environmentMinTemps": [-3, -2, 0, 4, 9, 14, 18, 17, 13, 11, 9, 0],
 		"environmentMaxTemps": [3, 5, 7, 14, 19, 24, 26, 25, 18, 14, 10, 5],
 		"wetnessWeightModifiers": [1.0, 1.0, 1.33, 1.66, 2.0]
@@ -65,14 +63,14 @@
 	{
 		"HologramData":
 		{
-			"disableIsCollidingBBoxCheck": false,
+			"disableIsCollidingBBoxCheck": true,
 			"disableIsCollidingPlayerCheck": false,
-			"disableIsClippingRoofCheck": false,
+			"disableIsClippingRoofCheck": true,
 			"disableIsBaseViableCheck": false,
-			"disableIsCollidingGPlotCheck": false,
-			"disableIsCollidingAngleCheck": false,
+			"disableIsCollidingGPlotCheck": true,
+			"disableIsCollidingAngleCheck": true,
 			"disableIsPlacementPermittedCheck": false,
-			"disableHeightPlacementCheck": false,
+			"disableHeightPlacementCheck": true,
 			"disableIsUnderwaterCheck": false,
 			"disableIsInTerrainCheck": false,
 			"disableColdAreaBuildingCheck": false,
