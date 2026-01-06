@@ -50,8 +50,8 @@ Cada contribuição é vital para enfrentarmos os desafios e continuar proporcio
 
 ## 📞 Contato
 
-- **Discord:** [Link do Discord]
-- **Administrador:** Leonardo de Souza
+- **Discord:** [em construção]
+- **Administrador:** Lion
 - **Email:** [seu-email@exemplo.com]
 
 ## 🤝 Contribuindo

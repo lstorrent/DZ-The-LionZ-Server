@@ -1,0 +1,50 @@
+Object Spawner
+DayZ
+Read
+View source
+View history
+Categories: DayZDayZ: Editing
+What is the Object Spawner?
+The Object Spawner addresses the need of our community to add additional detail to the world through a list of map objects together with their position and orientation.
+
+Objects from such lists are spawned into the world at the start of the server mission.
+
+⚠
+Please note that spawning a lot of objects this way may have impact on both the server and client performance.
+How to create and use a custom spawn list
+Enable cfgGameplay.json, (see the Gameplay settings documentation for cfgGameplay.json configuration)
+Create a new .json file (for example spawnerData.json) in your Mission folder, copy the contents of the template below into this new file
+Show the template...
+
+Edit the contents as needed. Do note each object's entry needs to end with a comma, except the last one.
+In the cfgGameplay.json file, locate the "objectSpawnersArr" and input your previously created .json as a parameter (example: "objectSpawnersArr": ["spawnerData.json" ])
+Details
+The cfgGameplay.json contains a filename array:
+
+"objectSpawnersArr": ["mySpawnData1.json","mySpawnData2.json","mySpawnData3.json"]
+Where each JSON file contains a list of objects to be spawned in the world at the start of the server mission.
+
+Parameters
+Type	Parameter	Details
+string	name	Supports 2 types of input:
+class name of the object to be spawned (for example: "Land_Wall_Gate_FenR")
+or a p3d model path (for example: "DZ/plants/tree/t_BetulaPendula_1fb.p3d")
+vector	pos	Position of the object in the world
+vector	ypr	Orientation as Yaw, Pitch and Roll in degrees
+float	scale	Multiplayer of the original object's size
+bool	enableCEPersistency	Spawns without persistence. Once the player takes it, persistence will be enabled if available.
+string	customString	Custom user data that can be handled on spawned item through OnSpawnByObjectSpawner method override
+Custom user data handling
+If you are passing some data through customString , you have to override OnSpawnByObjectSpawner on script class of spawned item to handle that data and implement the logic. See example of use in scripts - StaticFlagPole - where you can pass name of the flag that will be spawned on it, when the StaticFlagPole is spawned by ObjectSpawner.
+
+Limitations
+Only these paths are supported for p3d spawning:
+
+DZ/plants
+DZ/plants_bliss
+DZ/plants_sakhal
+DZ/rocks
+DZ/rocks_bliss
+DZ/rocks_sakhal
+ⓘ
+If the specified object does not exist (class or path to a model), log message with "Object spawner failed to spawn" will appear in the server RPT file.
