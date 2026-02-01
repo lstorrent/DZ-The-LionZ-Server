@@ -1,7 +1,7 @@
 @echo off
 :start
-set serverName=Meu Servidor DayZ
-set serverLocation="D:\SteamLibrary\steamapps\common\DayZServer"
+set serverName=The LionZ Server
+set serverLocation="C:\Program Files (x86)\Steam\steamapps\common\DayZServer"
 set serverPort=2302
 set serverConfig=serverDZ.cfg
 set serverProfile=profiles
@@ -12,7 +12,7 @@ title %serverName%
 cd %serverLocation%
 echo (%time%) %serverName% iniciado.
 
-start "DayZ Server" /min "DayZServer_x64.exe" -config=%serverConfig% -port=%serverPort% -profiles=%serverProfile% -cpuCount=%serverCPU% -mod=%MOD_LIST% -doLogs -adminLog -netLog -freezeCheck -noBE
+start "DayZ Server" /min "DayZServer_x64.exe" -config=%serverConfig% -port=%serverPort% -profiles=%serverProfile% -cpuCount=%serverCPU% -mod=%MOD_LIST% -doLogs -adminLog -netLog -freezeCheck -noBE -noFilePatching
 
 timeout 14400
 taskkill /im DayZServer_x64.exe /F
