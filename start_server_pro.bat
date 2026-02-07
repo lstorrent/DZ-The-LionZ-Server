@@ -1,7 +1,7 @@
 @echo off
 :start
 set serverName=The LionZ Server
-set serverLocation="C:\Program Files (x86)\Steam\steamapps\common\DayZServer"
+set serverLocation="D:\SteamLibrary\steamapps\common\DayZServer"
 set serverPort=2302
 set serverConfig=serverDZ.cfg
 set serverProfile=profiles
