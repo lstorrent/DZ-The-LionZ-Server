@@ -1,0 +1,2 @@
+# Teste de Auto-Deploy
+Este arquivo foi criado para testar o sistema de deploy automático.
