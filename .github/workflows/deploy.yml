@@ -1,64 +1,16 @@
-name: 🦁 Deploy The LionZ Server
+name: Deploy to DayZ Server
 
 on:
   push:
-    branches: [ main ]
-    paths:
-      - 'mpmissions/**'
-      - 'profiles/**'
-  workflow_dispatch:
+    branches: [ main, master ]
 
 jobs:
   deploy:
     runs-on: self-hosted
     
     steps:
-    - name: 📥 Checkout code
-      uses: actions/checkout@v4
-      
-    - name: 🛑 Stop DayZ Server (opcional)
-      run: |
-        # Descomente se quiser parar o servidor antes do deploy
-        # Stop-Process -Name "DayZServer" -Force -ErrorAction SilentlyContinue
-        Write-Host "⚠️ Lembre-se de parar o servidor se necessário" -ForegroundColor Yellow
-      shell: powershell
-      
-    - name: 📂 Backup atual
-      run: |
-        $backupPath = "D:\Backups\DayZServer\$(Get-Date -Format 'yyyy-MM-dd_HH-mm-ss')"
-        New-Item -ItemType Directory -Path $backupPath -Force
-        
-        Copy-Item "D:\SteamLibrary\steamapps\common\DayZServer\mpmissions" "$backupPath\mpmissions" -Recurse -ErrorAction SilentlyContinue
-        Copy-Item "D:\SteamLibrary\steamapps\common\DayZServer\profiles" "$backupPath\profiles" -Recurse -ErrorAction SilentlyContinue
-        
-        Write-Host "✅ Backup criado em: $backupPath" -ForegroundColor Green
-      shell: powershell
-      
-    - name: 🚀 Deploy to Server
-      run: |
-        Write-Host "🦁 Deploying The LionZ Server files..." -ForegroundColor Cyan
-        
-        # Copiar mpmissions
-        Write-Host "📁 Copiando mpmissions..." -ForegroundColor Yellow
-        Copy-Item "mpmissions\*" "D:\SteamLibrary\steamapps\common\DayZServer\mpmissions\" -Recurse -Force
-        Write-Host "✅ mpmissions deployed" -ForegroundColor Green
-        
-        # Copiar profiles  
-        Write-Host "📁 Copiando profiles..." -ForegroundColor Yellow
-        Copy-Item "profiles\*" "D:\SteamLibrary\steamapps\common\DayZServer\profiles\" -Recurse -Force
-        Write-Host "✅ profiles deployed" -ForegroundColor Green
-        
-        Write-Host "🎉 Deploy completed successfully!" -ForegroundColor Cyan
-      shell: powershell
-      
-    - name: 📊 Deploy Summary
-      run: |
-        Write-Host "========================================" -ForegroundColor Cyan
-        Write-Host "🦁 THE LIONZ SERVER - DEPLOY SUMMARY" -ForegroundColor Yellow
-        Write-Host "========================================" -ForegroundColor Cyan
-        Write-Host "📅 Deploy Time: $(Get-Date)" -ForegroundColor White
-        Write-Host "📝 Commit: $env:GITHUB_SHA" -ForegroundColor White
-        Write-Host "👤 Author: $env:GITHUB_ACTOR" -ForegroundColor White
-        Write-Host "🌟 Status: SUCCESS" -ForegroundColor Green
-        Write-Host "========================================" -ForegroundColor Cyan
-      shell: powershell
+      - name: Copy files to DayZ Server
+        run: |
+          robocopy "${{ github.workspace }}" "D:\SteamLibrary\steamapps\common\DayZServer" /MIR /XD .git .github /XF .gitignore README.md
+          if ($LASTEXITCODE -le 7) { exit 0 } else { exit $LASTEXITCODE }
+        shell: powershell
