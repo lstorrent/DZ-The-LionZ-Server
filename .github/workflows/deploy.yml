@@ -9,6 +9,9 @@ jobs:
     runs-on: self-hosted
     
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
       - name: Copy files to DayZ Server
         run: |
           robocopy "${{ github.workspace }}" "D:\SteamLibrary\steamapps\common\DayZServer" /MIR /XD .git .github /XF .gitignore README.md
