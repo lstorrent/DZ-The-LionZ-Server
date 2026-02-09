@@ -40,7 +40,77 @@
         {
             "ConfigVersion": 28,
             "ID": 1,
-            "ObjectiveType": 6
+            "ObjectiveType": 6,
+            "ObjectiveText": "Find the location of the treasure",
+            "TimeLimit": -1,
+            "Active": 1,
+            "ShowDistance": 1,
+            "ContainerName": "ExpansionQuestSeaChest",
+            "DigInStash": 1,
+            "MarkerName": "???",
+            "MarkerVisibility": 4,
+            "Positions": [
+                [2936.47998046875, 350.6139831542969, 6369.39013671875],
+                [3591.562744, 334.027374, 6943.830566],
+                [4192.853516, 291.121735, 7238.452148],
+                [4677.649902, 273.090332, 6771.764648],
+                [5254.972656, 305.819977, 5483.234863],
+                [5128.635254, 247.272018, 4725.108887],
+                [4585.113281, 233.447128, 4496.495605],
+                [3242.364014, 289.651825, 4577.155273],
+                [2502.897949, 193.979004, 5032.359375],
+                [2565.978516, 201.746429, 5395.776367],
+                [2755.251465, 209.267822, 5456.347168]
+            ],
+            "Loot": [
+                {
+                    "Name": "BakedBeansCan",
+                    "Attachments": [],
+                    "Chance": 1.0,
+                    "QuantityPercent": -2,
+                    "Max": 2,
+                    "Min": 1,
+                    "Variants": []
+                },
+                {
+                    "Name": "SardinesCan",
+                    "Attachments": [],
+                    "Chance": 1.0,
+                    "QuantityPercent": -2,
+                    "Max": 2,
+                    "Min": 1,
+                    "Variants": []
+                },
+                {
+                    "Name": "Ammo_9x19",
+                    "Attachments": [],
+                    "Chance": 1.0,
+                    "QuantityPercent": -2,
+                    "Max": 1,
+                    "Min": 1,
+                    "Variants": []
+                },
+                {
+                    "Name": "BandageDressing",
+                    "Attachments": [],
+                    "Chance": 1.0,
+                    "QuantityPercent": -2,
+                    "Max": 3,
+                    "Min": 2,
+                    "Variants": []
+                },
+                {
+                    "Name": "CombatKnife",
+                    "Attachments": [],
+                    "Chance": 0.8,
+                    "QuantityPercent": -2,
+                    "Max": 1,
+                    "Min": 0,
+                    "Variants": []
+                }
+            ],
+            "LootItemsAmount": 4,
+            "MaxDistance": 10.0
         }
     ],
     "QuestColor": 0,

@@ -20,9 +20,11 @@
         "Name": "Myshkino",
         "Radius": 100.0
     },
-    "Infected": [],
+    "Infected": [
+        "eAI_SurvivorM_Mirek|faction:Shamans,loadout:NBCLoadout,canbelooted:true"
+    ],
     "ItemCount": -1,
-    "InfectedCount": -1,
+    "InfectedCount": 2,
     "AirdropPlaneClassName": "",
     "Loot": []
 }
