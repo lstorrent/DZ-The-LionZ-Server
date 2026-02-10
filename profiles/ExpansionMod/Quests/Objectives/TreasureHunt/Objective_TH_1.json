@@ -11,75 +11,66 @@
     "MarkerName": "???",
     "MarkerVisibility": 4,
     "Positions": [
-        [
-            2936.47998046875,
-            350.40399169921877,
-            6369.39013671875
-        ],
-        [
-            3143.35009765625,
-            365.7760009765625,
-            6942.0400390625
-        ],
-        [
-            5233.509765625,
-            290.8810119628906,
-            6246.3701171875
-        ]
+        [2936.47998046875, 350.40399169921877, 6369.39013671875],
+        [3143.35009765625, 365.7760009765625, 6942.0400390625],
+        [5233.509765625, 290.8810119628906, 6246.3701171875],
+        [3001.493164, 369.447327, 6753.528320],
+        [3513.702881, 324.704285, 7330.224121],
+        [4186.076172, 290.179413, 7232.864258],
+        [4505.341797, 292.320587, 6482.830078],
+        [5097.298340, 259.823029, 6061.671875],
+        [4911.930664, 318.930878, 5672.770996],
+        [4444.822754, 314.816772, 5077.009766],
+        [3627.199463, 264.812042, 5047.590332],
+        [3186.079102, 247.674988, 5193.381836],
+        [2907.904053, 207.261841, 5287.041016],
+        [2390.037842, 189.666733, 5134.738281],
+        [2657.427002, 205.488052, 5395.381348],
+        [2627.669434, 228.294098, 5698.364258]
     ],
-    "LootItemsAmount": 0,
+    "LootItemsAmount": 10,
     "MaxDistance": 10.0,
     "Loot": [
-        {
-            "Name": "Binoculars",
-            "Chance": 0.30000001192092898,
-            "Attachments": [],
-            "QuantityPercent": -1.0,
-            "Max": -1,
-            "Min": 0,
-            "Variants": []
-        },
-        {
-            "Name": "Rangefinder",
-            "Chance": 0.05000000074505806,
-            "Attachments": [
-                {
-                    "Name": "Battery9V",
-                    "Chance": 1.0,
-                    "Attachments": []
-                }
-            ],
-            "QuantityPercent": -1.0,
-            "Max": -1,
-            "Min": 0,
-            "Variants": []
-        },
-        {
-            "Name": "GhillieAtt_Mossy",
-            "Chance": 0.05000000074505806,
-            "Attachments": [],
-            "QuantityPercent": -1.0,
-            "Max": -1,
-            "Min": 0,
-            "Variants": []
-        },
-        {
-            "Name": "WeaponCleaningKit",
-            "Chance": 0.05000000074505806,
-            "Attachments": [],
-            "QuantityPercent": -1.0,
-            "Max": -1,
-            "Min": 0,
-            "Variants": []
-        },
-        {
-            "Name": "ChernarusMap",
-            "Chance": 0.30000001192092898,
-            "Attachments": [],
-            "QuantityPercent": -1.0,
-            "Max": -1,
-            "Min": 0,
-            "Variants": []
-        }
+        {"Name": "Binoculars", "Chance": 0.30, "Attachments": [], "QuantityPercent": -1.0, "Max": -1, "Min": 0, "Variants": []},
+        {"Name": "ChernarusMap", "Chance": 0.30, "Attachments": [], "QuantityPercent": -1.0, "Max": -1, "Min": 0, "Variants": []},
+        {"Name": "ArmyPouch_Beige", "Chance": 0.25, "Attachments": [], "QuantityPercent": -1.0, "Max": -1, "Min": 0, "Variants": []},
+        {"Name": "ArmyPouch_Black", "Chance": 0.25, "Attachments": [], "QuantityPercent": -1.0, "Max": -1, "Min": 0, "Variants": []},
+        {"Name": "ArmyPouch_Camo", "Chance": 0.20, "Attachments": [], "QuantityPercent": -1.0, "Max": -1, "Min": 0, "Variants": []},
+        {"Name": "ArmyPouch_Green", "Chance": 0.25, "Attachments": [], "QuantityPercent": -1.0, "Max": -1, "Min": 0, "Variants": []},
+        {"Name": "BakedBeansCan", "Chance": 0.40, "Attachments": [], "QuantityPercent": -1.0, "Max": 2, "Min": 1, "Variants": []},
+        {"Name": "BoxCerealCrunchin", "Chance": 0.35, "Attachments": [], "QuantityPercent": 50.0, "Max": 1, "Min": 1, "Variants": []},
+        {"Name": "BrisketSpread", "Chance": 0.35, "Attachments": [], "QuantityPercent": -1.0, "Max": 2, "Min": 1, "Variants": []},
+        {"Name": "CatFoodCan", "Chance": 0.30, "Attachments": [], "QuantityPercent": -1.0, "Max": 2, "Min": 1, "Variants": []},
+        {"Name": "Chips", "Chance": 0.30, "Attachments": [], "QuantityPercent": -1.0, "Max": 1, "Min": 1, "Variants": []},
+        {"Name": "Balaclava3Holes_Blue", "Chance": 0.20, "Attachments": [], "QuantityPercent": -1.0, "Max": -1, "Min": 0, "Variants": []},
+        {"Name": "Balaclava3Holes_White", "Chance": 0.20, "Attachments": [], "QuantityPercent": -1.0, "Max": -1, "Min": 0, "Variants": []},
+        {"Name": "BalaclavaMask_Pink", "Chance": 0.15, "Attachments": [], "QuantityPercent": -1.0, "Max": -1, "Min": 0, "Variants": []},
+        {"Name": "BalaclavaMask_White", "Chance": 0.20, "Attachments": [], "QuantityPercent": -1.0, "Max": -1, "Min": 0, "Variants": []},
+        {"Name": "Blouse_Blue", "Chance": 0.15, "Attachments": [], "QuantityPercent": -1.0, "Max": -1, "Min": 0, "Variants": []},
+        {"Name": "Blouse_Green", "Chance": 0.15, "Attachments": [], "QuantityPercent": -1.0, "Max": -1, "Min": 0, "Variants": []},
+        {"Name": "Blouse_Violet", "Chance": 0.15, "Attachments": [], "QuantityPercent": -1.0, "Max": -1, "Min": 0, "Variants": []},
+        {"Name": "Blouse_White", "Chance": 0.15, "Attachments": [], "QuantityPercent": -1.0, "Max": -1, "Min": 0, "Variants": []},
+        {"Name": "BoonieHat_Black", "Chance": 0.20, "Attachments": [], "QuantityPercent": -1.0, "Max": -1, "Min": 0, "Variants": []},
+        {"Name": "BoonieHat_Blue", "Chance": 0.20, "Attachments": [], "QuantityPercent": -1.0, "Max": -1, "Min": 0, "Variants": []},
+        {"Name": "BoonieHat_Olive", "Chance": 0.20, "Attachments": [], "QuantityPercent": -1.0, "Max": -1, "Min": 0, "Variants": []},
+        {"Name": "BoonieHat_Orange", "Chance": 0.20, "Attachments": [], "QuantityPercent": -1.0, "Max": -1, "Min": 0, "Variants": []},
+        {"Name": "BoonieHat_Red", "Chance": 0.20, "Attachments": [], "QuantityPercent": -1.0, "Max": -1, "Min": 0, "Variants": []},
+        {"Name": "BoonieHat_Tan", "Chance": 0.20, "Attachments": [], "QuantityPercent": -1.0, "Max": -1, "Min": 0, "Variants": []},
+        {"Name": "Breeches_Beetcheck", "Chance": 0.18, "Attachments": [], "QuantityPercent": -1.0, "Max": -1, "Min": 0, "Variants": []},
+        {"Name": "Breeches_Beige", "Chance": 0.18, "Attachments": [], "QuantityPercent": -1.0, "Max": -1, "Min": 0, "Variants": []},
+        {"Name": "Breeches_Black", "Chance": 0.18, "Attachments": [], "QuantityPercent": -1.0, "Max": -1, "Min": 0, "Variants": []},
+        {"Name": "Breeches_Green", "Chance": 0.18, "Attachments": [], "QuantityPercent": -1.0, "Max": -1, "Min": 0, "Variants": []},
+        {"Name": "Breeches_Pink", "Chance": 0.18, "Attachments": [], "QuantityPercent": -1.0, "Max": -1, "Min": 0, "Variants": []},
+        {"Name": "Breeches_Red", "Chance": 0.18, "Attachments": [], "QuantityPercent": -1.0, "Max": -1, "Min": 0, "Variants": []},
+        {"Name": "Breeches_White", "Chance": 0.18, "Attachments": [], "QuantityPercent": -1.0, "Max": -1, "Min": 0, "Variants": []},
+        {"Name": "ChildBag_Blue", "Chance": 0.22, "Attachments": [], "QuantityPercent": -1.0, "Max": -1, "Min": 0, "Variants": []},
+        {"Name": "ChildBag_Green", "Chance": 0.22, "Attachments": [], "QuantityPercent": -1.0, "Max": -1, "Min": 0, "Variants": []},
+        {"Name": "ChildBag_Red", "Chance": 0.22, "Attachments": [], "QuantityPercent": -1.0, "Max": -1, "Min": 0, "Variants": []},
+        {"Name": "CZ527", "Chance": 0.10, "Attachments": [], "QuantityPercent": -1.0, "Max": -1, "Min": 0, "Variants": []},
+        {"Name": "Ammo_762x39", "Chance": 0.40, "Attachments": [], "QuantityPercent": -1.0, "Max": 2, "Min": 1, "Variants": []},
+        {"Name": "CZ75", "Chance": 0.15, "Attachments": [], "QuantityPercent": -1.0, "Max": -1, "Min": 0, "Variants": []},
+        {"Name": "Colt1911", "Chance": 0.15, "Attachments": [], "QuantityPercent": -1.0, "Max": -1, "Min": 0, "Variants": []},
+        {"Name": "CanOpener", "Chance": 0.35, "Attachments": [], "QuantityPercent": -1.0, "Max": -1, "Min": 0, "Variants": []},
+        {"Name": "Compass", "Chance": 0.30, "Attachments": [], "QuantityPercent": -1.0, "Max": -1, "Min": 0, "Variants": []}
     ]
 }
