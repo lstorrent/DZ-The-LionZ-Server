@@ -12,8 +12,18 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
         
+      - name: Show workspace
+        run: |
+          Write-Host "Workspace: ${{ github.workspace }}"
+          Get-ChildItem "${{ github.workspace }}" | Select-Object Name
+        shell: powershell
+        
       - name: Copy files to DayZ Server
         run: |
-          robocopy "${{ github.workspace }}" "D:\SteamLibrary\steamapps\common\DayZServer" /MIR /XD .git .github /XF .gitignore README.md
+          $source = "${{ github.workspace }}"
+          $dest = "D:\SteamLibrary\steamapps\common\DayZServer"
+          Write-Host "Copying from: $source"
+          Write-Host "Copying to: $dest"
+          robocopy "$source" "$dest" /MIR /XD .git .github /XF .gitignore README.md /R:0 /W:0
           if ($LASTEXITCODE -le 7) { exit 0 } else { exit $LASTEXITCODE }
         shell: powershell
