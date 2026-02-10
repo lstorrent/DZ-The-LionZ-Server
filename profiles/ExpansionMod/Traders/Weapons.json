@@ -39,7 +39,7 @@
         "ammo_expansion_m203_smoke_teargas": 3,
         "expansion_ammo_taser": 3,
         "universallight": 3,
-        "ammo_expansion_m203_sticky_smoke_white": 3,
-        "expansionammolaw": 3
+        "expansionammolaw": 3,
+        "ammo_expansion_m203_sticky_smoke_white": 3
     }
 }
