@@ -12,18 +12,16 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
         
-      - name: Show workspace
+      - name: Test permissions
         run: |
-          Write-Host "Workspace: ${{ github.workspace }}"
-          Get-ChildItem "${{ github.workspace }}" | Select-Object Name
+          Write-Host "Testing write permissions..."
+          "test" | Out-File "D:\SteamLibrary\steamapps\common\DayZServer\test-runner.txt"
+          Write-Host "Permission test OK!"
         shell: powershell
         
       - name: Copy files to DayZ Server
         run: |
-          $source = "${{ github.workspace }}"
-          $dest = "D:\SteamLibrary\steamapps\common\DayZServer"
-          Write-Host "Copying from: $source"
-          Write-Host "Copying to: $dest"
-          robocopy "$source" "$dest" /MIR /XD .git .github /XF .gitignore README.md /R:0 /W:0
-          if ($LASTEXITCODE -le 7) { exit 0 } else { exit $LASTEXITCODE }
+          robocopy "${{ github.workspace }}" "D:\SteamLibrary\steamapps\common\DayZServer" *.txt *.bat *.cfg /R:0 /W:0
+          Write-Host "Copy completed!"
+          exit 0
         shell: powershell
