@@ -9,19 +9,23 @@ jobs:
     runs-on: self-hosted
     
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-        
-      - name: Test permissions
+      - name: Check Git
         run: |
-          Write-Host "Testing write permissions..."
-          "test" | Out-File "D:\SteamLibrary\steamapps\common\DayZServer\test-runner.txt"
-          Write-Host "Permission test OK!"
+          Write-Host "Checking Git..."
+          git --version
+          Write-Host "Git OK!"
+        shell: powershell
+        
+      - name: Manual checkout
+        run: |
+          cd C:\actions-runner\_work\DZ-The-LionZ-Server\DZ-The-LionZ-Server
+          git pull origin main
+          Write-Host "Checkout OK!"
         shell: powershell
         
       - name: Copy files to DayZ Server
         run: |
-          robocopy "${{ github.workspace }}" "D:\SteamLibrary\steamapps\common\DayZServer" *.txt *.bat *.cfg /R:0 /W:0
+          robocopy "C:\actions-runner\_work\DZ-The-LionZ-Server\DZ-The-LionZ-Server" "D:\SteamLibrary\steamapps\common\DayZServer" *.txt *.bat *.cfg /R:0 /W:0
           Write-Host "Copy completed!"
           exit 0
         shell: powershell
