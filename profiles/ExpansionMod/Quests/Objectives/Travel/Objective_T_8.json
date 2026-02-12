@@ -1,0 +1,18 @@
+{
+    "ConfigVersion": 28,
+    "ID": 8,
+    "ObjectiveType": 3,
+    "ObjectiveText": "On the way to the village",
+    "TimeLimit": -1,
+    "Active": 1,
+    "Position": [
+        4263.292969, 
+        247.647537, 
+        4850.827637
+    ],
+    "MaxDistance": 20.0,
+    "MarkerName": "",
+    "ShowDistance": 1,
+    "TriggerOnEnter": 1,
+    "TriggerOnExit": 0
+}
