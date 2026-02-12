@@ -1397,7 +1397,7 @@
     </type>
 
     <type name="Expansion_Landrover_Wheel">
-        <nominal>25</nominal>
+        <nominal>0</nominal>
         <lifetime>2700</lifetime>
         <restock>0</restock>
         <min>10</min>
@@ -1421,7 +1421,7 @@
         <usage name="Industrial"/>
     </type>
     <type name="Expansion_Landrover_Hood">
-        <nominal>15</nominal>
+        <nominal>0</nominal>
         <lifetime>2700</lifetime>
         <restock>0</restock>
         <min>5</min>
@@ -1433,7 +1433,7 @@
         <usage name="Industrial" />
     </type>
     <type name="Expansion_Landrover_Driverdoor">
-        <nominal>15</nominal>
+        <nominal>0</nominal>
         <lifetime>2700</lifetime>
         <restock>0</restock>
         <min>5</min>
@@ -1445,7 +1445,7 @@
         <usage name="Industrial"/>
     </type>
     <type name="Expansion_Landrover_Codriverdoor">
-        <nominal>15</nominal>
+        <nominal>0</nominal>
         <lifetime>2700</lifetime>
         <restock>0</restock>
         <min>5</min>
@@ -1457,7 +1457,7 @@
         <usage name="Industrial"/>
     </type>
     <type name="Expansion_Landrover_Left">
-        <nominal>15</nominal>
+        <nominal>0</nominal>
         <lifetime>2700</lifetime>
         <restock>0</restock>
         <min>5</min>
@@ -1469,7 +1469,7 @@
         <usage name="Industrial"/>
     </type>
     <type name="Expansion_Landrover_Right">
-        <nominal>15</nominal>
+        <nominal>0</nominal>
         <lifetime>2700</lifetime>
         <restock>0</restock>
         <min>5</min>
@@ -1481,7 +1481,7 @@
         <usage name="Industrial"/>
     </type>
     <type name="Expansion_Landrover_Trunk">
-        <nominal>15</nominal>
+        <nominal>0</nominal>
         <lifetime>2700</lifetime>
         <restock>0</restock>
         <min>5</min>
@@ -1999,7 +1999,7 @@
 	<!-- EXPANSION ITEM TYPES -->
 	<!-- VEHICLE PARTS -->
 	<type name="ExpansionHelicopterBattery">
-        <nominal>20</nominal>
+        <nominal>0</nominal>
         <lifetime>43200</lifetime>
         <restock>0</restock>
         <min>10</min>
@@ -2025,7 +2025,7 @@
 		<usage name="Military"/>
     </type>
 	<type name="ExpansionIgniterPlug">
-        <nominal>20</nominal>
+        <nominal>0</nominal>
         <lifetime>43200</lifetime>
         <restock>0</restock>
         <min>10</min>
@@ -2038,7 +2038,7 @@
 		<usage name="Military"/>
     </type>
 	<type name="ExpansionHydraulicHoses">
-        <nominal>20</nominal>
+        <nominal>0</nominal>
         <lifetime>43200</lifetime>
         <restock>0</restock>
         <min>10</min>
@@ -2051,7 +2051,7 @@
 		<usage name="Military"/>
     </type>
 	<type name="ExpansionBusWheel">
-        <nominal>5</nominal>
+        <nominal>0</nominal>
         <lifetime>2700</lifetime>
         <restock>0</restock>
         <min>2</min>
@@ -2064,7 +2064,7 @@
         <usage name="Industrial"/>
     </type>
 	<type name="ExpansionBusWheelDouble">
-        <nominal>5</nominal>
+        <nominal>0</nominal>
         <lifetime>2700</lifetime>
         <restock>0</restock>
         <min>2</min>
@@ -2077,7 +2077,7 @@
         <usage name="Industrial"/>
     </type>
 	<type name="ExpansionUAZWheel">
-        <nominal>25</nominal>
+        <nominal>0</nominal>
         <lifetime>2700</lifetime>
         <restock>0</restock>
         <min>10</min>
@@ -2089,7 +2089,7 @@
         <usage name="Industrial"/>
     </type>
 	<type name="ExpansionTractorFrontWheel">
-        <nominal>15</nominal>
+        <nominal>0</nominal>
         <lifetime>2700</lifetime>
         <restock>0</restock>
         <min>8</min>
@@ -2102,7 +2102,7 @@
         <usage name="Farm"/>
     </type>
 	<type name="ExpansionTractorBackWheel">
-        <nominal>15</nominal>
+        <nominal>0</nominal>
         <lifetime>2700</lifetime>
         <restock>0</restock>
         <min>8</min>
@@ -2115,7 +2115,7 @@
         <usage name="Farm"/>
     </type>
 	<type name="ExpansionTractorDoorsDriver">
-        <nominal>10</nominal>
+        <nominal>0</nominal>
         <lifetime>2700</lifetime>
         <restock>0</restock>
         <min>5</min>
@@ -2128,7 +2128,7 @@
         <usage name="Farm"/>
     </type>
 	<type name="ExpansionTractorDoorsCoDriver">
-        <nominal>10</nominal>
+        <nominal>0</nominal>
         <lifetime>2700</lifetime>
         <restock>0</restock>
         <min>5</min>
@@ -2141,7 +2141,7 @@
         <usage name="Farm"/>
     </type>
 	<type name="ExpansionVodnikWheel">
-        <nominal>25</nominal>
+        <nominal>0</nominal>
         <lifetime>2700</lifetime>
         <restock>0</restock>
         <min>10</min>
@@ -2153,7 +2153,7 @@
         <usage name="Industrial"/>
     </type>
 	<type name="ExpansionVodnikDoorDriver">
-        <nominal>15</nominal>
+        <nominal>0</nominal>
         <lifetime>2700</lifetime>
         <restock>0</restock>
         <min>5</min>
@@ -2165,7 +2165,7 @@
         <usage name="Industrial"/>
     </type>
 	<type name="ExpansionVodnikDoorCoDriver">
-        <nominal>15</nominal>
+        <nominal>0</nominal>
         <lifetime>2700</lifetime>
         <restock>0</restock>
         <min>5</min>
@@ -2189,7 +2189,7 @@
         <usage name="Industrial" />
     </type>
 	<type name="ExpansionUAZDoorDriver">
-        <nominal>15</nominal>
+        <nominal>0</nominal>
         <lifetime>2700</lifetime>
         <restock>0</restock>
         <min>5</min>
@@ -2201,7 +2201,7 @@
         <usage name="Industrial"/>
     </type>
 	<type name="ExpansionUAZDoorCoDriver">
-        <nominal>15</nominal>
+        <nominal>0</nominal>
         <lifetime>2700</lifetime>
         <restock>0</restock>
         <min>5</min>
@@ -2213,7 +2213,7 @@
         <usage name="Industrial"/>
     </type>
 	<type name="ExpansionUAZDoorCargo1">
-        <nominal>15</nominal>
+        <nominal>0</nominal>
         <lifetime>2700</lifetime>
         <restock>0</restock>
         <min>5</min>
@@ -2225,7 +2225,7 @@
         <usage name="Industrial"/>
     </type>
 	<type name="ExpansionUAZDoorCargo2">
-        <nominal>15</nominal>
+        <nominal>0</nominal>
         <lifetime>2700</lifetime>
         <restock>0</restock>
         <min>5</min>
@@ -2357,7 +2357,7 @@
         <usage name="Industrial"/>
     </type>
 	<type name="ExpansionUh1hDoor_1_1">
-        <nominal>5</nominal>
+        <nominal>0</nominal>
         <lifetime>2700</lifetime>
         <restock>0</restock>
         <min>0</min>
@@ -2369,7 +2369,7 @@
         <usage name="Industrial"/>
     </type>
 	<type name="ExpansionUh1hDoor_1_2">
-        <nominal>5</nominal>
+        <nominal>0</nominal>
         <lifetime>2700</lifetime>
         <restock>0</restock>
         <min>0</min>
@@ -2381,7 +2381,7 @@
         <usage name="Industrial"/>
     </type>
 	<type name="ExpansionUh1hDoor_2_1">
-        <nominal>5</nominal>
+        <nominal>0</nominal>
         <lifetime>2700</lifetime>
         <restock>0</restock>
         <min>0</min>
@@ -2393,7 +2393,7 @@
         <usage name="Industrial"/>
     </type>
 	<type name="ExpansionUh1hDoor_2_2">
-        <nominal>5</nominal>
+        <nominal>0</nominal>
         <lifetime>2700</lifetime>
         <restock>0</restock>
         <min>0</min>
@@ -2597,7 +2597,7 @@
         <usage name="Industrial"/>
     </type>
 	<type name="Expansion_Mh6_Door_1_1">
-        <nominal>5</nominal>
+        <nominal>0</nominal>
         <lifetime>2700</lifetime>
         <restock>0</restock>
         <min>0</min>
@@ -2609,7 +2609,7 @@
         <usage name="Industrial"/>
     </type>
 	<type name="Expansion_Mh6_Door_1_2">
-        <nominal>5</nominal>
+        <nominal>0</nominal>
         <lifetime>2700</lifetime>
         <restock>0</restock>
         <min>0</min>
@@ -2621,7 +2621,7 @@
         <usage name="Industrial"/>
     </type>
 	<type name="Expansion_Mh6_Door_2_1">
-        <nominal>5</nominal>
+        <nominal>0</nominal>
         <lifetime>2700</lifetime>
         <restock>0</restock>
         <min>0</min>
@@ -2633,7 +2633,7 @@
         <usage name="Industrial"/>
     </type>
 	<type name="Expansion_Mh6_Door_2_2">
-        <nominal>5</nominal>
+        <nominal>0</nominal>
         <lifetime>2700</lifetime>
         <restock>0</restock>
         <min>0</min>

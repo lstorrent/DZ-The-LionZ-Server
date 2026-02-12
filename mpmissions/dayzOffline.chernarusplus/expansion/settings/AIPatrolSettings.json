@@ -136,7 +136,10 @@
             "ObjectClassName": "Wreck_UH1Y",
             "WaypointInterpolation": "",
             "UseRandomWaypointAsStartPoint": 0,
-            "Waypoints": []
+            "Waypoints": [
+                [4058.634277, 332.412079, 6379.888672],
+                [4582.578613, 276.828033, 6731.126953]
+            ]
         },
         {
             "Name": "",
