@@ -93,7 +93,7 @@
     },
     "Patrols": [
         {
-            "Name": "Patrulha da Green Mountain",
+            "Name": "Wreck_UH1Y",
             "Persist": 0,
             "Faction": "West",
             "Formation": "",
@@ -136,13 +136,10 @@
             "ObjectClassName": "Wreck_UH1Y",
             "WaypointInterpolation": "",
             "UseRandomWaypointAsStartPoint": 0,
-            "Waypoints": [
-                [4058.634277, 332.412079, 6379.888672],
-                [4582.578613, 276.828033, 6731.126953]
-            ]
+            "Waypoints": []
         },
         {
-            "Name": "",
+            "Name": "Wreck_Mi8_Crashed",
             "Persist": 0,
             "Faction": "East",
             "Formation": "",
@@ -188,7 +185,7 @@
             "Waypoints": []
         },
         {
-            "Name": "",
+            "Name": "Land_Wreck_sed01_aban1_police",
             "Persist": 0,
             "Faction": "East",
             "Formation": "",
@@ -234,7 +231,7 @@
             "Waypoints": []
         },
         {
-            "Name": "",
+            "Name": "Land_Wreck_sed01_aban2_police",
             "Persist": 0,
             "Faction": "East",
             "Formation": "",
@@ -280,7 +277,7 @@
             "Waypoints": []
         },
         {
-            "Name": "",
+            "Name": "ContaminatedArea_Static",
             "Persist": 0,
             "Faction": "West",
             "Formation": "",
@@ -326,7 +323,7 @@
             "Waypoints": []
         },
         {
-            "Name": "",
+            "Name": "ContaminatedArea_Dynamic",
             "Persist": 0,
             "Faction": "West",
             "Formation": "",
@@ -372,7 +369,7 @@
             "Waypoints": []
         },
         {
-            "Name": "",
+            "Name": "Zeleno Patrol - War A",
             "Persist": 0,
             "Faction": "West",
             "Formation": "",
@@ -381,7 +378,7 @@
             "Loadout": "",
             "Units": [],
             "NumberOfAI": 1,
-            "NumberOfAIMax": 3,
+            "NumberOfAIMax": 1,
             "Behaviour": "ALTERNATE",
             "LootingBehaviour": "",
             "Speed": "WALK",
@@ -415,19 +412,22 @@
             "ObjectClassName": "",
             "WaypointInterpolation": "",
             "UseRandomWaypointAsStartPoint": 1,
-            "Waypoints": []
+            "Waypoints": [
+                [3097.369629, 247.284302, 5675.584961],
+                [2073.046387, 178.297440, 4974.470703]
+            ]
         },
         {
-            "Name": "",
+            "Name": "Zeleno Patrol - War B",
             "Persist": 0,
-            "Faction": "West",
+            "Faction": "Raiders",
             "Formation": "",
             "FormationScale": 0.0,
             "FormationLooseness": 0.0,
             "Loadout": "",
             "Units": [],
             "NumberOfAI": 1,
-            "NumberOfAIMax": 3,
+            "NumberOfAIMax": 1,
             "Behaviour": "ALTERNATE",
             "LootingBehaviour": "",
             "Speed": "WALK",
@@ -461,10 +461,63 @@
             "ObjectClassName": "",
             "WaypointInterpolation": "",
             "UseRandomWaypointAsStartPoint": 1,
-            "Waypoints": []
+            "Waypoints": [
+                [2073.046387, 178.297440, 4974.470703],
+                [3097.369629, 247.284302, 5675.584961]
+                
+            ]
         },
         {
-            "Name": "",
+            "Name": "Green Mountain Patrol A",
+            "Persist": 0,
+            "Faction": "Raiders",
+            "Formation": "",
+            "FormationScale": 0.0,
+            "FormationLooseness": 0.0,
+            "Loadout": "",
+            "Units": [],
+            "NumberOfAI": 1,
+            "NumberOfAIMax": 1,
+            "Behaviour": "ALTERNATE",
+            "LootingBehaviour": "",
+            "Speed": "WALK",
+            "UnderThreatSpeed": "SPRINT",
+            "DefaultStance": "STANDING",
+            "DefaultLookAngle": 0.0,
+            "CanBeLooted": 1,
+            "LootDropOnDeath": "",
+            "UnlimitedReload": 0,
+            "SniperProneDistanceThreshold": 0.0,
+            "AccuracyMin": -1.0,
+            "AccuracyMax": -1.0,
+            "ThreatDistanceLimit": -1.0,
+            "NoiseInvestigationDistanceLimit": -1.0,
+            "MaxFlankingDistance": -1.0,
+            "EnableFlankingOutsideCombat": -1,
+            "DamageMultiplier": -1.0,
+            "DamageReceivedMultiplier": -1.0,
+            "HeadshotResistance": 0.0,
+            "CanSpawnInContaminatedArea": 0,
+            "CanBeTriggeredByAI": 0,
+            "MinDistRadius": -1.0,
+            "MaxDistRadius": -1.0,
+            "DespawnRadius": -1.0,
+            "MinSpreadRadius": 1.0,
+            "MaxSpreadRadius": 100.0,
+            "Chance": 1.0,
+            "DespawnTime": -1.0,
+            "RespawnTime": -2.0,
+            "LoadBalancingCategory": "",
+            "ObjectClassName": "",
+            "WaypointInterpolation": "",
+            "UseRandomWaypointAsStartPoint": 1,
+            "Waypoints": [
+                [4062.470703, 331.095917, 6384.766602],
+                [4731.000488, 257.183258, 6611.253906]
+            ]
+        },
+        {
+            "Name": "Zeleno Patrol - Base A",
             "Persist": 0,
             "Faction": "Raiders",
             "Formation": "",
@@ -477,7 +530,7 @@
             "Behaviour": "ALTERNATE",
             "LootingBehaviour": "",
             "Speed": "WALK",
-            "UnderThreatSpeed": "SPRINT",
+            "UnderThreatSpeed": "WALK",
             "DefaultStance": "STANDING",
             "DefaultLookAngle": 0.0,
             "CanBeLooted": 1,
@@ -507,53 +560,11 @@
             "ObjectClassName": "",
             "WaypointInterpolation": "",
             "UseRandomWaypointAsStartPoint": 1,
-            "Waypoints": []
-        },
-        {
-            "Name": "",
-            "Persist": 0,
-            "Faction": "Raiders",
-            "Formation": "",
-            "FormationScale": 0.0,
-            "FormationLooseness": 0.0,
-            "Loadout": "",
-            "Units": [],
-            "NumberOfAI": 1,
-            "NumberOfAIMax": 0,
-            "Behaviour": "ALTERNATE",
-            "LootingBehaviour": "",
-            "Speed": "WALK",
-            "UnderThreatSpeed": "SPRINT",
-            "DefaultStance": "STANDING",
-            "DefaultLookAngle": 0.0,
-            "CanBeLooted": 1,
-            "LootDropOnDeath": "",
-            "UnlimitedReload": 0,
-            "SniperProneDistanceThreshold": 0.0,
-            "AccuracyMin": -1.0,
-            "AccuracyMax": -1.0,
-            "ThreatDistanceLimit": -1.0,
-            "NoiseInvestigationDistanceLimit": -1.0,
-            "MaxFlankingDistance": -1.0,
-            "EnableFlankingOutsideCombat": -1,
-            "DamageMultiplier": -1.0,
-            "DamageReceivedMultiplier": -1.0,
-            "HeadshotResistance": 0.0,
-            "CanSpawnInContaminatedArea": 0,
-            "CanBeTriggeredByAI": 0,
-            "MinDistRadius": -1.0,
-            "MaxDistRadius": -1.0,
-            "DespawnRadius": -1.0,
-            "MinSpreadRadius": 1.0,
-            "MaxSpreadRadius": 100.0,
-            "Chance": 1.0,
-            "DespawnTime": -1.0,
-            "RespawnTime": -2.0,
-            "LoadBalancingCategory": "",
-            "ObjectClassName": "",
-            "WaypointInterpolation": "",
-            "UseRandomWaypointAsStartPoint": 1,
-            "Waypoints": []
+            "Waypoints": [
+                [10486.309570, 6.024986, 2332.679199],
+                [10498.691406, 6.024989, 2352.259766],
+                [10475.943359, 6.024985, 2366.673096]
+            ]
         },
         {
             "Name": "",
@@ -599,7 +610,23 @@
             "ObjectClassName": "",
             "WaypointInterpolation": "",
             "UseRandomWaypointAsStartPoint": 1,
-            "Waypoints": []
+            "Waypoints": [
+                [
+                    9963.3466796875,
+                    55.640098571777347,
+                    10900.8447265625
+                ],
+                [
+                    9965.3984375,
+                    54.729034423828128,
+                    10969.5361328125
+                ],
+                [
+                    9924.380859375,
+                    57.23215103149414,
+                    10901.9677734375
+                ]
+            ]
         }
     ]
 }

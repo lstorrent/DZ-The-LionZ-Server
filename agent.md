@@ -326,7 +326,375 @@ Mortes Desconhecidas:
 }
 ```
 
-#### 4. Outros Arquivos de Configuração Expansion
+#### 4. Quest System (Sistema de Missões)
+
+**Localização dos Arquivos:**
+```
+profiles/ExpansionMod/Quests/
+├── Quests/           # Arquivos de configuração de missões
+├── Objectives/       # Arquivos de objetivos
+└── NPCs/            # Arquivos de NPCs quest givers
+```
+
+##### 4.1. Quest Configuration (Configuração de Missões)
+
+Arquivos de quest podem ter qualquer nome desde que tenham extensão `.json` e estejam na pasta `Quests/`.
+
+**Parâmetros Principais:**
+
+- `ConfigVersion`: Integer. Versão do arquivo de configuração (não altere!)
+- `ID`: Integer. ID único da quest (deve ser diferente para cada quest)
+- `Type`: Integer. Tipo da quest (sempre use `1` = NORMAL)
+- `Title`: String. Título da quest
+- `Descriptions`: Array com 3 entradas:
+  - `[0]`: Descrição ao pegar a quest
+  - `[1]`: Descrição enquanto quest está ativa (visível no NPC)
+  - `[2]`: Descrição ao entregar a quest (visível no NPC de entrega)
+- `ObjectiveText`: String. Texto curto do objetivo
+- `FollowUpQuest`: Integer. ID da quest seguinte (quest encadeada)
+- `Repeatable`: Boolean. Quest pode ser repetida
+- `IsDailyQuest`: Boolean. Quest diária com reset diário
+- `IsWeeklyQuest`: Boolean. Quest semanal com reset semanal
+- `CancelQuestOnPlayerDeath`: Boolean. Quest cancela se jogador morrer
+- `Autocomplete`: Boolean. Quest completa automaticamente ao finalizar objetivos
+- `IsGroupQuest`: Boolean. Quest de grupo
+- `ObjectSetFileName`: String. Nome do arquivo `.map` (sem extensão) para spawnar objetos
+  - Arquivo deve estar em: `MISSION.MAPNAME/expansion/quests/objects`
+
+**Quest Items:**
+```json
+"QuestItems": [
+    {
+        "ClassName": "SledgeHammer",
+        "Amount": 1
+    }
+]
+```
+Itens dados ao jogador ao iniciar a quest. São deletados ao completar/cancelar ou ao deslogar.
+
+**Rewards (Recompensas):**
+```json
+"Rewards": [
+    {
+        "ClassName": "TaloonBag_Blue",
+        "Amount": 1,
+        "Attachments": [],
+        "DamagePercent": 0,
+        "QuestID": -1,
+        "Chance": 1.0
+    }
+]
+```
+- `ClassName`: Nome da classe do item
+- `Amount`: Quantidade
+- `Attachments`: Array de attachments para o item
+- `DamagePercent`: Porcentagem de dano do item
+- `QuestID`: Se > -1, item se torna quest giver para essa quest ID
+- `Chance`: Chance de receber (usado com `RandomReward`)
+
+**Sistema de Recompensas:**
+- `NeedToSelectReward`: Boolean. Jogador escolhe uma recompensa da lista
+- `RandomReward`: Boolean. Recompensas aleatórias baseadas em `Chance`
+- `RandomRewardAmount`: Integer. Quantidade de recompensas aleatórias
+- `RewardsForGroupOwnerOnly`: Boolean. Só líder do grupo recebe recompensas
+
+**NPCs:**
+- `QuestGiverIDs`: Array. IDs dos NPCs que dão a quest
+- `QuestTurnInIDs`: Array. IDs dos NPCs que recebem a quest completa
+
+**Objectives (Objetivos):**
+```json
+"Objectives": [
+    {
+        "ConfigVersion": 28,
+        "ID": 3,
+        "ObjectiveType": 3
+    }
+]
+```
+
+**Tipos de Objetivos:**
+- `2` = TARGET: Matar quantidade de mobs/jogadores (opcional: com arma específica)
+- `3` = TRAVEL: Ir até localização XY
+- `4` = COLLECT: Coletar quantidade de itens
+- `5` = DELIVERY: Entregar itens em posição/NPC específico
+- `6` = TREASUREHUNT: Encontrar localização com tesouro escondido
+- `7` = AIPATROL: Eliminar patrulha de IA (opcional: com arma específica)
+- `8` = AICAMP: Eliminar acampamento de IA (opcional: com arma específica)
+- `9` = AIVIP: Proteger e escoltar IA até localização
+- `10` = ACTION: Executar ação específica
+- `11` = CRAFTING: Craftar itens específicos
+
+**Outros Parâmetros:**
+- `QuestColor`: Integer. Cor principal da quest (formato ARGB)
+- `ReputationReward`: Integer. Recompensa de reputação (requer Hardline mod)
+- `ReputationRequirement`: Integer. Reputação necessária para aceitar
+- `PreQuestIDs`: Array. IDs de quests que devem ser completadas antes
+- `RequiredFaction`: String. Facção necessária (requer Expansion-AI)
+- `FactionReward`: String. Facção recebida como recompensa
+- `PlayerNeedQuestItems`: Boolean. Quest cancela se perder quest items
+- `DeleteQuestItems`: Boolean. Deleta quest items ao completar
+- `SequentialObjectives`: Boolean. Objetivos devem ser feitos em ordem
+- `FactionReputationRequirements`: Map. Reputação de facção necessária
+- `FactionReputationRewards`: Map. Recompensa de reputação por facção
+- `SuppressQuestLogOnCompletion`: Boolean. Suprime log ao completar
+- `Active`: Boolean. Ativa/desativa esta quest
+
+**Exemplo de Quest Completa:**
+```json
+{
+    "ConfigVersion": 22,
+    "ID": 2,
+    "Type": 1,
+    "Title": "Um favor para Steve...",
+    "Descriptions": [
+        "Peter te enviou? Bem, eu tenho o que ele quer. Mas preciso de um favor também...",
+        "Ainda não terminou? Volte quando o trabalho estiver feito!",
+        "Ah, você voltou! Aqui está sua recompensa."
+    ],
+    "ObjectiveText": "Mate 10 infectados civis com o martelo de Steve.",
+    "FollowUpQuest": 3,
+    "Repeatable": 0,
+    "IsDailyQuest": 0,
+    "IsWeeklyQuest": 0,
+    "CancelQuestOnPlayerDeath": 0,
+    "Autocomplete": 0,
+    "IsGroupQuest": 0,
+    "QuestItems": [
+        {
+            "ClassName": "SledgeHammer",
+            "Amount": 1
+        }
+    ],
+    "Rewards": [
+        {
+            "ClassName": "WaterBottle",
+            "Amount": 1,
+            "Chance": 1.0
+        }
+    ],
+    "QuestGiverIDs": [2],
+    "QuestTurnInIDs": [2],
+    "Objectives": [
+        {
+            "ConfigVersion": 28,
+            "ID": 2,
+            "ObjectiveType": 3
+        },
+        {
+            "ConfigVersion": 28,
+            "ID": 1,
+            "ObjectiveType": 2
+        }
+    ],
+    "PreQuestIDs": [1],
+    "SequentialObjectives": 1,
+    "Active": 1
+}
+```
+
+**Configurações Especiais de Quest:**
+
+**Auto-Start Quest** (Quest que inicia automaticamente):
+```json
+"QuestGiverIDs": [],
+"IsAchievement": 0,
+"IsGroupQuest": 0,
+"PreQuestIDs": []
+```
+
+**Achievement Quest** (Conquista):
+```json
+"QuestGiverIDs": [],
+"IsAchievement": 1,
+"Autocomplete": 1,
+"IsGroupQuest": 0,
+"PreQuestIDs": []
+```
+
+**Daily Quest** (Quest Diária):
+```json
+"Repeatable": 1,
+"IsDailyQuest": 1,
+"IsWeeklyQuest": 0
+```
+
+**Weekly Quest** (Quest Semanal):
+```json
+"Repeatable": 1,
+"IsDailyQuest": 0,
+"IsWeeklyQuest": 1
+```
+
+##### 4.2. Quest Objectives Configuration
+
+Arquivos de objetivos podem ter qualquer nome com extensão `.json` na pasta `Objectives/` correspondente.
+
+**Parâmetros Principais:**
+- `ConfigVersion`: Integer. Versão do config (não altere!)
+- `ID`: Integer. ID único do objetivo (único por categoria)
+- `ObjectiveType`: Integer. Tipo do objetivo (deve corresponder à categoria)
+- `ObjectiveText`: String. Texto exibido no quest log e HUD
+- `TimeLimit`: Integer. Tempo limite em segundos para completar
+- `Active`: Boolean. Ativa/desativa este objetivo
+
+**Links para Configurações Específicas:**
+- Action Objective: https://github.com/salutesh/DayZ-Expansion-Scripts/wiki/Action-Objective-Configuration
+- AI Camp Objective: https://github.com/salutesh/DayZ-Expansion-Scripts/wiki/AI-Camp-Objective-Configuration
+- AI Patrol Objective: https://github.com/salutesh/DayZ-Expansion-Scripts/wiki/AI-Patrol-Objective-Configuration
+- AI VIP Objective: https://github.com/salutesh/DayZ-Expansion-Scripts/wiki/AI-VIP-Objective-Configuration
+- Collection Objective: https://github.com/salutesh/DayZ-Expansion-Scripts/wiki/Collection-Objective-Configuration
+- Crafting Objective: https://github.com/salutesh/DayZ-Expansion-Scripts/wiki/Crafting-Objective-Configuration
+- Delivery Objective: https://github.com/salutesh/DayZ-Expansion-Scripts/wiki/Delivery-Objective-Configuration
+- Target Objective: https://github.com/salutesh/DayZ-Expansion-Scripts/wiki/Target-Objective-Configuration
+- Travel Objective: https://github.com/salutesh/DayZ-Expansion-Scripts/wiki/Travel-Objective-Configuration
+- Treasure Hunt Objective: https://github.com/salutesh/DayZ-Expansion-Scripts/wiki/Treasure-Hunt-Objective-Configuration
+
+##### 4.3. Quest NPC Configuration
+
+Arquivos de NPC podem ter qualquer nome com extensão `.json` na pasta `NPCs/`.
+
+**Parâmetros Principais:**
+- `ConfigVersion`: Integer. Versão do config (não altere!)
+- `ID`: Integer. ID único do NPC
+- `ClassName`: String. Classe do NPC
+- `Position`: Vector [X, Y, Z]. Posição de spawn no mundo
+- `Orientation`: Vector [Yaw, Pitch, Roll]. Orientação do NPC
+- `NPCName`: String. Nome exibido na ação
+- `DefaultNPCText`: String. Texto padrão quando não há quests disponíveis
+- `NPCType`: Integer. Tipo do NPC:
+  - `0` = NORMAL (NPC normal)
+  - `1` = OBJECT (Objeto estático)
+  - `2` = AI (NPC com IA)
+- `Active`: Boolean. Ativa/desativa este NPC
+
+**NPCs Padrão Disponíveis:**
+
+NPCs Normais:
+- ExpansionQuestNPCMirek, ExpansionQuestNPCDenis, ExpansionQuestNPCBoris
+- ExpansionQuestNPCCyril, ExpansionQuestNPCElias, ExpansionQuestNPCFrancis
+- ExpansionQuestNPCGuo, ExpansionQuestNPCHassan, ExpansionQuestNPCIndar
+- ExpansionQuestNPCJose, ExpansionQuestNPCKaito, ExpansionQuestNPCLewis
+- ExpansionQuestNPCManua, ExpansionQuestNPCNiki, ExpansionQuestNPCOliver
+- ExpansionQuestNPCPeter, ExpansionQuestNPCQuinn, ExpansionQuestNPCRolf
+- ExpansionQuestNPCSeth, ExpansionQuestNPCTaiki, ExpansionQuestNPCLinda
+- ExpansionQuestNPCMaria, ExpansionQuestNPCFrida, ExpansionQuestNPCGabi
+- ExpansionQuestNPCHelga, ExpansionQuestNPCIrena, ExpansionQuestNPCJudy
+- ExpansionQuestNPCKeiko, ExpansionQuestNPCEva, ExpansionQuestNPCNaomi
+- ExpansionQuestNPCBaty
+
+NPCs AI (requer Expansion-AI):
+- ExpansionQuestNPCAIMirek, ExpansionQuestNPCAIDenis, etc. (adicione "AI" após "NPC")
+
+Objetos Estáticos:
+- ExpansionQuestObjectBoard, ExpansionQuestBoardSmall
+- ExpansionQuestBoardLarge, ExpansionQuestObjectLocker
+
+**Parâmetros para NPCs AI (NPCType = 2):**
+- `Waypoints`: Array de vetores. Caminho que o NPC seguirá (primeira entrada deve ser Position)
+- `NPCEmoteID`: Integer. ID do emote que NPC faz aleatoriamente
+- `NPCEmoteIsStatic`: Boolean. Força NPC a ficar neste emote sempre
+- `NPCLoadoutFile`: String. Nome do arquivo de loadout (sem extensão)
+- `NPCInteractionEmoteID`: Integer. Emote ao interagir
+- `NPCQuestCancelEmoteID`: Integer. Emote ao cancelar quest
+- `NPCQuestStartEmoteID`: Integer. Emote ao aceitar quest
+- `NPCQuestCompleteEmoteID`: Integer. Emote ao completar quest
+- `NPCFaction`: String. Nome da facção do NPC
+
+**IDs de Emotes:**
+```
+1=GREETING, 2=SOS, 3=HEART, 4=TAUNT, 5=LYINGDOWN, 6=TAUNTKISS
+7=FACEPALM, 8=TAUNTELBOW, 9=THUMB, 10=THROAT, 11=SUICIDE, 12=DANCE
+13=CAMPFIRE, 14=SITA, 15=SITB, 16=THUMBDOWN, 32=DABBING, 35=TIMEOUT
+39=CLAP, 40=POINT, 43=SILENT, 44=SALUTE, 45=RPS, 46=WATCHING
+47=HOLD, 48=LISTENING, 49=POINTSELF, 50=LOOKATME, 51=TAUNTTHINK
+52=MOVE, 53=DOWN, 54=COME, 55=RPS_R, 56=RPS_P, 57=RPS_S
+58=NOD, 59=SHAKE, 60=SHRUG, 61=SURRENDER, 62=VOMIT
+```
+
+**Exemplo de NPC AI:**
+```json
+{
+    "ConfigVersion": 6,
+    "ID": 1,
+    "ClassName": "ExpansionQuestNPCAIDenis",
+    "Position": [3706.27, 402.01, 5987.08],
+    "Orientation": [282.0, 0.0, 0.0],
+    "NPCName": "Peter",
+    "DefaultNPCText": "Hmm?",
+    "Waypoints": [[3706.27, 402.01, 5987.08]],
+    "NPCEmoteID": 46,
+    "NPCEmoteIsStatic": 0,
+    "NPCLoadoutFile": "NBCLoadout",
+    "NPCInteractionEmoteID": 1,
+    "NPCQuestCancelEmoteID": 60,
+    "NPCQuestStartEmoteID": 58,
+    "NPCQuestCompleteEmoteID": 39,
+    "NPCFaction": "InvincibleObservers",
+    "NPCType": 2,
+    "Active": 1
+}
+```
+
+##### 4.4. Quest Settings (QuestSettings.json)
+
+**Localização:** `profiles/ExpansionMod/Settings/QuestSettings.json`
+
+**Parâmetros Principais:**
+- `m_Version`: Integer. Versão do arquivo (não altere!)
+- `EnableQuests`: Boolean. Ativa/desativa sistema de quests
+- `EnableQuestLogTab`: Boolean. Ativa aba de quests no livro (requer Expansion-Book)
+- `CreateQuestNPCMarkers`: Boolean. Cria marcadores no mapa para NPCs (não funciona ainda)
+- `MaxActiveQuests`: Integer. Máximo de quests ativas simultaneamente
+
+**Textos de Notificação:**
+- `QuestAcceptedTitle/Text`: Título/texto ao aceitar quest
+- `QuestCompletedTitle/Text`: Título/texto ao completar quest
+- `QuestFailedTitle/Text`: Título/texto ao falhar quest
+- `QuestCanceledTitle/Text`: Título/texto ao cancelar quest
+- `QuestTurnInTitle/Text`: Título/texto ao entregar quest
+- `QuestObjectiveCompletedTitle/Text`: Título/texto ao completar objetivo
+- `AchievementCompletedTitle/Text`: Título/texto ao completar conquista
+- `QuestCooldownTitle/Text`: Título/texto quando quest está em cooldown
+- `QuestNotInGroupTitle/Text`: Título/texto para quest de grupo sem estar em grupo
+- `QuestNotGroupOwnerTitle/Text`: Título/texto quando não é líder do grupo
+
+**Reset de Quests:**
+- `WeeklyResetDay`: String. Dia da semana para reset (em inglês: "Monday", "Tuesday", etc.)
+- `WeeklyResetHour`: Integer. Hora do reset semanal (0-23)
+- `WeeklyResetMinute`: Integer. Minuto do reset semanal (0-59)
+- `DailyResetHour`: Integer. Hora do reset diário (0-23)
+- `DailyResetMinute`: Integer. Minuto do reset diário (0-59)
+- `UseUTCTime`: Boolean. Usa horário UTC para resets
+
+**Modo de Quest de Grupo:**
+- `GroupQuestMode`: Integer
+  - `0`: Só líder aceita e entrega quests de grupo
+  - `1`: Só líder entrega, mas todos podem aceitar
+  - `2`: Todos podem aceitar e entregar
+
+**Exemplo:**
+```json
+{
+    "m_Version": 10,
+    "EnableQuests": 1,
+    "EnableQuestLogTab": 1,
+    "QuestAcceptedTitle": "Quest Aceita",
+    "QuestAcceptedText": "A quest %1 foi aceita!",
+    "QuestCompletedTitle": "Quest Completa",
+    "QuestCompletedText": "Todos objetivos de %1 foram completados",
+    "WeeklyResetDay": "Wednesday",
+    "WeeklyResetHour": 8,
+    "WeeklyResetMinute": 0,
+    "DailyResetHour": 8,
+    "DailyResetMinute": 0,
+    "UseUTCTime": 0,
+    "GroupQuestMode": 0,
+    "MaxActiveQuests": 5
+}
+```
+
+#### 5. Outros Arquivos de Configuração Expansion
 
 **BuildingSettings.json**: Configuração de construções
 **DamageSystemSettings.json**: Sistema de dano

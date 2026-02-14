@@ -192,30 +192,28 @@
     ],
     "Descriptions": [
         {
-            "CategoryName": "General Info",
+            "CategoryName": "MERCADO - GREEN MOUNTAIN",
             "Descriptions": [
                 {
-                    "DescriptionText": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+                    "DescriptionText": "LOCALIZACAO ESTRATEGICA: O Mercado do The LionZ esta localizado na iconica Green Mountain, um dos pontos mais estrategicos de Chernarus."
                 },
                 {
-                    "DescriptionText": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+                    "DescriptionText": "COORDENADAS GPS: Latitude 037 | Longitude 093 | Altitude aproximadamente 620m acima do nivel do mar. A Green Mountain e facilmente identificavel pela sua torre de transmissao caracteristica, visivel de longas distancias."
                 },
                 {
-                    "DescriptionText": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
-                }
-            ]
-        },
-        {
-            "CategoryName": "Mod Info",
-            "Descriptions": [
-                {
-                    "DescriptionText": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+                    "DescriptionText": "SISTEMA DE COMERCIO: O mercado opera com um sistema dinamico de precos baseado na oferta e demanda do servidor. Os valores dos itens podem sofrer alteracoes sem aviso previo, refletindo a economia do servidor em tempo real. Alguns itens raros possuem quantidade limitada e podem esgotar rapidamente."
                 },
                 {
-                    "DescriptionText": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+                    "DescriptionText": "MISSOES REGIONAIS: O mercado serve como hub central para missoes da regiao oeste de Chernarus. Consulte as missoes disponiveis diretamente no mercado. Complete missoes para obter itens raros e moeda extra. Novas missoes sao adicionadas regularmente."
                 },
                 {
-                    "DescriptionText": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+                    "DescriptionText": "AVISO DE SEGURANCA - ZONA DE ALTO RISCO: A regiao da Green Mountain e patrulhada por IA hostil. Patrulhas armadas circulam constantemente nas proximidades do mercado e podem atacar sobreviventes desavisados."
+                },
+                {
+                    "DescriptionText": "RECOMENDACOES DE SEGURANCA: Aproxime-se com cautela e observe os arredores antes de entrar. Evite fazer barulho excessivo que possa atrair patrulhas. Viaje em grupo sempre que possivel. Mantenha armas prontas, mas evite conflitos desnecessarios proximo ao mercado. Planeje sua rota de fuga antes de iniciar transacoes."
+                },
+                {
+                    "DescriptionText": "LEMBRE-SE: O mercado e uma zona neutra, mas as areas ao redor NAO sao seguras. Sua sobrevivencia e sua responsabilidade! Boa sorte, sobrevivente!"
                 }
             ]
         }
