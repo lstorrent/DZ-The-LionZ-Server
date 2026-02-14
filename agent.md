@@ -694,9 +694,202 @@ Objetos Estáticos:
 }
 ```
 
-#### 5. Outros Arquivos de Configuração Expansion
+#### 5. BaseBuildingSettings.json
 
-**BuildingSettings.json**: Configuração de construções
+**Localização:** `mpmissions/dayzOffline.<mapname>/expansion/settings/BaseBuildingSettings.json`
+
+⚠️ **Nota:** Diferente de outras configurações, este arquivo é específico por mapa.
+
+**Parâmetros Principais:**
+
+- `m_Version`: Integer. Versão do arquivo (não altere!)
+
+**Configurações de Construção:**
+
+- `CanBuildAnywhere`: Boolean
+  - `0`: Construir segue limitações vanilla
+  - `1`: Pode construir em qualquer lugar sem restrições
+
+- `AllowBuildingWithoutATerritory`: Boolean
+  - `0`: Obrigado a construir dentro de território
+  - `1`: Pode construir fora de território
+
+- `DeployableOutsideATerritory`: Array de strings. Lista de classnames que podem ser colocados fora de território (usado se AllowBuildingWithoutATerritory = 0)
+```json
+"DeployableOutsideATerritory": [
+    "Fireplace",
+    "BearTrap",
+    "TerritoryFlagKit"
+]
+```
+
+- `DeployableInsideAEnemyTerritory`: Array de strings. Itens que podem ser colocados em território inimigo (para raid)
+```json
+"DeployableInsideAEnemyTerritory": [
+    "ExpansionSatchel",
+    "LandMineTrap",
+    "BearTrap"
+]
+```
+
+**Crafting:**
+
+- `CanCraftVanillaBasebuilding`: Boolean
+  - `0`: Não pode craftar cerca/torre vanilla
+  - `1`: Pode craftar cerca/torre vanilla
+
+- `CanCraftExpansionBasebuilding`: Boolean
+  - `0`: Não pode craftar kits Expansion (parede, piso, rampa, escada)
+  - `1`: Pode craftar kits Expansion
+
+**Desmontagem:**
+
+- `DestroyFlagOnDismantle`: Boolean
+  - `0`: Recebe kit de volta ao desmontar bandeira
+  - `1`: Não recebe kit de volta
+
+- `DismantleOutsideTerritory`: Boolean
+  - `0`: Não pode desmontar fora do próprio território
+  - `1`: Pode desmontar tudo exceto em território alheio
+
+- `DismantleInsideTerritory`: Boolean
+  - `0`: Não pode desmontar em territórios que não possui
+  - `1`: Pode desmontar em qualquer território
+
+- `DismantleAnywhere`: Boolean
+  - `0`: Precisa estar no lado macio para desmontar
+  - `1`: Ação de desmontar disponível de qualquer lado
+
+- `DismantleFlagMode`: Integer
+  - `-1`: Só membros do território podem desmontar com mãos nuas
+  - `0`: Qualquer um pode desmontar com mãos nuas
+  - `1`: Qualquer um pode desmontar mas só com ferramentas específicas
+
+**Codelocks:**
+
+- `CodelockActionsAnywhere`: Boolean
+  - `0`: Precisa olhar para o codelock para interagir (vanilla)
+  - `1`: Pode olhar para parede/porta/portão ou codelock para interagir
+
+- `CodeLockLength`: Integer. Tamanho da senha (ex: 4 = senha de 4 dígitos)
+
+- `DoDamageWhenEnterWrongCodeLock`: Boolean
+  - `0`: Não recebe dano ao errar senha
+  - `1`: Recebe dano ao errar senha
+
+- `DamageWhenEnterWrongCodeLock`: Float. Quantidade de dano ao errar senha (0-100)
+
+- `CodelockAttachMode`: Integer
+  - `0`: Expansion BaseBuilding apenas
+  - `1`: Expansion BaseBuilding + Cerca
+  - `2`: Expansion BaseBuilding + Cerca + Tendas
+  - `3`: Expansion BaseBuilding + Tendas
+
+**Território:**
+
+- `CanCraftTerritoryFlagKit`: Boolean
+  - `0`: Não pode craftar bandeira de território
+  - `1`: Pode craftar bandeira (3 gravetos + 1 corda)
+
+- `SimpleTerritory`: Boolean
+  - `0`: Precisa construir bandeira como vanilla
+  - `1`: Bandeira é construída automaticamente ao ser colocada
+
+- `AutomaticFlagOnCreation`: Boolean
+  - `0`: Jogador precisa adicionar bandeira manualmente
+  - `1`: Bandeira é adicionada automaticamente ao mastro
+
+- `GetTerritoryFlagKitAfterBuild`: Boolean
+  - `0`: Não recebe kit de volta após construir
+  - `1`: Recebe kit de volta após primeiro estágio
+
+- `FlagMenuMode`: Integer
+  - `0`: Não pode criar território
+  - `1`: Pode criar território e customizar bandeira
+  - `2`: Pode criar território mas não customizar bandeira
+
+**Zonas de Construção:**
+
+- `BuildZoneRequiredCustomMessage`: String. Mensagem exibida ao tentar construir em zona proibida
+
+- `Zones`: Array de zonas de construção/não-construção
+```json
+"Zones": [
+    {
+        "Name": "Green Mountain Trader Camp",
+        "Center": [3728.27, 403.0, 6003.60],
+        "Radius": 600.0,
+        "Items": [
+            "Fireplace",
+            "LandMineTrap",
+            "BearTrap"
+        ],
+        "IsWhitelist": 1,
+        "CustomMessage": ""
+    }
+]
+```
+  - `Name`: Nome da zona
+  - `Center`: Coordenadas [X, Y, Z] do centro
+  - `Radius`: Raio em metros
+  - `Items`: Lista de itens permitidos (se IsWhitelist = 1) ou proibidos (se IsWhitelist = 0)
+  - `IsWhitelist`: Boolean. Se 1, apenas Items listados são permitidos; se 0, Items listados são proibidos
+  - `CustomMessage`: Mensagem customizada para esta zona
+
+- `ZonesAreNoBuildZones`: Boolean
+  - `0`: Zonas são áreas de construção (só pode construir dentro delas)
+  - `1`: Zonas são áreas proibidas (não pode construir dentro delas)
+
+**Armazenamento Virtual:**
+
+- `EnableVirtualStorage`: Boolean. Itens são salvos em armazenamento virtual e removidos do mundo quando container fecha (melhora performance)
+
+- `VirtualStorageExcludedContainers`: Array de strings. Containers excluídos do armazenamento virtual
+```json
+"VirtualStorageExcludedContainers": [
+    "ExpansionAirdropContainerBase"
+]
+```
+
+**Exemplo de Configuração para The LionZ:**
+```json
+{
+    "m_Version": 5,
+    "CanBuildAnywhere": 1,
+    "AllowBuildingWithoutATerritory": 1,
+    "CanCraftVanillaBasebuilding": 0,
+    "CanCraftExpansionBasebuilding": 1,
+    "DestroyFlagOnDismantle": 1,
+    "DismantleOutsideTerritory": 0,
+    "DismantleInsideTerritory": 0,
+    "CodeLockLength": 4,
+    "DoDamageWhenEnterWrongCodeLock": 1,
+    "DamageWhenEnterWrongCodeLock": 10.0,
+    "SimpleTerritory": 1,
+    "AutomaticFlagOnCreation": 1,
+    "Zones": [
+        {
+            "Name": "Green Mountain Trader Camp",
+            "Center": [3728.27, 403.0, 6003.60],
+            "Radius": 600.0,
+            "Items": ["Fireplace", "LandMineTrap", "BearTrap"],
+            "IsWhitelist": 1,
+            "CustomMessage": ""
+        }
+    ],
+    "ZonesAreNoBuildZones": 1,
+    "EnableVirtualStorage": 0
+}
+```
+
+**Dicas para Zonas de Não-Construção:**
+- Use para proteger áreas de trader
+- Defina raio apropriado (500-1000m para traders)
+- Permita apenas itens essenciais (fogueira, armadilhas)
+- Bloqueie explosivos em zonas seguras
+
+#### 6. Outros Arquivos de Configuração Expansion
+
 **DamageSystemSettings.json**: Sistema de dano
 **DebugSettings.json**: Configurações de debug
 **GeneralSettings.json**: Configurações gerais do mod
@@ -705,7 +898,6 @@ Objetos Estáticos:
 **MapSettings.json**: Configurações do mapa
 **MissionSettings.json**: Configurações de missões
 **MonitoringSettings.json**: Monitoramento do servidor
-**NotificationSettings.json**: Sistema de notificações
 **PartySettings.json**: Sistema de grupos
 **SafeZoneSettings.json**: Zonas seguras
 **SpawnSettings.json**: Configurações de spawn de jogadores

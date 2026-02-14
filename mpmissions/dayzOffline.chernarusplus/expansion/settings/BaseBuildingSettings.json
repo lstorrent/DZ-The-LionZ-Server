@@ -53,34 +53,9 @@
     "BuildZoneRequiredCustomMessage": "",
     "Zones": [
         {
-            "Name": "Krasnostav Trader Camp",
-            "Center": [
-                11882.0,
-                143.0,
-                12466.0
-            ],
-            "Radius": 1000.0,
-            "Items": [
-                "Fireplace",
-                "LandMineTrap",
-                "BearTrap",
-                "FishNetTrap",
-                "RabbitSnareTrap",
-                "SmallFishTrap",
-                "TripwireTrap",
-                "ExplosivesBase"
-            ],
-            "IsWhitelist": 1,
-            "CustomMessage": ""
-        },
-        {
             "Name": "Green Mountain Trader Camp",
-            "Center": [
-                3728.27001953125,
-                403.0,
-                6003.60009765625
-            ],
-            "Radius": 1000.0,
+            "Center": [3728.27001953125, 403.0, 6003.60009765625],
+            "Radius": 600.0,
             "Items": [
                 "Fireplace",
                 "LandMineTrap",
@@ -95,12 +70,8 @@
             "CustomMessage": ""
         },
         {
-            "Name": "Kamenka Trader Camp",
-            "Center": [
-                1143.1400146484376,
-                6.900000095367432,
-                2423.27001953125
-            ],
+            "Name": "Military Tisy",
+            "Center": [1126.779663, 463.661163, 14240.797852],
             "Radius": 1000.0,
             "Items": [
                 "Fireplace",
