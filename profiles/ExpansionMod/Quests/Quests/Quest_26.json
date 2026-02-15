@@ -4,11 +4,11 @@
     "Type": 1,
     "Title": "Recuperar Radio Militar",
     "Descriptions": [
-        "Um radio militar foi roubado de nossa base.",
-        "É importante e precisamos dele.",
-        "Tome cuidado, pode haver forças hostis."
+        "Briefing: Um rádio militar foi roubado de nossa base. Temos informações que ele se encontra nas proximidades da cidade de Rogovo. Encontre o rádio e traga de volta!",
+        "Ainda procurando o rádio? Ele deve estar perto de Rogovo. Tome cuidado com forças hostis!",
+        "Você encontrou o rádio! Excelente trabalho, sobrevivente. Aqui está sua recompensa."
     ],
-    "ObjectiveText": "Procure o Radio e Devolva a base.",
+    "ObjectiveText": "Encontre o Rádio.",
     "FollowUpQuest": -1,
     "Repeatable": 1,
     "IsDailyQuest": 0,
@@ -51,11 +51,6 @@
             "ConfigVersion": 28,
             "ID": 4,
             "ObjectiveType": 4
-        },
-        {
-            "ConfigVersion": 28,
-            "ID": 3,
-            "ObjectiveType": 5
         }
     ],
     "QuestColor": -930200403,

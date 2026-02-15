@@ -4,9 +4,9 @@
     "Type": 1,
     "Title": "A Procura de Recursos",
     "Descriptions": [
-        "Parece que este recurso esta na Base de Zeleno.",
-        "Precisamos de recursos importantes.",
-        "Eletronicos são necessario."
+        "Precisamos de uma placa-mãe de computador. Temos informações que há uma na Base Militar de Zeleno. Encontre a placa-mãe e traga de volta!",
+        "Ainda procurando a placa-mãe? Ela deve estar na Base de Zeleno. Tome cuidado com forças hostis!",
+        "Você encontrou a placa-mãe! Excelente trabalho, sobrevivente. Aqui está sua recompensa."
     ],
     "ObjectiveText": "Procure o uma placa mae de computador.",
     "FollowUpQuest": -1,
@@ -49,13 +49,8 @@
         },
         {
             "ConfigVersion": 28,
-            "ID": 4,
+            "ID": 5,
             "ObjectiveType": 4
-        },
-        {
-            "ConfigVersion": 28,
-            "ID": 3,
-            "ObjectiveType": 5
         }
     ],
     "QuestColor": -930200403,
