@@ -24,6 +24,12 @@ Juntos, estamos construindo uma comunidade onde todos são bem-vindos para compa
 
 ## 🚀 Como Conectar
 
+**Informações do Servidor:**
+- 🎮 **Nome:** Lion-Z Hardcore
+- 🌐 **IP:** 188.255.171.173
+- 🔌 **Porta:** 2332
+
+**Passos para conectar:**
 1. Abra o DayZ
 2. Vá para a aba "Community"
 3. Procure por "Lion-Z"
