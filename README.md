@@ -4,7 +4,7 @@
 ![Status](https://img.shields.io/badge/Status-Online-green?style=for-the-badge)
 ![Players](https://img.shields.io/badge/Players-Welcome-blue?style=for-the-badge)
 
-🌐 **[Visite nosso site oficial](https://SEU-USUARIO.github.io/DZ-The-LionZ-Server/)**
+🌐 **[Visite nosso site oficial](https://lstorrent.github.io/DZ-The-LionZ-Server/)**
 
 ## 🖼️ Quem Somos?
 
