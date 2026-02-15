@@ -888,7 +888,213 @@ Objetos Estáticos:
 - Permita apenas itens essenciais (fogueira, armadilhas)
 - Bloqueie explosivos em zonas seguras
 
-#### 6. Outros Arquivos de Configuração Expansion
+#### 6. RaidSettings.json
+
+**Localização:** `mpmissions/dayzOffline.<mapname>/expansion/settings/RaidSettings.json`
+
+**Parâmetros Principais:**
+
+- `m_Version`: Integer. Versão do arquivo (não altere!)
+
+**Configurações de Explosivos:**
+
+- `ExplosionTime`: Integer. Tempo em segundos para ExpansionSatchel (C4) explodir
+
+- `ExplosiveDamageWhitelist`: Array de strings. Classnames de explosões permitidas para raid
+  - ⚠️ **Importante**: Use classname da EXPLOSÃO, não do item
+  - Exemplo: "Expansion_RPG_Explosion" (não "RPG_Ammo")
+```json
+"ExplosiveDamageWhitelist": [
+    "Explosion_M67",
+    "Expansion_C4_Explosion",
+    "Expansion_RPG_Explosion"
+]
+```
+
+- `EnableExplosiveWhitelist`: Boolean
+  - `0`: Todos explosivos podem raidar (ignora whitelist)
+  - `1`: Apenas explosivos da whitelist podem raidar
+
+**Multiplicadores de Dano:**
+
+- `ExplosionDamageMultiplier`: Float. Multiplicador de dano explosivo em paredes Expansion
+  - Fórmula: `Dano Final = Dano Base × Multiplicador`
+  - Exemplo: Granada (50 dano) × 50 = 2500 dano
+  - Referência de dano base:
+    - Granada vanilla: 50
+    - Foguete Expansion: 300
+    - C4 Expansion: 600
+  - 🛡️ HP de Paredes: 30,000
+  - Valores < 1 funcionam (0.5 = metade do dano, 0 = sem dano)
+
+- `ProjectileDamageMultiplier`: Float. Multiplicador de dano de balas em paredes Expansion
+  - Fórmula: `Dano Final = Dano Base × Multiplicador`
+  - Exemplo: Bala (65 dano) × 2 = 130 dano
+  - 🛡️ HP de Paredes: 30,000
+  - Valores < 1 funcionam (0 = desabilita dano de balas)
+
+**Raid de Cofres:**
+
+- `CanRaidSafes`: Boolean
+  - `0`: Cofres Expansion não podem ser destruídos
+  - `1`: Permite raidar cofres Expansion
+
+- `SafeExplosionDamageMultiplier`: Float. Multiplicador de dano explosivo em cofres
+  - Fórmula: `Dano Final = Dano Base × Multiplicador`
+  - 🛡️ HP de Cofres:
+    - Large: 20,000
+    - Medium: 15,000
+    - Small: 10,000
+
+- `SafeProjectileDamageMultiplier`: Float. Multiplicador de dano de balas em cofres
+
+- `SafeRaidTools`: Array de strings. Ferramentas permitidas para raidar cofres
+```json
+"SafeRaidTools": [
+    "Hacksaw",
+    "HandSaw"
+]
+```
+
+- `SafeRaidToolTimeSeconds`: Integer. Tempo necessário para raidar cofre com ferramenta
+
+- `SafeRaidToolCycles`: Integer. Número de ciclos necessários para raidar cofre
+
+- `SafeRaidToolDamagePercent`: Integer. Dano total causado à ferramenta (100 = arruinada após todos ciclos)
+
+**Raid de Arame Farpado:**
+
+- `BarbedWireRaidTools`: Array de strings. Ferramentas para cortar arame farpado
+```json
+"BarbedWireRaidTools": [
+    "Pliers",
+    "CombinationPliers"
+]
+```
+
+- `BarbedWireRaidToolTimeSeconds`: Integer. Tempo para cortar arame
+
+- `BarbedWireRaidToolCycles`: Integer. Número de ciclos necessários
+
+- `BarbedWireRaidToolDamagePercent`: Integer. Dano à ferramenta (0-100)
+
+**Raid de Codelocks:**
+
+- `CanRaidLocksOnWalls`: Integer
+  - `0`: Não pode raidar codelocks em paredes
+  - `1`: Pode raidar codelocks em paredes, portas E portões
+  - `2`: Pode raidar codelocks apenas em portas
+  - `3`: Pode raidar codelocks apenas em portões
+
+- `CanRaidLocksOnFences`: Boolean
+  - `0`: Não pode raidar codelocks em cercas
+  - `1`: Pode raidar codelocks em cercas
+
+- `CanRaidLocksOnTents`: Boolean
+  - `0`: Não pode raidar codelocks em tendas
+  - `1`: Pode raidar codelocks em tendas
+
+- `LockRaidTools`: Array de strings. Ferramentas para raidar codelocks
+```json
+"LockRaidTools": [
+    "Hacksaw",
+    "HandSaw",
+    "Pliers"
+]
+```
+
+- `LockOnWallRaidToolTimeSeconds`: Integer. Tempo para raidar lock em parede
+
+- `LockOnFenceRaidToolTimeSeconds`: Integer. Tempo para raidar lock em cerca
+
+- `LockOnTentRaidToolTimeSeconds`: Integer. Tempo para raidar lock em tenda
+
+- `LockRaidToolCycles`: Integer. Número de ciclos necessários
+
+- `LockRaidToolDamagePercent`: Integer. Dano à ferramenta (0-100)
+
+**Modo de Raid de BaseBuilding:**
+
+- `BaseBuildingRaidMode`: Integer
+  - `-1`: Elementos Expansion BaseBuilding NÃO podem ser raidados
+  - `0`: TODOS elementos podem ser raidados
+  - `1`: Apenas portas/portões podem ser raidados
+  - `2`: Apenas portas/portões/janelas podem ser raidados
+
+**Exemplo de Configuração Balanceada:**
+```json
+{
+    "m_Version": 10,
+    "ExplosionTime": 30,
+    "ExplosiveDamageWhitelist": [
+        "Explosion_M67",
+        "Expansion_C4_Explosion",
+        "Expansion_RPG_Explosion"
+    ],
+    "EnableExplosiveWhitelist": 1,
+    "ExplosionDamageMultiplier": 50.0,
+    "ProjectileDamageMultiplier": 2.0,
+    "CanRaidSafes": 1,
+    "SafeExplosionDamageMultiplier": 50.0,
+    "SafeProjectileDamageMultiplier": 2.0,
+    "SafeRaidTools": ["Hacksaw"],
+    "SafeRaidToolTimeSeconds": 300,
+    "SafeRaidToolCycles": 5,
+    "SafeRaidToolDamagePercent": 100,
+    "BarbedWireRaidTools": ["Pliers", "CombinationPliers"],
+    "BarbedWireRaidToolTimeSeconds": 30,
+    "BarbedWireRaidToolCycles": 1,
+    "BarbedWireRaidToolDamagePercent": 10,
+    "CanRaidLocksOnWalls": 1,
+    "CanRaidLocksOnFences": 1,
+    "CanRaidLocksOnTents": 1,
+    "LockRaidTools": ["Hacksaw", "Pliers"],
+    "LockOnWallRaidToolTimeSeconds": 180,
+    "LockOnFenceRaidToolTimeSeconds": 120,
+    "LockOnTentRaidToolTimeSeconds": 60,
+    "LockRaidToolCycles": 3,
+    "LockRaidToolDamagePercent": 50,
+    "BaseBuildingRaidMode": 0
+}
+```
+
+**Cálculos de Raid:**
+
+**Exemplo 1: Raidar Parede com C4**
+- HP da Parede: 30,000
+- Dano do C4: 600
+- Multiplicador: 50
+- Dano por C4: 600 × 50 = 30,000
+- **Resultado: 1 C4 destrói 1 parede**
+
+**Exemplo 2: Raidar Parede com Granadas**
+- HP da Parede: 30,000
+- Dano da Granada: 50
+- Multiplicador: 50
+- Dano por Granada: 50 × 50 = 2,500
+- **Resultado: 12 granadas para destruir 1 parede**
+
+**Exemplo 3: Raidar Cofre Grande com C4**
+- HP do Cofre: 20,000
+- Dano do C4: 600
+- Multiplicador: 50
+- Dano por C4: 600 × 50 = 30,000
+- **Resultado: 1 C4 destrói cofre grande**
+
+**Dicas de Balanceamento:**
+- Multiplicador alto (50+): Raid rápido, favorece atacantes
+- Multiplicador médio (20-50): Raid balanceado
+- Multiplicador baixo (1-20): Raid difícil, favorece defensores
+- Multiplicador 0: Desabilita raid por aquele método
+
+**Dicas para Servidor PvP:**
+- Habilite whitelist de explosivos para controlar métodos de raid
+- Configure tempo de C4 apropriado (30-60s)
+- Permita raid de codelocks com ferramentas (adiciona gameplay)
+- Ajuste ciclos e tempo baseado na dificuldade desejada
+- Considere dano à ferramenta para balancear economia
+
+#### 7. Outros Arquivos de Configuração Expansion
 
 **DamageSystemSettings.json**: Sistema de dano
 **DebugSettings.json**: Configurações de debug

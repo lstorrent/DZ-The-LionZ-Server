@@ -1,19 +1,11 @@
 {
     "m_Version": 5,
-    "BaseBuildingRaidMode": 0,
+    "BaseBuildingRaidMode": 1,
     "ExplosionTime": 30.0,
     "ExplosiveDamageWhitelist": [
-        "Expansion_C4_Explosion",
-        "Expansion_RPG_Explosion",
-        "Expansion_LAW_Explosion",
-        "M79",
-        "RGD5Grenade",
-        "M67Grenade",
-        "FlashGrenade",
-        "Land_FuelStation_Feed",
-        "Land_FuelStation_Feed_Enoch"
+        "Expansion_C4_Explosion"
     ],
-    "EnableExplosiveWhitelist": 0,
+    "EnableExplosiveWhitelist": 1,
     "ExplosionDamageMultiplier": 50.0,
     "ProjectileDamageMultiplier": 1.0,
     "CanRaidSafes": 1,

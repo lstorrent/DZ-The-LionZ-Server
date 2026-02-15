@@ -1,0 +1,20 @@
+{
+    "ConfigVersion": 28,
+    "ID": 4,
+    "ObjectiveType": 5,
+    "ObjectiveText": "Leve a MOBO ate a base Green Mountain",
+    "TimeLimit": -1,
+    "Active": 1,
+    "Collections": [
+        {
+            "Amount": 1,
+            "ClassName": "ExpansionCircuitBoardBase",
+            "QuantityPercent": -1,
+            "MinQuantityPercent": -1
+        }
+    ],
+    "ShowDistance": 1,
+    "AddItemsToNearbyMarketZone": 0,
+    "MaxDistance": 20.0,
+    "MarkerName": ""
+}
