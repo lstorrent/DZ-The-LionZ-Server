@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The LionZ Server - DayZ</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: #fff;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #c41e3a 0%, #8b0000 100%);
+            box-shadow: 0 4px 20px rgba(196, 30, 58, 0.3);
+        }
+        h1 {
+            font-size: 3.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .lion-emoji { font-size: 1.2em; }
+        .tagline {
+            font-size: 1.3em;
+            opacity: 0.9;
+            margin-top: 10px;
+        }
+        .badges {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .badge {
+            background: rgba(0,0,0,0.3);
+            padding: 8px 16px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .section {
+            background: rgba(255,255,255,0.05);
+            margin: 30px 0;
+            padding: 40px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        h2 {
+            color: #c41e3a;
+            margin-bottom: 20px;
+            font-size: 2em;
+            border-bottom: 2px solid #c41e3a;
+            padding-bottom: 10px;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .feature-card {
+            background: rgba(196, 30, 58, 0.1);
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #c41e3a;
+            transition: transform 0.3s;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            background: rgba(196, 30, 58, 0.2);
+        }
+        .feature-card strong {
+            color: #c41e3a;
+            font-size: 1.1em;
+        }
+        .connect-steps {
+            background: rgba(196, 30, 58, 0.1);
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .connect-steps ol {
+            margin-left: 20px;
+            font-size: 1.1em;
+        }
+        .connect-steps li {
+            margin: 15px 0;
+            padding-left: 10px;
+        }
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #c41e3a 0%, #8b0000 100%);
+            color: #fff;
+            padding: 15px 40px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin: 20px 10px;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(196, 30, 58, 0.4);
+        }
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(196, 30, 58, 0.6);
+        }
+        .rules-list, .support-list {
+            list-style: none;
+            margin-top: 20px;
+        }
+        .rules-list li, .support-list li {
+            padding: 12px;
+            margin: 10px 0;
+            background: rgba(255,255,255,0.05);
+            border-radius: 5px;
+            border-left: 3px solid #c41e3a;
+        }
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 50px;
+            background: rgba(0,0,0,0.3);
+            border-top: 2px solid #c41e3a;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .contact-item {
+            background: rgba(196, 30, 58, 0.2);
+            padding: 15px 25px;
+            border-radius: 10px;
+        }
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5em; }
+            .section { padding: 25px; }
+            .features { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><span class="lion-emoji">🦁</span> The LionZ Server</h1>
+        <p class="tagline">Sua jornada no DayZ começa aqui</p>
+        <div class="badges">
+            <span class="badge">🎮 DayZ</span>
+            <span class="badge">🟢 Online</span>
+            <span class="badge">👥 Jogadores Bem-vindos</span>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="section">
+            <h2>🖼️ Quem Somos?</h2>
+            <p>Iniciei minha jornada no DayZ jogando a versão Vanilla. Ao conhecer alguns amigos, mergulhei em servidores mod. Certa vez, encontrei um servidor mod fullpvp que era incrivelmente administrado. Infelizmente, o servidor fechou, mas o desejo de ter um ambiente agradável para jogar DayZ persistiu.</p>
+            <p style="margin-top: 15px;">Após várias tentativas frustradas de encontrar um novo lar, decidi que aprenderia a administrar e criar meu próprio servidor. O objetivo era proporcionar a todos uma experiência envolvente no DayZ. Hoje, estou dedicando meu tempo e esforço para atingir a perfeição e oferecer uma experiência notável a todos que visitam <strong>The LionZ</strong>.</p>
+            <p style="margin-top: 15px;">Juntos, estamos construindo uma comunidade onde todos são bem-vindos para compartilhar essa jornada no mundo implacável do DayZ.</p>
+        </section>
+
+        <section class="section">
+            <h2>🎮 Características do Servidor</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <strong>Modo</strong><br>Modded PvP
+                </div>
+                <div class="feature-card">
+                    <strong>Experiência</strong><br>Imersiva e desafiadora
+                </div>
+                <div class="feature-card">
+                    <strong>Comunidade</strong><br>Acolhedora e ativa
+                </div>
+                <div class="feature-card">
+                    <strong>Administração</strong><br>Dedicada e presente
+                </div>
+                <div class="feature-card">
+                    <strong>Eventos</strong><br>Regulares e envolventes
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>🚀 Como Conectar</h2>
+            <div class="connect-steps">
+                <ol>
+                    <li>Abra o DayZ</li>
+                    <li>Vá para a aba "Community"</li>
+                    <li>Procure por "Lion-Z"</li>
+                    <li>Conecte-se e comece sua jornada!</li>
+                </ol>
+            </div>
+            <div style="text-align: center;">
+                <a href="https://discord.gg/GaKrkBE4wD" class="cta-button" target="_blank">💬 Junte-se ao Discord</a>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>📋 Regras do Servidor</h2>
+            <ul class="rules-list">
+                <li>✅ Respeite todos os jogadores</li>
+                <li>✅ Não use cheats ou exploits</li>
+                <li>✅ Mantenha o roleplay imersivo</li>
+                <li>✅ Siga as diretrizes da comunidade</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>💰 Apoie o Servidor</h2>
+            <p>A jornada no mundo implacável do DayZ é emocionante, mas manter nosso refúgio, o <strong>The Lion-Z</strong>, demanda esforços constantes. Se você valoriza a experiência única que estamos construindo juntos, consideraria contribuir para a sustentabilidade do servidor?</p>
+            <ul class="support-list">
+                <li>✅ Manter a qualidade do servidor</li>
+                <li>✅ Garantir jogabilidade estável</li>
+                <li>✅ Criar eventos envolventes</li>
+                <li>✅ Fortalecer nossa comunidade unida</li>
+            </ul>
+            <p style="margin-top: 20px; font-style: italic; text-align: center; font-size: 1.1em;">É com o apoio de sobreviventes generosos como você que podemos manter viva a chama do The Lion-Z.</p>
+        </section>
+
+        <section class="section">
+            <h2>📞 Contato</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <strong>Discord:</strong><br>
+                    <a href="https://discord.gg/GaKrkBE4wD" target="_blank" style="color: #7289da;">discord.gg/GaKrkBE4wD</a>
+                </div>
+                <div class="contact-item">
+                    <strong>Administrador:</strong><br>
+                    Lion
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p style="font-size: 1.3em; margin-bottom: 10px;"><strong>Que a sobrevivência seja nossa aliada! 🦁</strong></p>
+        <p style="opacity: 0.8;">Feito com ❤️ pela comunidade The LionZ</p>
+    </footer>
+</body>
+</html>
