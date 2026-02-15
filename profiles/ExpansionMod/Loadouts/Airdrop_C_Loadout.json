@@ -1,0 +1,151 @@
+{
+    "ClassName": "",
+    "Include": "",
+    "Chance": 1.0,
+    "Quantity": {
+        "Min": 0.0,
+        "Max": 0.0
+    },
+    "Health": [],
+    "InventoryAttachments": [
+        {
+            "SlotName": "Body",
+            "Items": [
+                {"ClassName": "HikingJacket_Blue", "Chance": 1.0, "Health": [{"Min": 0.7, "Max": 1.0}]},
+                {"ClassName": "HikingJacket_Black", "Chance": 1.0, "Health": [{"Min": 0.7, "Max": 1.0}]},
+                {"ClassName": "HikingJacket_Green", "Chance": 1.0, "Health": [{"Min": 0.7, "Max": 1.0}]},
+                {"ClassName": "HikingJacket_Red", "Chance": 1.0, "Health": [{"Min": 0.7, "Max": 1.0}]},
+                {"ClassName": "Hoodie_Blue", "Chance": 1.0, "Health": [{"Min": 0.7, "Max": 1.0}]},
+                {"ClassName": "Hoodie_Black", "Chance": 1.0, "Health": [{"Min": 0.7, "Max": 1.0}]},
+                {"ClassName": "Hoodie_Green", "Chance": 1.0, "Health": [{"Min": 0.7, "Max": 1.0}]},
+                {"ClassName": "Hoodie_Red", "Chance": 1.0, "Health": [{"Min": 0.7, "Max": 1.0}]},
+                {"ClassName": "Hoodie_Grey", "Chance": 1.0, "Health": [{"Min": 0.7, "Max": 1.0}]},
+                {"ClassName": "Hoodie_Brown", "Chance": 1.0, "Health": [{"Min": 0.7, "Max": 1.0}]}
+            ]
+        },
+        {
+            "SlotName": "Legs",
+            "Items": [
+                {"ClassName": "Jeans_Blue", "Chance": 1.0, "Health": [{"Min": 0.7, "Max": 1.0}]},
+                {"ClassName": "Jeans_Black", "Chance": 1.0, "Health": [{"Min": 0.7, "Max": 1.0}]},
+                {"ClassName": "Jeans_Brown", "Chance": 1.0, "Health": [{"Min": 0.7, "Max": 1.0}]},
+                {"ClassName": "Jeans_Green", "Chance": 1.0, "Health": [{"Min": 0.7, "Max": 1.0}]},
+                {"ClassName": "Jeans_Grey", "Chance": 1.0, "Health": [{"Min": 0.7, "Max": 1.0}]},
+                {"ClassName": "SlacksPants_Blue", "Chance": 1.0, "Health": [{"Min": 0.7, "Max": 1.0}]},
+                {"ClassName": "SlacksPants_Black", "Chance": 1.0, "Health": [{"Min": 0.7, "Max": 1.0}]},
+                {"ClassName": "SlacksPants_Beige", "Chance": 1.0, "Health": [{"Min": 0.7, "Max": 1.0}]},
+                {"ClassName": "SlacksPants_Brown", "Chance": 1.0, "Health": [{"Min": 0.7, "Max": 1.0}]},
+                {"ClassName": "SlacksPants_DarkGrey", "Chance": 1.0, "Health": [{"Min": 0.7, "Max": 1.0}]}
+            ]
+        },
+        {
+            "SlotName": "Feet",
+            "Items": [
+                {"ClassName": "HikingBootsLow_Blue", "Chance": 1.0, "Health": [{"Min": 0.7, "Max": 1.0}]},
+                {"ClassName": "HikingBootsLow_Black", "Chance": 1.0, "Health": [{"Min": 0.7, "Max": 1.0}]},
+                {"ClassName": "HikingBootsLow_Grey", "Chance": 1.0, "Health": [{"Min": 0.7, "Max": 1.0}]},
+                {"ClassName": "HikingBootsLow_Beige", "Chance": 1.0, "Health": [{"Min": 0.7, "Max": 1.0}]},
+                {"ClassName": "WorkingBoots_Yellow", "Chance": 1.0, "Health": [{"Min": 0.7, "Max": 1.0}]},
+                {"ClassName": "WorkingBoots_Brown", "Chance": 1.0, "Health": [{"Min": 0.7, "Max": 1.0}]},
+                {"ClassName": "WorkingBoots_Grey", "Chance": 1.0, "Health": [{"Min": 0.7, "Max": 1.0}]},
+                {"ClassName": "WorkingBoots_Beige", "Chance": 1.0, "Health": [{"Min": 0.7, "Max": 1.0}]},
+                {"ClassName": "Wellies_Black", "Chance": 1.0, "Health": [{"Min": 0.7, "Max": 1.0}]},
+                {"ClassName": "Wellies_Brown", "Chance": 1.0, "Health": [{"Min": 0.7, "Max": 1.0}]}
+            ]
+        },
+        {
+            "SlotName": "Back",
+            "Items": [
+                {"ClassName": "TaloonBag_Blue", "Chance": 1.0, "Health": [{"Min": 0.7, "Max": 1.0}]},
+                {"ClassName": "TaloonBag_Orange", "Chance": 1.0, "Health": [{"Min": 0.7, "Max": 1.0}]}
+            ]
+        },
+        {
+            "SlotName": "Melee",
+            "Items": [
+                {"ClassName": "BaseballBat", "Chance": 1.0},
+                {"ClassName": "Pickaxe", "Chance": 1.0}
+            ]
+        }
+    ],
+    "InventoryCargo": [
+        {"ClassName": "BandageDressing", "Chance": 1.0},
+        {"ClassName": "Screwdriver", "Chance": 1.0},
+        {"ClassName": "CanOpener", "Chance": 1.0}
+    ],
+    "Sets": [
+        {
+            "ClassName": "WEAPON",
+            "InventoryAttachments": [
+                {
+                    "SlotName": "Shoulder",
+                    "Items": [
+                        {"ClassName": "Izh18", "Chance": 1.0, "InventoryAttachments": [{"SlotName": "", "Items": [{"ClassName": "Ammo_308Win", "Chance": 1.0, "Quantity": {"Min": 5, "Max": 10}}]}]}
+                    ]
+                }
+            ]
+        },
+        {
+            "ClassName": "WEAPON",
+            "InventoryAttachments": [
+                {
+                    "SlotName": "Shoulder",
+                    "Items": [
+                        {"ClassName": "MKII", "Chance": 1.0, "InventoryAttachments": [{"SlotName": "", "Items": [{"ClassName": "Ammo_22", "Chance": 1.0, "Quantity": {"Min": 10, "Max": 20}}]}]}
+                    ]
+                }
+            ]
+        },
+        {
+            "ClassName": "WEAPON",
+            "InventoryAttachments": [
+                {
+                    "SlotName": "Shoulder",
+                    "Items": [
+                        {"ClassName": "Sporter22", "Chance": 1.0, "InventoryAttachments": [{"SlotName": "", "Items": [{"ClassName": "Ammo_22", "Chance": 1.0, "Quantity": {"Min": 10, "Max": 20}}]}]}
+                    ]
+                }
+            ]
+        },
+        {
+            "ClassName": "WEAPON",
+            "InventoryAttachments": [
+                {
+                    "SlotName": "Shoulder",
+                    "Items": [
+                        {"ClassName": "Mp133Shotgun", "Chance": 1.0, "InventoryAttachments": [{"SlotName": "", "Items": [{"ClassName": "Ammo_12gaSlug", "Chance": 1.0, "Quantity": {"Min": 5, "Max": 10}}]}]}
+                    ]
+                }
+            ]
+        },
+        {
+            "ClassName": "WEAPON",
+            "InventoryAttachments": [
+                {
+                    "SlotName": "Shoulder",
+                    "Items": [
+                        {"ClassName": "Izh43Shotgun", "Chance": 1.0, "InventoryAttachments": [{"SlotName": "", "Items": [{"ClassName": "Ammo_12gaSlug", "Chance": 1.0, "Quantity": {"Min": 5, "Max": 10}}]}]}
+                    ]
+                }
+            ]
+        },
+        {
+            "ClassName": "FOOD",
+            "InventoryCargo": [
+                {"ClassName": "PeachesCan", "Chance": 1.0}
+            ]
+        },
+        {
+            "ClassName": "FOOD",
+            "InventoryCargo": [
+                {"ClassName": "BakedBeansCan", "Chance": 1.0}
+            ]
+        },
+        {
+            "ClassName": "FOOD",
+            "InventoryCargo": [
+                {"ClassName": "SardinesCan", "Chance": 1.0}
+            ]
+        }
+    ]
+}

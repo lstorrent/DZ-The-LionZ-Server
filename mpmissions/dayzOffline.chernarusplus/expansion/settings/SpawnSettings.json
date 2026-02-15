@@ -292,7 +292,7 @@
         "Armbands": [],
         "Backpacks": []
     },
-    "EnableSpawnSelection": 1,
+    "EnableSpawnSelection": 0,
     "SpawnOnTerritory": 0,
     "StartingGear": {
         "EnableStartingGear": 1,

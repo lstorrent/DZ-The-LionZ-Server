@@ -21,7 +21,7 @@
         "Radius": 100.0
     },
     "Infected": [
-        "eAI_SurvivorM_Mirek|faction:Shamans,loadout:NBCLoadout,canbelooted:true"
+        "eAI_SurvivorM_Mirek|faction:Shamans,loadout:Airdrop_C_Loadout,canbelooted:true"
     ],
     "ItemCount": -1,
     "InfectedCount": 2,

@@ -1094,7 +1094,340 @@ Objetos Estáticos:
 - Ajuste ciclos e tempo baseado na dificuldade desejada
 - Considere dano à ferramenta para balancear economia
 
-#### 7. Outros Arquivos de Configuração Expansion
+#### 7. SpawnSettings.json
+
+**Localização:** `mpmissions/dayzOffline.<mapname>/expansion/settings/SpawnSettings.json`
+
+⚠️ **Nota:** Este arquivo é específico por mapa, diferente da maioria das outras configurações.
+
+**Parâmetros Principais:**
+
+- `m_Version`: Integer. Versão do arquivo (não altere!)
+
+##### Starting Clothing (Roupas Iniciais)
+
+**StartingClothing** (Object):
+
+- `EnableCustomClothing`: Boolean
+  - `0`: Jogador spawna com roupas vanilla padrão
+  - `1`: Jogador spawna com roupas configuradas neste arquivo
+
+- `SetRandomHealth`: Boolean
+  - `0`: Todas as roupas spawnam em condição pristine
+  - `1`: Roupas spawnam em condição aleatória
+
+**Arrays de Roupas:**
+
+Cada array pode conter múltiplos classnames. Se houver apenas um item, jogador sempre spawna com ele. Se houver múltiplos, um é selecionado aleatoriamente.
+
+- `Headgear`: Array. Chapéus, capacetes, gorros
+- `Glasses`: Array. Óculos e óculos de sol
+- `Masks`: Array. Máscaras faciais
+- `Tops`: Array. Camisas, jaquetas, casacos
+- `Vests`: Array. Coletes
+- `Gloves`: Array. Luvas
+- `Pants`: Array. Calças e shorts
+- `Belts`: Array. Cintos
+- `Shoes`: Array. Sapatos e botas
+- `Armbands`: Array. Braçadeiras
+- `Backpacks`: Array. Mochilas
+
+**Exemplo:**
+```json
+"StartingClothing": {
+    "EnableCustomClothing": 1,
+    "SetRandomHealth": 1,
+    "Headgear": ["BaseballCap_Blue", "BaseballCap_Red"],
+    "Tops": ["TShirt_Blue", "TShirt_Red", "TShirt_Green"],
+    "Pants": ["Jeans_Blue", "Jeans_Black"],
+    "Shoes": ["AthleticShoes_Blue", "AthleticShoes_Black"],
+    "Backpacks": ["TaloonBag_Blue", "TaloonBag_Orange"]
+}
+```
+
+##### Spawn Selection (Seleção de Spawn)
+
+- `EnableSpawnSelection`: Boolean
+  - `0`: Jogadores spawnam aleatoriamente no mapa (vanilla)
+  - `1`: Jogadores podem escolher onde spawnar
+
+- `SpawnOnTerritory`: Boolean
+  - `0`: Jogadores não podem respawnar em seus territórios
+  - `1`: Pode respawnar no próprio território
+
+**SpawnLocations** (Array):
+
+Lista de localizações de spawn exibidas no menu de seleção.
+
+```json
+"SpawnLocations": [
+    {
+        "Name": "Elektrozavodsk",
+        "Positions": [
+            [10400.0, 2.0, 2200.0],
+            [10500.0, 2.0, 2300.0],
+            [10600.0, 2.0, 2400.0]
+        ],
+        "UseCooldown": 1
+    }
+]
+```
+
+- `Name`: String. Nome da localização exibido no menu
+- `Positions`: Array de coordenadas [X, Y, Z]
+  - Se apenas uma posição, jogador sempre spawna ali
+  - Se múltiplas, uma é escolhida aleatoriamente
+  - ⚠️ **Primeira posição é usada para criar marcador no mapa**
+- `UseCooldown`: Boolean. Aplica cooldown nesta localização (requer `EnableRespawnCooldowns: 1`)
+
+##### Starting Gear (Equipamento Inicial)
+
+**StartingGear** (Object):
+
+- `EnableStartingGear`: Boolean
+  - `0`: Jogador spawna com gear vanilla padrão
+  - `1`: Jogador spawna com gear configurado
+
+**Configurações de Inventário:**
+
+- `UseUpperGear`: Boolean. Usa itens de `UpperGear` (inventário da camisa)
+- `UsePantsGear`: Boolean. Usa itens de `PantsGear` (inventário da calça)
+- `UseBackpackGear`: Boolean. Usa itens de `BackpackGear` (inventário da mochila)
+- `UseVestGear`: Boolean. Usa itens de `VestGear` (inventário do colete)
+- `UsePrimaryWeapon`: Boolean. Adiciona arma primária
+- `UseSecondaryWeapon`: Boolean. Adiciona arma secundária
+
+**Formato de Itens:**
+
+```json
+"UpperGear": [
+    {
+        "ClassName": "Rag",
+        "Quantity": 4,
+        "Attachments": []
+    },
+    {
+        "ClassName": "FNX45",
+        "Quantity": 1,
+        "Attachments": [
+            "Mag_FNX45_15Rnd",
+            "PistolSuppressor"
+        ]
+    }
+]
+```
+
+- `ClassName`: String. Nome da classe do item
+- `Quantity`: Integer. Quantidade (para stackables) ou `-1` para quantidade padrão
+- `Attachments`: Array. Attachments para o item
+
+**Armas:**
+
+```json
+"PrimaryWeapon": {
+    "ClassName": "AKM",
+    "Quantity": -1,
+    "Attachments": ["AK_WoodBttstck", "Mag_AKM_30Rnd"]
+},
+"SecondaryWeapon": {
+    "ClassName": "Glock19",
+    "Quantity": -1,
+    "Attachments": ["Mag_Glock_15Rnd"]
+}
+```
+
+⚠️ **Importante**: Armas devem ser de fogo ou corpo-a-corpo (machado, faca, etc.)
+
+**Outras Configurações:**
+
+- `ApplyEnergySources`: Boolean
+  - `0`: Nada acontece
+  - `1`: Todos itens que precisam de bateria V9 recebem uma automaticamente
+
+- `SetRandomHealth`: Boolean
+  - `0`: Todo gear spawna em condição pristine
+  - `1`: Gear spawna em condição aleatória
+
+##### Loadouts (Conjuntos de Equipamento)
+
+- `UseLoadouts`: Boolean
+  - `0`: Sistema de loadouts desabilitado
+  - `1`: Usa loadouts ao respawnar
+
+⚠️ **Nota**: Você pode combinar starting gear/clothing com loadouts. Loadouts podem escolher outfit aleatório enquanto starting gear dá itens genéricos.
+
+**MaleLoadouts** (Array):
+```json
+"MaleLoadouts": [
+    ["SoldierLoadout", 0.5],
+    ["CivilianLoadout", 0.5]
+]
+```
+
+**FemaleLoadouts** (Array):
+```json
+"FemaleLoadouts": [
+    ["SoldierLoadout", 0.5],
+    ["CivilianLoadout", 0.5]
+]
+```
+
+- Primeiro valor: String. Nome do loadout
+- Segundo valor: Float. Chance de 0.0 a 1.0 de ser escolhido
+
+##### Status Inicial do Jogador
+
+- `SpawnHealthValue`: Float. Vida inicial (100.0 = máximo)
+- `SpawnEnergyValue`: Float. Energia/comida inicial (máximo ~20000)
+- `SpawnWaterValue`: Float. Água/sede inicial (máximo ~5000)
+
+**Valores Recomendados:**
+- Fácil: Health 100, Energy 1000, Water 1000
+- Normal: Health 100, Energy 500, Water 500
+- Difícil: Health 75, Energy 300, Water 300
+- Hardcore: Health 50, Energy 100, Water 100
+
+##### Respawn Cooldowns (Tempo de Recarga)
+
+- `EnableRespawnCooldowns`: Boolean
+  - `0`: Sistema de cooldown desabilitado
+  - `1`: Ativa cooldown para spawn locations com `UseCooldown: 1`
+
+- `RespawnCooldown`: Integer. Tempo em segundos de cooldown após spawnar em uma localização
+
+- `RespawnUTCTime`: Boolean
+  - `0`: Cooldowns calculados com horário local do servidor
+  - `1`: Cooldowns calculados com horário UTC
+
+**Punição por Multi-Spawn:**
+
+- `PunishMultispawn`: Boolean
+  - `0`: Feature desabilitada
+  - `1`: Pune jogador com cooldown adicional ao usar mesma localização repetidamente
+
+- `PunishCooldown`: Integer. Cooldown adicional em segundos (somado ao `RespawnCooldown`)
+
+- `PunishTimeframe`: Integer. Tempo em segundos entre respawns na mesma localização para não ativar punição
+
+**Exemplo:**
+```json
+"EnableRespawnCooldowns": 1,
+"RespawnCooldown": 1800,
+"PunishMultispawn": 1,
+"PunishCooldown": 3600,
+"PunishTimeframe": 7200
+```
+
+Significa:
+- Cooldown normal: 30 minutos
+- Se respawnar no mesmo local em menos de 2 horas: cooldown de 1 hora adicional (total 1h30min)
+
+##### Death Marker (Marcador de Morte)
+
+- `CreateDeathMarker`: Boolean
+  - `0`: Feature desabilitada
+  - `1`: Cria marcador no mapa mostrando última localização de morte no menu de spawn
+
+##### Exemplo Completo para The LionZ
+
+**Configuração Survival/PvP Balanceada:**
+```json
+{
+    "m_Version": 7,
+    "EnableSpawnSelection": 1,
+    "SpawnOnTerritory": 0,
+    "SpawnLocations": [
+        {
+            "Name": "Elektrozavodsk",
+            "Positions": [
+                [10400.0, 2.0, 2200.0],
+                [10500.0, 2.0, 2300.0]
+            ],
+            "UseCooldown": 1
+        },
+        {
+            "Name": "Chernogorsk",
+            "Positions": [
+                [6600.0, 2.0, 2500.0],
+                [6700.0, 2.0, 2600.0]
+            ],
+            "UseCooldown": 1
+        }
+    ],
+    "StartingClothing": {
+        "EnableCustomClothing": 1,
+        "SetRandomHealth": 1,
+        "Headgear": [],
+        "Tops": ["TShirt_Blue", "TShirt_Red", "TShirt_Green"],
+        "Pants": ["Jeans_Blue", "Jeans_Black"],
+        "Shoes": ["AthleticShoes_Blue"],
+        "Backpacks": []
+    },
+    "StartingGear": {
+        "EnableStartingGear": 1,
+        "ApplyEnergySources": 1,
+        "SetRandomHealth": 1,
+        "UpperGear": [
+            {
+                "ClassName": "Rag",
+                "Quantity": 2,
+                "Attachments": []
+            }
+        ],
+        "PantsGear": [],
+        "BackpackGear": [],
+        "VestGear": [],
+        "PrimaryWeapon": {
+            "ClassName": "StoneKnife",
+            "Quantity": -1,
+            "Attachments": []
+        },
+        "SecondaryWeapon": {}
+    },
+    "UseLoadouts": 0,
+    "MaleLoadouts": [],
+    "FemaleLoadouts": [],
+    "SpawnHealthValue": 100.0,
+    "SpawnEnergyValue": 500.0,
+    "SpawnWaterValue": 500.0,
+    "EnableRespawnCooldowns": 1,
+    "RespawnCooldown": 1800,
+    "RespawnUTCTime": 0,
+    "PunishMultispawn": 1,
+    "PunishCooldown": 3600,
+    "PunishTimeframe": 7200,
+    "CreateDeathMarker": 1
+}
+```
+
+**Dicas de Configuração:**
+
+**Para Servidor PvP:**
+- Cooldowns moderados (15-30 min) para evitar spawn rush
+- Starting gear mínimo (faca de pedra, alguns rags)
+- Múltiplas localizações de spawn espalhadas
+- `CreateDeathMarker: 1` para facilitar recuperação de loot
+
+**Para Servidor PvE/RP:**
+- Cooldowns baixos ou desabilitados
+- Starting gear mais generoso (comida, água, ferramentas)
+- Spawn em cidades seguras
+- `SpawnOnTerritory: 1` para facilitar retorno à base
+
+**Para Servidor Hardcore:**
+- Cooldowns altos (1+ hora)
+- Sem starting gear ou apenas faca
+- Status inicial baixo (Energy 300, Water 300)
+- Poucas localizações de spawn
+- `PunishMultispawn: 1` com cooldown alto
+
+**Localizações Populares em Chernarus:**
+- Costa Sul: Elektro, Cherno, Kamyshovo
+- Costa Leste: Berezino, Solnichniy, Svetloyarsk
+- Interior: Stary Sobor, Novy Sobor, Gorka
+- Oeste: Zelenogorsk, Vybor, Lopatino
+
+#### 8. Outros Arquivos de Configuração Expansion
 
 **DamageSystemSettings.json**: Sistema de dano
 **DebugSettings.json**: Configurações de debug
@@ -1106,7 +1439,6 @@ Objetos Estáticos:
 **MonitoringSettings.json**: Monitoramento do servidor
 **PartySettings.json**: Sistema de grupos
 **SafeZoneSettings.json**: Zonas seguras
-**SpawnSettings.json**: Configurações de spawn de jogadores
 **TerritorySettings.json**: Sistema de territórios
 **VehicleSettings.json**: Configurações de veículos
 
