@@ -1,28 +1,28 @@
 {
     "ConfigVersion": 22,
-    "ID": 6,
+    "ID": 28,
     "Type": 1,
-    "Title": "Elimine os Bandidos no Vilarejo",
+    "Title": "Carga Recuperada",
     "Descriptions": [
-        "Precisamos eliminar bandidos em uma vila proximo a Green Mountain. É preciso manter o mercado seguro.",
-        "PLACEHOLDER",
-        "PLACEHOLDER"
+        "Um avião caiu nas proximidades de Balota. Precisamos que recupere uma carga importante.",
+        "Não me pergunte o que é.",
+        "Apenas recupere!"
     ],
-    "ObjectiveText": "Elimine os Bandidos",
+    "ObjectiveText": "Recuperar carga misteriosa.",
     "FollowUpQuest": -1,
-    "Repeatable": 0,
+    "Repeatable": 1,
     "IsDailyQuest": 0,
     "IsWeeklyQuest": 0,
     "CancelQuestOnPlayerDeath": 0,
     "Autocomplete": 0,
     "IsGroupQuest": 0,
-    "ObjectSetFileName": "",
+    "ObjectSetFileName": "Quest_29",
     "QuestItems": [],
     "Rewards": [
         {
-            "ClassName": "ExpansionBanknoteHryvnia",
-            "Amount": 500,
-            "Attachments": [],
+            "ClassName": "Glock19",
+            "Amount": 1,
+            "Attachments": ["Mag_Glock_15Rnd"],
             "DamagePercent": 0,
             "HealthPercent": 0,
             "QuestID": -1,
@@ -38,18 +38,18 @@
         3
     ],
     "QuestTurnInIDs": [
-        3
+        1
     ],
     "IsAchievement": 0,
     "Objectives": [
         {
             "ConfigVersion": 28,
-            "ID": 1,
+            "ID": 11,
             "ObjectiveType": 3
         },
         {
             "ConfigVersion": 28,
-            "ID": 1,
+            "ID": 3,
             "ObjectiveType": 8
         }
     ],

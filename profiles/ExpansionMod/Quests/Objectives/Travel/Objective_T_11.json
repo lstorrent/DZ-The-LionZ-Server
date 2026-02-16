@@ -1,0 +1,14 @@
+{
+    "ConfigVersion": 28,
+    "ID": 11,
+    "ObjectiveType": 3,
+    "ObjectiveText": "",
+    "TimeLimit": -1,
+    "Active": 1,
+    "Position": [3670.294189, 303.521973, 8257.275391],
+    "MaxDistance": 30.0,
+    "MarkerName": "",
+    "ShowDistance": 1,
+    "TriggerOnEnter": 1,
+    "TriggerOnExit": 0
+}

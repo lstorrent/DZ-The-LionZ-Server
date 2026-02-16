@@ -1,8 +1,8 @@
 {
     "ConfigVersion": 28,
-    "ID": 1,
+    "ID": 3,
     "ObjectiveType": 8,
-    "ObjectiveText": "Elimine todos os Bandidos na localização",
+    "ObjectiveText": "Elimine todos os Bandidos da Fazenda",
     "TimeLimit": -1,
     "Active": 1,
     "InfectedDeletionRadius": 10.0,
@@ -88,11 +88,7 @@
             "WaypointInterpolation": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
-                [
-                    4351.330078125,
-                    307.0679931640625,
-                    6400.52001953125
-                ]
+                [3662.894531, 302.757660, 8148.732422]
             ]
         },
         {
@@ -172,11 +168,7 @@
             "WaypointInterpolation": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
-                [
-                    4389.02978515625,
-                    302.802001953125,
-                    6391.77001953125
-                ]
+                [3670.366699, 306.661133, 8257.256836]
             ]
         }
     ]

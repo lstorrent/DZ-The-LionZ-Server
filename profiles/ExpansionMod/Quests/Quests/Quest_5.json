@@ -4,13 +4,13 @@
     "Type": 1,
     "Title": "Elimine uma Patrulha de Bandidos",
     "Descriptions": [
-        "Eliminar uma patrulha de bandidos um jeito de conseguir reputação e boas recompensas!",
+        "Eliminar uma patrulha de bandidos é um jeito de conseguir reputação e boas recompensas!",
         "PLACEHOLDER",
         "PLACEHOLDER"
     ],
     "ObjectiveText": "Procure pela patrulha e elimine-os.",
     "FollowUpQuest": -1,
-    "Repeatable": 1,
+    "Repeatable": 0,
     "IsDailyQuest": 0,
     "IsWeeklyQuest": 1,
     "CancelQuestOnPlayerDeath": 0,

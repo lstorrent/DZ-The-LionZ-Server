@@ -1094,7 +1094,177 @@ Objetos Estáticos:
 - Ajuste ciclos e tempo baseado na dificuldade desejada
 - Considere dano à ferramenta para balancear economia
 
-#### 7. SpawnSettings.json
+#### 7. PartySettings.json
+
+**Localização:** `profiles/ExpansionMod/Settings/PartySettings.json`
+
+Configura o sistema de grupos/party do servidor, permitindo jogadores formarem equipes com marcadores, HUD compartilhado e comunicação.
+
+**Parâmetros Principais:**
+
+- `m_Version`: Integer. Versão do arquivo (não altere!)
+
+**Configurações Gerais:**
+
+- `EnableParties`: Boolean
+  - `0`: Jogadores não podem criar grupos
+  - `1`: Permite criação de grupos (abrir livro com B e ir na aba party)
+
+- `MaxMembersInParty`: Integer
+  - Máximo de jogadores permitidos em um único grupo
+  - Se <= 0, tamanho ilimitado
+  - Recomendado: 5-10 para servidores PvP
+
+- `UseWholeMapForInviteList`: Boolean
+  - `0`: Só pode convidar jogadores próximos
+  - `1`: Pode convidar qualquer jogador de qualquer distância
+
+**Marcadores 3D (Acima da Cabeça):**
+
+- `ShowPartyMember3DMarkers`: Boolean
+  - `0`: Não exibe marcadores acima da cabeça dos membros
+  - `1`: Exibe marcador estilo "The Sims" acima da cabeça dos membros do grupo
+
+- `ShowDistanceUnderPartyMembersMarkers`: Boolean (requer ShowPartyMember3DMarkers = 1)
+  - `0`: Não exibe distância sob o marcador
+  - `1`: Exibe distância em metros sob cada marcador de membro
+
+- `ShowNameOnPartyMembersMarkers`: Boolean (requer ShowPartyMember3DMarkers = 1)
+  - `0`: Não exibe nome sob o marcador
+  - `1`: Exibe nome do jogador sob cada marcador de membro
+
+**Quick Markers (Marcadores Rápidos):**
+
+- `EnableQuickMarker`: Boolean
+  - `0`: Não pode criar quickmarkers
+  - `1`: Pode criar quickmarker (só funciona se estiver em grupo)
+  - Uso: Tecla H para criar, H ou Delete olhando para o marcador para remover
+  - Dica: Olhe para o céu e pressione H para criar marcador aéreo
+
+- `ShowDistanceUnderQuickMarkers`: Boolean (requer EnableQuickMarker = 1)
+  - `0`: Não exibe distância sob quickmarker
+  - `1`: Exibe distância sob cada quickmarker
+
+- `ShowNameOnQuickMarkers`: Boolean (requer EnableQuickMarker = 1)
+  - `0`: Não exibe nome do criador do quickmarker
+  - `1`: Exibe nome do criador sob o quickmarker
+
+**Party Markers (Marcadores de Grupo):**
+
+- `CanCreatePartyMarkers`: Boolean
+  - `0`: Não pode criar marcadores de grupo
+  - `1`: Pode criar marcadores de grupo no mapa
+  - Marcadores são visíveis por todos do grupo
+
+- `ShowPartyMemberMapMarkers`: Boolean
+  - `0`: Não exibe membros do grupo no mapa
+  - `1`: Exibe posição dos membros do grupo no mapa
+
+**HUD de Grupo:**
+
+- `ShowPartyMemberHUD`: Boolean
+  - `0`: Desabilita HUD de status dos membros
+  - `1`: Membros do grupo podem ver status dos companheiros (saúde, condição)
+
+- `ShowHUDMemberBlood`: Boolean (requer ShowPartyMemberHUD = 1)
+  - `0`: Não exibe nível de sangue no HUD
+  - `1`: Exibe nível de sangue dos membros
+
+- `ShowHUDMemberStates`: Boolean (requer ShowPartyMemberHUD = 1)
+  - `0`: Não exibe estados (fome, sede, etc.) no HUD
+  - `1`: Exibe estados dos membros (ícones de status)
+
+- `ShowHUDMemberStance`: Boolean (requer ShowPartyMemberHUD = 1)
+  - `0`: Não exibe postura no HUD
+  - `1`: Exibe postura dos membros (em pé, agachado, deitado)
+
+- `ShowHUDMemberDistance`: Boolean (requer ShowPartyMemberHUD = 1)
+  - `0`: Não exibe distância no HUD
+  - `1`: Exibe distância até cada membro no HUD
+
+**Tags e Cooldowns:**
+
+- `ForcePartyToHaveTags`: Boolean
+  - `0`: Grupos não precisam ter tag
+  - `1`: Força grupos a terem uma tag/nome
+
+- `DisplayPartyTag`: Boolean
+  - `0`: Não exibe tag do grupo
+  - `1`: Exibe tag do grupo nos marcadores e HUD
+
+- `InviteCooldown`: Integer
+  - Tempo em segundos de cooldown entre convites
+  - `0`: Sem cooldown
+  - Recomendado: 5-10 para evitar spam
+
+**Exemplo de Configuração PvP Balanceada:**
+```json
+{
+    "m_Version": 8,
+    "EnableParties": 1,
+    "MaxMembersInParty": 6,
+    "UseWholeMapForInviteList": 0,
+    "ShowPartyMember3DMarkers": 1,
+    "ShowDistanceUnderPartyMembersMarkers": 1,
+    "ShowNameOnPartyMembersMarkers": 1,
+    "EnableQuickMarker": 1,
+    "ShowDistanceUnderQuickMarkers": 1,
+    "ShowNameOnQuickMarkers": 1,
+    "CanCreatePartyMarkers": 1,
+    "ShowPartyMemberHUD": 1,
+    "ShowHUDMemberBlood": 1,
+    "ShowHUDMemberStates": 1,
+    "ShowHUDMemberStance": 1,
+    "ShowPartyMemberMapMarkers": 1,
+    "ShowHUDMemberDistance": 1,
+    "ForcePartyToHaveTags": 0,
+    "InviteCooldown": 5,
+    "DisplayPartyTag": 1
+}
+```
+
+**Exemplo de Configuração Hardcore (Menos Informação):**
+```json
+{
+    "m_Version": 8,
+    "EnableParties": 1,
+    "MaxMembersInParty": 4,
+    "UseWholeMapForInviteList": 0,
+    "ShowPartyMember3DMarkers": 1,
+    "ShowDistanceUnderPartyMembersMarkers": 0,
+    "ShowNameOnPartyMembersMarkers": 1,
+    "EnableQuickMarker": 1,
+    "ShowDistanceUnderQuickMarkers": 0,
+    "ShowNameOnQuickMarkers": 0,
+    "CanCreatePartyMarkers": 0,
+    "ShowPartyMemberHUD": 1,
+    "ShowHUDMemberBlood": 0,
+    "ShowHUDMemberStates": 0,
+    "ShowHUDMemberStance": 0,
+    "ShowPartyMemberMapMarkers": 0,
+    "ShowHUDMemberDistance": 0,
+    "ForcePartyToHaveTags": 1,
+    "InviteCooldown": 10,
+    "DisplayPartyTag": 1
+}
+```
+
+**Dicas de Configuração:**
+
+- **Servidor PvP Casual**: Habilite todos os marcadores e HUD para facilitar coordenação
+- **Servidor PvP Hardcore**: Desabilite distâncias e marcadores no mapa para aumentar dificuldade
+- **Limite de Membros**: 4-6 para servidores pequenos, 8-10 para servidores grandes
+- **UseWholeMapForInviteList**: Mantenha em 0 para forçar encontros presenciais
+- **InviteCooldown**: Use 5-10 segundos para evitar spam de convites
+- **ForcePartyToHaveTags**: Útil para identificação em eventos e guerras de clãs
+
+**Integração com Outros Sistemas:**
+
+- **BookSettings.json**: `EnablePartyTab` deve estar em 1 para acessar menu de party
+- **QuestSettings.json**: `GroupQuestMode` controla como grupos interagem com quests
+- **MapSettings.json**: Marcadores de party aparecem no mapa se habilitado
+
+#### 8. SpawnSettings.json
 
 **Localização:** `mpmissions/dayzOffline.<mapname>/expansion/settings/SpawnSettings.json`
 

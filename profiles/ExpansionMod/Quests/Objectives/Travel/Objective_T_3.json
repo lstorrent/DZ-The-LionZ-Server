@@ -2,7 +2,7 @@
     "ConfigVersion": 28,
     "ID": 3,
     "ObjectiveType": 3,
-    "ObjectiveText": "Get to the Camp",
+    "ObjectiveText": "Vá para Green Mountain",
     "TimeLimit": -1,
     "Active": 1,
     "Position": [
@@ -11,7 +11,7 @@
         5987.080078125
     ],
     "MaxDistance": 20.0,
-    "MarkerName": "Get to the Camp",
+    "MarkerName": "Vá para Green Mountain",
     "ShowDistance": 1,
     "TriggerOnEnter": 1,
     "TriggerOnExit": 0

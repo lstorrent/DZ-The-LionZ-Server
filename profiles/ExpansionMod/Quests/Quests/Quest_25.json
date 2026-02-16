@@ -2,13 +2,13 @@
     "ConfigVersion": 22,
     "ID": 25,
     "Type": 1,
-    "Title": "Clear Another Village",
+    "Title": "Elimine Bandidos de Kozlovka",
     "Descriptions": [
         "PLACEHOLDER",
         "PLACEHOLDER",
         "PLACEHOLDER"
     ],
-    "ObjectiveText": "Kill all bandits at the Village.",
+    "ObjectiveText": "Elimine os Bandidos do Vilarejo",
     "FollowUpQuest": -1,
     "Repeatable": 1,
     "IsDailyQuest": 0,
