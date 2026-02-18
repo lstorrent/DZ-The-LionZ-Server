@@ -20,9 +20,27 @@
     "QuestItems": [],
     "Rewards": [
         {
-            "ClassName": "Glock19",
+            "ClassName": "Mich2001Helmet",
             "Amount": 1,
-            "Attachments": ["Mag_Glock_15Rnd"],
+            "Attachments": [],
+            "DamagePercent": 0,
+            "HealthPercent": 0,
+            "QuestID": -1,
+            "Chance": 1.0
+        },
+        {
+            "ClassName": "NVGoggles",
+            "Amount": 1,
+            "Attachments": ["Battery9V"],
+            "DamagePercent": 0,
+            "HealthPercent": 0,
+            "QuestID": -1,
+            "Chance": 1.0
+        },
+        {
+            "ClassName": "ExpansionBanknoteDollar",
+            "Amount": 500,
+            "Attachments": [],
             "DamagePercent": 0,
             "HealthPercent": 0,
             "QuestID": -1,

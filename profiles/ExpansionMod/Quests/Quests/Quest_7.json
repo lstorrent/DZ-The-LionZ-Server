@@ -2,13 +2,13 @@
     "ConfigVersion": 22,
     "ID": 7,
     "Type": 1,
-    "Title": "Kill - Civilian Infected",
+    "Title": "Infectados",
     "Descriptions": [
         "PLACEHOLDER",
         "PLACEHOLDER",
         "PLACEHOLDER"
     ],
-    "ObjectiveText": "Kill 100 civilian Infected.",
+    "ObjectiveText": "Elimine 100 civis Infectados.",
     "FollowUpQuest": -1,
     "Repeatable": 0,
     "IsDailyQuest": 0,
@@ -21,7 +21,7 @@
     "Rewards": [
         {
             "ClassName": "ExpansionBanknoteHryvnia",
-            "Amount": 3000,
+            "Amount": 1000,
             "Attachments": [],
             "DamagePercent": 0,
             "HealthPercent": 0,

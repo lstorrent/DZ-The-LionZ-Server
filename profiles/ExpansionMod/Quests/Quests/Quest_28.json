@@ -20,9 +20,36 @@
     "QuestItems": [],
     "Rewards": [
         {
-            "ClassName": "Glock19",
+            "ClassName": "TTsKOJacket_Camo",
             "Amount": 1,
-            "Attachments": ["Mag_Glock_15Rnd"],
+            "Attachments": [],
+            "DamagePercent": 0,
+            "HealthPercent": 0,
+            "QuestID": -1,
+            "Chance": 1.0
+        },
+        {
+            "ClassName": "TTSKOPants",
+            "Amount": 1,
+            "Attachments": [],
+            "DamagePercent": 0,
+            "HealthPercent": 0,
+            "QuestID": -1,
+            "Chance": 1.0
+        },
+        {
+            "ClassName": "TTSKOBoots",
+            "Amount": 1,
+            "Attachments": [],
+            "DamagePercent": 0,
+            "HealthPercent": 0,
+            "QuestID": -1,
+            "Chance": 1.0
+        },
+        {
+            "ClassName": "AssaultBag_Ttsko",
+            "Amount": 1,
+            "Attachments": [],
             "DamagePercent": 0,
             "HealthPercent": 0,
             "QuestID": -1,
