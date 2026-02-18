@@ -20,9 +20,18 @@
     "QuestItems": [],
     "Rewards": [
         {
-            "ClassName": "Glock19",
+            "ClassName": "CrossBow_Wood",
             "Amount": 1,
-            "Attachments": ["Mag_Glock_15Rnd"],
+            "Attachments": [],
+            "DamagePercent": 0,
+            "HealthPercent": 0,
+            "QuestID": -1,
+            "Chance": 1.0
+        },
+        {
+            "ClassName": "ammo_huntingbolt",
+            "Amount": 5,
+            "Attachments": [],
             "DamagePercent": 0,
             "HealthPercent": 0,
             "QuestID": -1,

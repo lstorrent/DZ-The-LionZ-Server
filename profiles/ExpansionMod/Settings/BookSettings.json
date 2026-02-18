@@ -216,6 +216,26 @@
                     "DescriptionText": "LEMBRE-SE: O mercado e uma zona neutra, mas as areas ao redor NAO sao seguras. Sua sobrevivencia e sua responsabilidade! Boa sorte, sobrevivente!"
                 }
             ]
+        },
+        {
+            "CategoryName": "PATRULHAS - AREAS MILITARES",
+            "Descriptions": [
+                {
+                    "DescriptionText": "ALERTA CRITICO: As instalacoes militares de Chernarus nao estao abandonadas. Patrulhas armadas da faccao de resistencia controlam estas zonas com mao de ferro."
+                },
+                {
+                    "DescriptionText": "ZONAS DE PERIGO EXTREMO: Bases militares de grande porte como Tisy, NWAF, Balota e Zeleno sao alvos prioritarios. Estas areas possuem patrulhas constantes e altamente letais. Os soldados da resistencia nao hesitam em abrir fogo contra intrusos."
+                },
+                {
+                    "DescriptionText": "COMPORTAMENTO HOSTIL: Estes combatentes sao veteranos impiedosos. Nao espere negociacao ou misericordia. Eles atiram para matar e trabalham em equipe coordenada. Subestimar estas patrulhas e um erro fatal."
+                },
+                {
+                    "DescriptionText": "RECOMENDACOES TATICAS: Reconhecimento e essencial - observe a area antes de avancar. Evite confrontos diretos sempre que possivel. Se detectado, procure cobertura imediatamente. Trabalhe em equipe e mantenha comunicacao constante. Planeje rotas de extracao antes de entrar."
+                },
+                {
+                    "DescriptionText": "AVISO FINAL: O loot militar vale a pena, mas sua vida vale mais. Entre preparado ou nao entre. A resistencia nao perdoa erros. Boa sorte, sobrevivente - voce vai precisar!"
+                }
+            ]
         }
     ],
     "CraftingCategories": [
