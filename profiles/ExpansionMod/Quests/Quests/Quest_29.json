@@ -38,7 +38,7 @@
             "Chance": 1.0
         },
         {
-            "ClassName": "ExpansionBanknoteDollar",
+            "ClassName": "ExpansionBanknoteUSD",
             "Amount": 500,
             "Attachments": [],
             "DamagePercent": 0,

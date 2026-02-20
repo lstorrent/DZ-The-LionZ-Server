@@ -2,13 +2,13 @@
     "ConfigVersion": 22,
     "ID": 5,
     "Type": 1,
-    "Title": "Elimine uma Patrulha de Bandidos",
+    "Title": "Bandidos Perigosos",
     "Descriptions": [
-        "Eliminar uma patrulha de bandidos é um jeito de conseguir reputação e boas recompensas!",
-        "PLACEHOLDER",
-        "PLACEHOLDER"
+            "Recebemos relatos de uma patrulha de bandidos bem armados na área. Elimine-os e você será recompensado com um traje NBC completo - essencial para explorar zonas contaminadas.",
+            "Os bandidos continuam à solta. Não volte sem completar a missão!",
+            "Trabalho bem feito! Este equipamento NBC vai te manter vivo nas áreas mais mortais de Chernarus."
     ],
-    "ObjectiveText": "Procure pela patrulha e elimine-os.",
+    "ObjectiveText": "Encontre o Castelo",
     "FollowUpQuest": -1,
     "Repeatable": 0,
     "IsDailyQuest": 0,
@@ -92,7 +92,7 @@
         3
     ],
     "QuestTurnInIDs": [
-        3
+        1
     ],
     "IsAchievement": 0,
     "Objectives": [

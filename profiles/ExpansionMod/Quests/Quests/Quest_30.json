@@ -1,14 +1,14 @@
 {
     "ConfigVersion": 22,
-    "ID": 25,
+    "ID": 30,
     "Type": 1,
-    "Title": "Manter a Ordem",
+    "Title": "Pacote Perdido",
     "Descriptions": [
-        "O Mercado de Green Mountain não tolera bandidos operando próximo à região. Temos informações que um hostil esta na redondezas de Kozlovka. Elimine-o e mantenha a ordem. Recompensa: escolha uma pistola.",
-        "Kozlovka ainda está sob controle dele. Não falhe!",
-        "A ordem foi restaurada. O Mercado reconhece seu serviço - escolha sua arma."
+        "Um pacote misterioso precisa ser recuperado. O Avião nao conseguiu fazer o Airdrop na localização do Mercado. Este pacote esta em um aeroporto que vc ja conhece!",
+        "Ele parece ser de cor amarela.",
+        ""
     ],
-    "ObjectiveText": "Elimine-o do Vilarejo",
+    "ObjectiveText": "Procure o Avião",
     "FollowUpQuest": -1,
     "Repeatable": 1,
     "IsDailyQuest": 0,
@@ -16,38 +16,41 @@
     "CancelQuestOnPlayerDeath": 0,
     "Autocomplete": 0,
     "IsGroupQuest": 0,
-    "ObjectSetFileName": "",
+    "ObjectSetFileName": "Quest_30",
     "QuestItems": [],
     "Rewards": [
         {
-            "ClassName": "Glock19",
+            "ClassName": "PlateCarrierVest_Camo",
             "Amount": 1,
-            "Attachments": ["Mag_Glock_15Rnd"],
+            "Attachments": [
+                "PlateCarrierPouches_Camo",
+                "PlateCarrierHolster_Camo"
+            ],
             "DamagePercent": 0,
             "HealthPercent": 0,
             "QuestID": -1,
             "Chance": 1.0
         },
         {
-            "ClassName": "FNX45",
+            "ClassName": "MilitaryBelt",
             "Amount": 1,
-            "Attachments": ["Mag_FNX45_15Rnd"],
+            "Attachments": [],
             "DamagePercent": 0,
             "HealthPercent": 0,
             "QuestID": -1,
             "Chance": 1.0
         },
         {
-            "ClassName": "Deagle",
+            "ClassName": "TacticalGloves_Green",
             "Amount": 1,
-            "Attachments": ["Mag_Deagle_9rnd"],
+            "Attachments": [],
             "DamagePercent": 0,
             "HealthPercent": 0,
             "QuestID": -1,
             "Chance": 1.0
         }
     ],
-    "NeedToSelectReward": 1,
+    "NeedToSelectReward": 0,
     "RandomReward": 0,
     "RandomRewardAmount": -1,
     "RewardsForGroupOwnerOnly": 1,
@@ -62,13 +65,13 @@
     "Objectives": [
         {
             "ConfigVersion": 28,
-            "ID": 8,
+            "ID": 13,
             "ObjectiveType": 3
         },
         {
             "ConfigVersion": 28,
-            "ID": 2,
-            "ObjectiveType": 8
+            "ID": 7,
+            "ObjectiveType": 4
         }
     ],
     "QuestColor": -930200403,
