@@ -4,119 +4,102 @@
     "Icon": "Deliver",
     "Color": "FBFCFEFF",
     "IsExchange": 0,
-    "InitStockPercent": 75.0,
+    "InitStockPercent": 30.0,
     "Items": [
         {
             "ClassName": "makarovij70",
-            "MaxPriceThreshold": 785,
-            "MinPriceThreshold": 470,
+            "MaxPriceThreshold": 8000,
+            "MinPriceThreshold": 5000,
             "SellPricePercent": -1.0,
-            "MaxStockThreshold": 100,
+            "MaxStockThreshold": 8,
             "MinStockThreshold": 1,
             "QuantityPercent": -1,
-            "SpawnAttachments": [
-                "mag_ij70_8rnd"
-            ],
+            "SpawnAttachments": ["mag_ij70_8rnd"],
             "Variants": []
         },
         {
             "ClassName": "derringer_black",
-            "MaxPriceThreshold": 610,
-            "MinPriceThreshold": 365,
+            "MaxPriceThreshold": 6500,
+            "MinPriceThreshold": 4000,
             "SellPricePercent": -1.0,
-            "MaxStockThreshold": 100,
+            "MaxStockThreshold": 6,
             "MinStockThreshold": 1,
             "QuantityPercent": -1,
             "SpawnAttachments": [],
-            "Variants": [
-                "derringer_grey",
-                "derringer_pink"
-            ]
+            "Variants": ["derringer_grey", "derringer_pink"]
         },
         {
             "ClassName": "cz75",
-            "MaxPriceThreshold": 1230,
-            "MinPriceThreshold": 735,
+            "MaxPriceThreshold": 15000,
+            "MinPriceThreshold": 10000,
             "SellPricePercent": -1.0,
-            "MaxStockThreshold": 100,
+            "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityPercent": -1,
-            "SpawnAttachments": [
-                "mag_cz75_15rnd"
-            ],
+            "SpawnAttachments": ["mag_cz75_15rnd"],
             "Variants": []
         },
         {
             "ClassName": "fnx45",
-            "MaxPriceThreshold": 7845,
-            "MinPriceThreshold": 4705,
+            "MaxPriceThreshold": 45000,
+            "MinPriceThreshold": 30000,
             "SellPricePercent": -1.0,
-            "MaxStockThreshold": 100,
+            "MaxStockThreshold": 3,
             "MinStockThreshold": 1,
             "QuantityPercent": -1,
-            "SpawnAttachments": [
-                "mag_fnx45_15rnd"
-            ],
+            "SpawnAttachments": ["mag_fnx45_15rnd"],
             "Variants": []
         },
         {
             "ClassName": "glock19",
-            "MaxPriceThreshold": 850,
-            "MinPriceThreshold": 510,
+            "MaxPriceThreshold": 18000,
+            "MinPriceThreshold": 12000,
             "SellPricePercent": -1.0,
-            "MaxStockThreshold": 100,
+            "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityPercent": -1,
-            "SpawnAttachments": [
-                "mag_glock_15rnd"
-            ],
+            "SpawnAttachments": ["mag_glock_15rnd"],
             "Variants": []
         },
         {
             "ClassName": "mkii",
-            "MaxPriceThreshold": 1040,
-            "MinPriceThreshold": 625,
+            "MaxPriceThreshold": 12000,
+            "MinPriceThreshold": 8000,
             "SellPricePercent": -1.0,
-            "MaxStockThreshold": 100,
+            "MaxStockThreshold": 6,
             "MinStockThreshold": 1,
             "QuantityPercent": -1,
-            "SpawnAttachments": [
-                "mag_mkii_10rnd"
-            ],
+            "SpawnAttachments": ["mag_mkii_10rnd"],
             "Variants": []
         },
         {
             "ClassName": "colt1911",
-            "MaxPriceThreshold": 5345,
-            "MinPriceThreshold": 3210,
+            "MaxPriceThreshold": 35000,
+            "MinPriceThreshold": 25000,
             "SellPricePercent": -1.0,
-            "MaxStockThreshold": 100,
+            "MaxStockThreshold": 4,
             "MinStockThreshold": 1,
             "QuantityPercent": -1,
-            "SpawnAttachments": [
-                "mag_1911_7rnd"
-            ],
+            "SpawnAttachments": ["mag_1911_7rnd"],
             "Variants": []
         },
         {
             "ClassName": "engraved1911",
-            "MaxPriceThreshold": 5390,
-            "MinPriceThreshold": 3235,
+            "MaxPriceThreshold": 42000,
+            "MinPriceThreshold": 32000,
             "SellPricePercent": -1.0,
-            "MaxStockThreshold": 100,
+            "MaxStockThreshold": 2,
             "MinStockThreshold": 1,
             "QuantityPercent": -1,
-            "SpawnAttachments": [
-                "mag_1911_7rnd"
-            ],
+            "SpawnAttachments": ["mag_1911_7rnd"],
             "Variants": []
         },
         {
             "ClassName": "magnum",
-            "MaxPriceThreshold": 390,
-            "MinPriceThreshold": 235,
+            "MaxPriceThreshold": 28000,
+            "MinPriceThreshold": 18000,
             "SellPricePercent": -1.0,
-            "MaxStockThreshold": 100,
+            "MaxStockThreshold": 4,
             "MinStockThreshold": 1,
             "QuantityPercent": -1,
             "SpawnAttachments": [],
@@ -124,51 +107,43 @@
         },
         {
             "ClassName": "deagle",
-            "MaxPriceThreshold": 375,
-            "MinPriceThreshold": 225,
+            "MaxPriceThreshold": 38000,
+            "MinPriceThreshold": 28000,
             "SellPricePercent": -1.0,
-            "MaxStockThreshold": 100,
+            "MaxStockThreshold": 3,
             "MinStockThreshold": 1,
             "QuantityPercent": -1,
-            "SpawnAttachments": [
-                "mag_deagle_9rnd"
-            ],
-            "Variants": [
-                "deagle_gold"
-            ]
+            "SpawnAttachments": ["mag_deagle_9rnd"],
+            "Variants": ["deagle_gold"]
         },
         {
             "ClassName": "deagle_gold",
-            "MaxPriceThreshold": 400,
-            "MinPriceThreshold": 240,
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 40000,
             "SellPricePercent": -1.0,
-            "MaxStockThreshold": 100,
+            "MaxStockThreshold": 1,
             "MinStockThreshold": 1,
             "QuantityPercent": -1,
-            "SpawnAttachments": [
-                "mag_deagle_9rnd"
-            ],
+            "SpawnAttachments": ["mag_deagle_9rnd"],
             "Variants": []
         },
         {
             "ClassName": "p1",
-            "MaxPriceThreshold": 865,
-            "MinPriceThreshold": 520,
+            "MaxPriceThreshold": 10000,
+            "MinPriceThreshold": 6000,
             "SellPricePercent": -1.0,
-            "MaxStockThreshold": 100,
+            "MaxStockThreshold": 6,
             "MinStockThreshold": 1,
             "QuantityPercent": -1,
-            "SpawnAttachments": [
-                "mag_p1_8rnd"
-            ],
+            "SpawnAttachments": ["mag_p1_8rnd"],
             "Variants": []
         },
         {
             "ClassName": "longhorn",
-            "MaxPriceThreshold": 3270,
-            "MinPriceThreshold": 1960,
+            "MaxPriceThreshold": 32000,
+            "MinPriceThreshold": 22000,
             "SellPricePercent": -1.0,
-            "MaxStockThreshold": 100,
+            "MaxStockThreshold": 3,
             "MinStockThreshold": 1,
             "QuantityPercent": -1,
             "SpawnAttachments": [],
@@ -176,15 +151,13 @@
         },
         {
             "ClassName": "expansion_m9",
-            "MaxPriceThreshold": 7800,
-            "MinPriceThreshold": 4600,
+            "MaxPriceThreshold": 40000,
+            "MinPriceThreshold": 28000,
             "SellPricePercent": -1.0,
-            "MaxStockThreshold": 100,
+            "MaxStockThreshold": 3,
             "MinStockThreshold": 1,
             "QuantityPercent": -1,
-            "SpawnAttachments": [
-                "mag_expansion_m9_15rnd"
-            ],
+            "SpawnAttachments": ["mag_expansion_m9_15rnd"],
             "Variants": []
         }
     ]

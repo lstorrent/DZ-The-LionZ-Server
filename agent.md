@@ -1211,6 +1211,1639 @@ Configura o sistema de grupos/party do servidor, permitindo jogadores formarem e
     "ShowDistanceUnderQuickMarkers": 1,
     "ShowNameOnQuickMarkers": 1,
     "CanCreatePartyMarkers": 1,
+    "ShowPartyMemberMapMarkers": 1,
+    "ShowPartyMemberHUD": 1,
+    "ShowHUDMemberBlood": 1,
+    "ShowHUDMemberStates": 1,
+    "ShowHUDMemberDistance": 1,
+    "ForcePartyToHaveTags": 0,
+    "DisplayPartyTag": 1,
+    "InviteCooldown": 5
+}
+```
+
+#### 8. Market System (Sistema de Trader)
+
+**Localização dos Arquivos:**
+```
+profiles/ExpansionMod/Settings/
+├── MarketSettings.json          # Configurações gerais do market
+├── TraderZones.json            # Zonas de trader (safezones)
+profiles/ExpansionMod/Market/
+├── Items/                      # Configuração de itens vendidos
+├── Categories/                 # Categorias do market
+└── Traders/                    # Configuração de traders/NPCs
+```
+
+**Visão Geral:**
+
+O Expansion Market é um sistema de mercado baseado em estoque onde jogadores podem comprar e vender itens em troca de moeda. Tudo é configurável: preços, estoque, itens disponíveis por trader, categorias, etc.
+
+**Características:**
+- Sistema baseado em estoque (itens podem esgotar)
+- Preços dinâmicos ou estáticos
+- Múltiplos traders com inventários diferentes
+- Categorias customizáveis
+- Moeda customizável
+- ATMs para armazenamento de dinheiro
+- Zonas de trader (safezones)
+
+##### 8.1. MarketSettings.json
+
+**Localização:** `mpmissions/dayzOffline.<mapname>/expansion/settings/MarketSettings.json`
+
+⚠️ **Importante:** Diferente de outras configurações do Expansion, MarketSettings.json é específico por mapa e fica na pasta da missão.
+
+**Parâmetros Principais:**
+
+- `m_Version`: Integer
+  - Versão do arquivo de configuração (não altere!)
+  - Usado internamente para conversão automática de configurações antigas
+
+**Configurações Gerais:**
+
+- `MarketSystemEnabled`: Boolean
+  - `0`: Desabilita todo o sistema de market
+  - `1`: Habilita sistema de market
+
+**Veículos - Distâncias e Spawn:**
+
+- `MaxVehicleDistanceToTrader`: Float
+  - Distância máxima de veículos normais (carro/heli/barco) para aparecer como vendável
+  - Também define distância máxima da zona de spawn de veículos
+  - Valor em metros
+  - Recomendado: 100-200m
+
+- `MaxLargeVehicleDistanceToTrader`: Float
+  - Distância máxima de veículos grandes (ex: porta-aviões)
+  - Também define distância máxima da zona de spawn
+  - Valor em metros
+  - Recomendado: 500-1000m
+
+- `LargeVehicles`: Array [String]
+  - Classnames de veículos que devem usar MaxLargeVehicleDistanceToTrader
+  - Exemplo:
+```json
+"LargeVehicles": [
+    "ExpansionAircraftCarrier",
+    "ExpansionCargoShip"
+]
+```
+
+**Zonas de Spawn de Veículos:**
+
+- `LandSpawnPositions`: Array de objetos
+  - Posições e orientações para spawn de veículos terrestres (carros)
+  - Precisa ter pelo menos uma entrada dentro do raio de MaxVehicleDistanceToTrader do trader
+  - Estrutura:
+```json
+"LandSpawnPositions": [
+    {
+        "Position": [11903.400390625, 140.0, 12455.099609375],
+        "Orientation": [24.0, 0.0, 0.0]
+    },
+    {
+        "Position": [1513, 120, 1045],
+        "Orientation": [24, 0, 0]
+    }
+]
+```
+  - `Position`: Vector [X, Y, Z] - Coordenadas do spawn
+  - `Orientation`: Vector [Yaw, Pitch, Roll] - Rotação do veículo
+
+- `AirSpawnPositions`: Array de objetos
+  - Posições e orientações para spawn de veículos aéreos (helicópteros, aviões)
+  - Mesma estrutura que LandSpawnPositions
+  - Exemplo:
+```json
+"AirSpawnPositions": [
+    {
+        "Position": [11903.400390625, 140.0, 12455.099609375],
+        "Orientation": [24.0, 0.0, 0.0]
+    }
+]
+```
+
+- `WaterSpawnPositions`: Array de objetos
+  - Posições e orientações para spawn de veículos aquáticos (barcos)
+  - Mesma estrutura que LandSpawnPositions
+  - Exemplo:
+```json
+"WaterSpawnPositions": [
+    {
+        "Position": [11903.400390625, 140.0, 12455.099609375],
+        "Orientation": [24.0, 0.0, 0.0]
+    }
+]
+```
+
+**Sistema ATM:**
+
+- `ATMSystemEnabled`: Boolean
+  - `0`: Desabilita ATMs (caixas eletrônicos)
+  - `1`: Habilita ATMs
+
+- `MaxDepositMoney`: Integer
+  - Quantidade máxima de dinheiro que jogadores podem depositar no ATM
+  - `-1`: Sem limite
+  - Valor positivo: Limite específico
+  - Exemplo: `10000000` (10 milhões)
+
+- `DefaultDepositMoney`: Integer
+  - Dinheiro padrão que jogador recebe na conta ATM ao entrar pela primeira vez
+  - `0`: Sem dinheiro inicial
+  - Valor positivo: Dinheiro inicial
+  - Exemplo: `5000` (5 mil de início)
+
+- `ATMPlayerTransferEnabled`: Boolean
+  - `0`: Não pode transferir dinheiro entre jogadores via ATM
+  - `1`: Permite transferências entre jogadores
+
+- `ATMPartyLockerEnabled`: Boolean
+  - `0`: Não há cofre compartilhado de grupo
+  - `1`: Grupos podem ter cofre compartilhado no ATM
+
+- `MaxPartyDepositMoney`: Integer
+  - Quantidade máxima de dinheiro que pode ser depositada na conta de grupo
+  - `-1`: Sem limite
+  - Valor positivo: Limite específico
+
+**Preços e Moeda:**
+
+- `SellPricePercent`: Float
+  - Controla diferença de preço de venda GLOBAL de todos itens do market
+  - Valor padrão: `75.0` (75% do preço de compra)
+  - Pode ser sobrescrito individualmente por zona ou item
+  - Exemplos:
+    - `75.0`: Trader paga 75% do preço de compra
+    - `50.0`: Trader paga 50% do preço de compra
+    - `100.0`: Trader paga preço cheio (sem lucro)
+
+- `Currencies`: Array [String]
+  - Lista de moedas que podem ser armazenadas na conta bancária do ATM
+  - Classnames dos itens de moeda
+  - Exemplo:
+```json
+"Currencies": [
+    "expansionbanknotehryvnia",
+    "expansionbanknote1",
+    "expansionbanknote5",
+    "expansionbanknote10",
+    "expansionbanknote20",
+    "expansionbanknote50",
+    "expansionbanknote100",
+    "expansionbanknote200",
+    "expansionbanknote500"
+]
+```
+
+**Customização Visual do Menu:**
+
+- `MarketMenuColors`: Objeto
+  - Cores usadas para o menu do market
+  - Formato: Hexadecimal RRGGBBAA, RGBA, ou decimal R G B A (0-255)
+  - Alpha (transparência) é opcional
+  - Gerador de cores: https://color.adobe.com/create/color-wheel
+
+**Cores Disponíveis:**
+
+- `BaseColorVignette`: Cor de fundo vinheta do menu
+- `BaseColorHeaders`: Cor para todos elementos de cabeçalho
+- `BaseColorLabels`: Cor para todos fundos de labels
+- `BaseColorText`: Cor para todos elementos de texto no menu
+- `BaseColorInfoSectionBackground`: Cor de fundo da seção de info do item
+- `BaseColorTooltipsCorners`: Cor dos cantos dos tooltips
+- `BaseColorTooltipsSeperatorLine`: Cor da linha separadora dos tooltips
+- `BaseColorTooltipsBackground`: Cor de fundo dos tooltips
+- `ColorDecreaseQuantityButton`: Cor do botão de diminuir quantidade
+- `ColorSetQuantityButton`: Cor do botão de definir quantidade
+- `ColorIncreaseQuantityButton`: Cor do botão de aumentar quantidade
+- `ColorSellPanel`: Cor de fundo do painel de venda
+- `ColorSellButton`: Cor do botão de vender
+- `ColorBuyPanel`: Cor de fundo do painel de compra
+- `ColorBuyButton`: Cor do botão de comprar
+- `ColorMarketIcon`: Cor do ícone principal do trader (canto superior esquerdo)
+- `ColorFilterOptionsButton`: Cor ao passar mouse sobre botão de filtro de armas
+- `ColorFilterOptionsIcon`: Cor do ícone do botão de filtro de armas
+- `ColorSearchFilterButton`: Cor do botão de filtro de busca ao passar mouse
+- `ColorCategoryButton`: Cor dos botões de categoria ao passar mouse
+- `ColorCategoryCollapseIcon`: Cor do ícone de seta quando categoria está colapsada
+- `ColorItemButton`: Cor do botão de item ao passar mouse
+- `ColorItemInfoIcon`: Cor do ícone de info quando item tem condição especial
+- `ColorItemInfoHasContainerItems`: Cor do texto quando item tem outros itens no container
+- `ColorItemInfoHasAttachments`: Cor do texto quando item tem attachments
+- `ColorItemInfoHasBullets`: Cor do texto quando magazine tem balas
+- `ColorItemInfoIsAttachment`: Cor do texto quando item está anexado a outro
+- `ColorItemInfoIsEquipped`: Cor do texto quando item está equipado
+- `ColorItemInfoAttachments`: Cor do texto de attachments padrão na view detalhada
+- `ColorToggleCategoriesText`: Cor do texto do botão de toggle de categorias
+- `ColorCategoryCorners`: Cor dos cantos dos elementos de categoria
+- `ColorCategoryBackground`: Cor de fundo dos elementos de categoria
+
+**Ícone de Moeda:**
+
+- `CurrencyIcon`: String
+  - Caminho para o ícone usado como ícone de moeda no menu
+  - Padrão: `"DayZExpansion/Market/GUI/icons/coinstack2_64x64.edds"`
+  - Formato: Arquivo .edds (DayZ texture format)
+
+**Configuração Interna:**
+
+- `NetworkCategories`: Array
+  - Usado apenas internamente
+  - ⚠️ **NÃO ALTERE**: Gerado automaticamente e será sobrescrito
+
+**Exemplo de Configuração Completa:**
+
+```json
+{
+    "m_Version": 15,
+    "MarketSystemEnabled": 1,
+    "MaxVehicleDistanceToTrader": 150.0,
+    "MaxLargeVehicleDistanceToTrader": 1000.0,
+    "LargeVehicles": [],
+    "LandSpawnPositions": [
+        {
+            "Position": [3700.0, 403.0, 6000.0],
+            "Orientation": [0.0, 0.0, 0.0]
+        },
+        {
+            "Position": [3710.0, 403.0, 6000.0],
+            "Orientation": [0.0, 0.0, 0.0]
+        }
+    ],
+    "AirSpawnPositions": [
+        {
+            "Position": [3750.0, 403.0, 6050.0],
+            "Orientation": [0.0, 0.0, 0.0]
+        }
+    ],
+    "WaterSpawnPositions": [],
+    "ATMSystemEnabled": 1,
+    "MaxDepositMoney": 10000000,
+    "DefaultDepositMoney": 5000,
+    "ATMPlayerTransferEnabled": 1,
+    "ATMPartyLockerEnabled": 1,
+    "MaxPartyDepositMoney": 50000000,
+    "SellPricePercent": 75.0,
+    "Currencies": [
+        "expansionbanknotehryvnia",
+        "expansionbanknote1",
+        "expansionbanknote5",
+        "expansionbanknote10",
+        "expansionbanknote20",
+        "expansionbanknote50",
+        "expansionbanknote100"
+    ],
+    "CurrencyIcon": "DayZExpansion/Market/GUI/icons/coinstack2_64x64.edds",
+    "MarketMenuColors": {
+        "BaseColorVignette": "000000AA",
+        "BaseColorHeaders": "1E1E1EFF",
+        "BaseColorLabels": "2D2D2DFF",
+        "BaseColorText": "FFFFFFFF",
+        "BaseColorInfoSectionBackground": "1A1A1AFF",
+        "ColorBuyButton": "00FF00FF",
+        "ColorSellButton": "FF0000FF"
+    },
+    "NetworkCategories": []
+}
+```
+
+**Dicas e Boas Práticas:**
+
+1. **Zonas de Spawn de Veículos:**
+   - Coloque múltiplas posições para evitar colisões
+   - Espaçamento recomendado: 10-15m entre posições
+   - Certifique-se que estão dentro do raio do trader
+   - Use terreno plano para spawn terrestre
+   - Use área aberta para spawn aéreo
+
+2. **Sistema ATM:**
+   - Habilite transferências para economia player-driven
+   - Configure limite de depósito para evitar inflação
+   - Dinheiro inicial ajuda novos jogadores
+   - Party locker incentiva trabalho em equipe
+
+3. **Preços:**
+   - SellPricePercent 50-75% é balanceado
+   - Valores muito altos causam inflação
+   - Valores muito baixos desestimulam venda
+
+4. **Moedas:**
+   - Use notas de valores variados (1, 5, 10, 20, 50, 100)
+   - Facilita transações de valores diferentes
+   - Evite muitas denominações (confuso)
+
+5. **Customização Visual:**
+   - Use cores que combinem com tema do servidor
+   - Mantenha contraste para legibilidade
+   - Teste cores antes de aplicar
+   - Use alpha para transparência sutil
+
+6. **Veículos Grandes:**
+   - Adicione apenas se tiver veículos muito grandes
+   - Aumenta raio de detecção e spawn
+   - Evite usar para veículos normais
+
+**Formatos de Cor Aceitos:**
+
+1. **Hexadecimal RRGGBBAA:**
+   - `"FF0000FF"` = Vermelho opaco
+   - `"00FF0080"` = Verde semi-transparente
+
+2. **Hexadecimal RGBA:**
+   - `"F00F"` = Vermelho opaco (formato curto)
+
+3. **Decimal R G B A:**
+   - `"255 0 0 255"` = Vermelho opaco
+   - `"0 255 0 128"` = Verde semi-transparente
+
+**Obtendo Coordenadas para Spawn:**
+
+1. Use DayZeEditor para obter posições exatas
+2. Entre no jogo e use comando de debug (se habilitado)
+3. Use ferramentas online de mapas DayZ
+4. Copie coordenadas de objetos existentes
+
+**Exemplo de Setup para The LionZ:**
+
+```json
+{
+    "m_Version": 15,
+    "MarketSystemEnabled": 1,
+    "MaxVehicleDistanceToTrader": 150.0,
+    "LandSpawnPositions": [
+        {"Position": [3700.0, 403.0, 6000.0], "Orientation": [0.0, 0.0, 0.0]},
+        {"Position": [3710.0, 403.0, 6000.0], "Orientation": [90.0, 0.0, 0.0]},
+        {"Position": [3720.0, 403.0, 6000.0], "Orientation": [180.0, 0.0, 0.0]}
+    ],
+    "ATMSystemEnabled": 1,
+    "MaxDepositMoney": 5000000,
+    "DefaultDepositMoney": 10000,
+    "ATMPlayerTransferEnabled": 1,
+    "ATMPartyLockerEnabled": 1,
+    "SellPricePercent": 60.0,
+    "Currencies": [
+        "expansionbanknotehryvnia"
+    ]
+}
+```
+
+##### 8.2. Configuração de Categorias
+
+**Localização:** `profiles/ExpansionMod/Market/Categories/`
+
+Categorias organizam itens no menu do trader. Cada arquivo `.json` representa uma categoria.
+
+**Estrutura:**
+```json
+{
+    "m_Version": 12,
+    "DisplayName": "Weapons",
+    "Icon": "Deliver",
+    "Color": "FBFCFEFF",
+    "IsExchange": 0,
+    "InitStockPercent": 75.0,
+    "Items": []
+}
+```
+
+**Parâmetros:**
+
+- `m_Version`: Integer
+  - Versão do arquivo de configuração (não altere!)
+  - Usado internamente para conversão automática de configurações antigas
+
+- `DisplayName`: String
+  - Nome de exibição da categoria usado no menu do market
+  - Suporta strings localizadas ou texto direto
+  - Exemplos:
+    - `"DisplayName": "#STR_EXPANSION_MARKET_CATEGORY_AMMOBOXES"` (localizado)
+    - `"DisplayName": "Ammo Boxes"` (texto direto)
+    - `"DisplayName": "Caixas de Munição"` (texto em português)
+
+- `Icon`: String
+  - Ícone da categoria que será exibido
+  - Lista completa de ícones: https://github.com/salutesh/DayZ-Expansion-Scripts/wiki/%5BServer-Hosting%5D-List-of-default-icon-names
+  - Exemplos: `"Weapon"`, `"Food"`, `"Medical"`, `"Vehicle"`, `"Deliver"`
+
+- `Color`: String
+  - Código de cor hexadecimal para esta categoria
+  - Formato: RRGGBBAA (Red, Green, Blue, Alpha) sem o `#`
+  - Ferramentas online: https://www.color-hex.com/
+  - Exemplos:
+    - `"FBFCFEFF"`: Branco
+    - `"FF0000FF"`: Vermelho
+    - `"00FF00FF"`: Verde
+    - `"0000FFFF"`: Azul
+    - `"FFFF00FF"`: Amarelo
+
+- `IsExchange`: Boolean
+  - Define se esta categoria é usada para moedas/currency
+  - `0`: Categoria normal de itens
+  - `1`: Categoria de moeda (todos itens neste arquivo são moedas)
+  - ⚠️ **Importante**: Se habilitado (1), TODOS os itens neste arquivo serão marcados como moeda
+  - Certifique-se que o arquivo contém APENAS itens de moeda
+
+- `InitStockPercent`: Float
+  - Porcentagem do estoque máximo que cada item será inicializado
+  - Aplica-se no primeiro start do servidor ou para novos itens
+  - Valor: 0.0 a 100.0
+  - Padrão recomendado: `75.0` (75% do estoque máximo)
+  - Exemplos:
+    - `100.0`: Inicia com estoque cheio
+    - `75.0`: Inicia com 75% do estoque
+    - `50.0`: Inicia com metade do estoque
+    - `0.0`: Inicia sem estoque (player-driven)
+
+- `Items`: Array de objetos
+  - Contém todos os itens e informações associadas para controle de preço e estoque
+  - Veja seção "Configuração de Itens" abaixo
+
+**Ícones Disponíveis:**
+- `Weapon`, `Ammo`, `Clothing`, `Food`, `Medical`, `Tools`
+- `Vehicle`, `Parts`, `Building`, `Misc`, `Deliver`
+- `Gas`, `Helicopter`, `Boat`, `Plane`
+- Lista completa: https://github.com/salutesh/DayZ-Expansion-Scripts/wiki/Market-Settings-Items-&-Categories
+
+**Exemplos de Categorias:**
+
+`Weapons.json`:
+```json
+{
+    "m_Version": 12,
+    "DisplayName": "Armas",
+    "Icon": "Weapon",
+    "Color": "FF5733FF",
+    "IsExchange": 0,
+    "InitStockPercent": 75.0,
+    "Items": []
+}
+```
+
+`Food.json`:
+```json
+{
+    "m_Version": 12,
+    "DisplayName": "Comida",
+    "Icon": "Food",
+    "Color": "33FF57FF",
+    "IsExchange": 0,
+    "InitStockPercent": 100.0,
+    "Items": []
+}
+```
+
+`Currency.json` (Categoria de Moeda):
+```json
+{
+    "m_Version": 12,
+    "DisplayName": "Moedas",
+    "Icon": "Deliver",
+    "Color": "FFD700FF",
+    "IsExchange": 1,
+    "InitStockPercent": 0.0,
+    "Items": []
+}
+```
+
+##### 8.3. Configuração de Itens
+
+**Localização:** Dentro do array `Items` de cada arquivo de categoria em `profiles/ExpansionMod/Market/Categories/`
+
+Cada item no array contém configurações de preço, estoque, attachments e variantes.
+
+**Estrutura de Item:**
+```json
+{
+    "ClassName": "AKM",
+    "MaxPriceThreshold": 50000,
+    "MinPriceThreshold": 25000,
+    "SellPricePercent": -1.0,
+    "MaxStockThreshold": 10,
+    "MinStockThreshold": 1,
+    "QuantityPercent": -1,
+    "SpawnAttachments": [],
+    "Variants": []
+}
+```
+
+**Parâmetros:**
+
+- `ClassName`: String
+  - Nome da classe do item/objeto
+  - Deve ser o classname exato do DayZ
+  - Geralmente em minúsculo
+  - Exemplo: `"akm"`, `"m4a1"`, `"apple"`
+
+- `MaxPriceThreshold`: Integer
+  - Preço máximo que o item pode ter
+  - Ocorre quando estoque está no mínimo
+  - Fórmula: Preço aumenta quando estoque diminui
+
+- `MinPriceThreshold`: Integer
+  - Preço mínimo que o item pode ter
+  - Ocorre quando estoque está no máximo
+  - Fórmula: Preço diminui quando estoque aumenta
+
+- `SellPricePercent`: Float
+  - Porcentagem do preço de compra ao vender para trader
+  - `-1.0`: Usa configuração da zona (padrão)
+  - `0.0 a 100.0`: Porcentagem específica
+  - ⚠️ **Nota**: Usa encoding bfloat16 (precisão limitada a 2-3 dígitos decimais)
+  - Exemplos:
+    - `-1.0`: Usa valor da zona
+    - `50.0`: Trader paga 50% do preço de compra
+    - `75.0`: Trader paga 75% do preço de compra
+
+- `MaxStockThreshold`: Integer
+  - Estoque máximo que o item pode ter no market
+  - Valor especial: `-1` = estoque infinito (estático)
+  - Para estoque estático: `MaxStockThreshold = MinStockThreshold = -1`
+
+- `MinStockThreshold`: Integer
+  - Estoque mínimo que o item pode ter no market
+  - Valor especial: `-1` = estoque infinito (estático)
+  - Para estoque estático: `MaxStockThreshold = MinStockThreshold = -1`
+
+- `QuantityPercent`: Integer
+  - Porcentagem da quantidade do item (magazines, líquidos, munição, etc.)
+  - `-1`: Padrão 100% (cheio)
+  - `0 a 100`: Porcentagem específica
+  - Exemplos:
+    - `-1`: Magazine cheio, garrafa cheia
+    - `100`: 100% cheio
+    - `50`: Metade cheio
+    - `0`: Vazio
+
+- `SpawnAttachments`: Array [String]
+  - Classnames de itens que serão anexados por padrão
+  - Funciona com armas (criar loadouts padrão)
+  - Funciona com roupas, mochilas, coletes
+  - Jogador pode comprar item com attachments padrão
+  - Exemplo:
+```json
+"SpawnAttachments": [
+    "ak_woodbttstck",
+    "ak_woodhndgrd",
+    "mag_akm_30rnd"
+]
+```
+
+- `Variants`: Array [String]
+  - Classnames de itens que serão exibidos como variantes
+  - Útil para variações de cor do mesmo item
+  - Exibidos em dropdown no menu detalhado do market
+  - Variante herda configuração do item base por padrão
+  - Para configuração diferente, variante precisa de entrada própria em `Items`
+  - Exemplo:
+```json
+"Variants": [
+    "tacticalshirt_black",
+    "tacticalshirt_olive",
+    "tacticalshirt_tan"
+]
+```
+
+**Configurações Especiais:**
+
+**Estoque Estático (Infinito):**
+```json
+{
+    "ClassName": "apple",
+    "MaxPriceThreshold": 100,
+    "MinPriceThreshold": 100,
+    "MaxStockThreshold": -1,
+    "MinStockThreshold": -1
+}
+```
+
+**Preço Estático (Fixo):**
+```json
+{
+    "ClassName": "bandage",
+    "MaxPriceThreshold": 500,
+    "MinPriceThreshold": 500,
+    "MaxStockThreshold": 50,
+    "MinStockThreshold": 10
+}
+```
+
+**Sistema de Preço Dinâmico:**
+
+O preço varia baseado no estoque:
+- Estoque alto → Preço baixo (MinPriceThreshold)
+- Estoque baixo → Preço alto (MaxPriceThreshold)
+- Fórmula: `Preço = MinPrice + ((MaxPrice - MinPrice) × (1 - EstoqueAtual/MaxEstoque))`
+
+**Exemplos Práticos:**
+
+**Exemplo 1: Munição Básica**
+```json
+{
+    "ClassName": "ammobox_00buck_10rnd",
+    "MaxPriceThreshold": 80,
+    "MinPriceThreshold": 40,
+    "SellPricePercent": -1.0,
+    "MaxStockThreshold": 250,
+    "MinStockThreshold": 1,
+    "QuantityPercent": -1,
+    "SpawnAttachments": [],
+    "Variants": []
+}
+```
+
+**Exemplo 2: Mochila com Variantes**
+```json
+{
+    "ClassName": "childbag_red",
+    "MaxPriceThreshold": 40,
+    "MinPriceThreshold": 20,
+    "SellPricePercent": -1.0,
+    "MaxStockThreshold": 100,
+    "MinStockThreshold": 1,
+    "QuantityPercent": -1,
+    "SpawnAttachments": [],
+    "Variants": [
+        "childbag_blue",
+        "childbag_green"
+    ]
+}
+```
+
+**Exemplo 3: Variante com Preço Diferente**
+```json
+{
+    "ClassName": "childbag_green",
+    "MaxPriceThreshold": 50,
+    "MinPriceThreshold": 25,
+    "SellPricePercent": -1.0,
+    "MaxStockThreshold": 100,
+    "MinStockThreshold": 1,
+    "QuantityPercent": -1,
+    "SpawnAttachments": [],
+    "Variants": []
+}
+```
+*Nota: childbag_green tem preço diferente do item base (childbag_red)*
+
+**Exemplo 4: Arma com Loadout Padrão**
+```json
+{
+    "ClassName": "fal",
+    "MaxPriceThreshold": 2000,
+    "MinPriceThreshold": 1700,
+    "SellPricePercent": -1.0,
+    "MaxStockThreshold": 100,
+    "MinStockThreshold": 1,
+    "QuantityPercent": -1,
+    "SpawnAttachments": [
+        "fal_oebttstck",
+        "mag_fal_20rnd"
+    ],
+    "Variants": []
+}
+```
+
+**Exemplo 5: Magazine com 50% de Munição**
+```json
+{
+    "ClassName": "mag_akm_30rnd",
+    "MaxPriceThreshold": 5000,
+    "MinPriceThreshold": 2500,
+    "SellPricePercent": -1.0,
+    "MaxStockThreshold": 50,
+    "MinStockThreshold": 10,
+    "QuantityPercent": 50,
+    "SpawnAttachments": [],
+    "Variants": []
+}
+```
+
+**Exemplo 6: Item com Estoque Infinito**
+```json
+{
+    "ClassName": "apple",
+    "MaxPriceThreshold": 100,
+    "MinPriceThreshold": 100,
+    "SellPricePercent": -1.0,
+    "MaxStockThreshold": -1,
+    "MinStockThreshold": -1,
+    "QuantityPercent": -1,
+    "SpawnAttachments": [],
+    "Variants": []
+}
+```
+
+**Exemplo 7: Roupa com Variantes de Cor**
+```json
+{
+    "ClassName": "tacticalshirt_grey",
+    "MaxPriceThreshold": 1000,
+    "MinPriceThreshold": 500,
+    "SellPricePercent": -1.0,
+    "MaxStockThreshold": 20,
+    "MinStockThreshold": 5,
+    "QuantityPercent": -1,
+    "SpawnAttachments": [],
+    "Variants": [
+        "tacticalshirt_black",
+        "tacticalshirt_olive",
+        "tacticalshirt_tan"
+    ]
+}
+```
+
+**Exemplo 8: Veículo com Peças**
+```json
+{
+    "ClassName": "expansionuaz",
+    "MaxPriceThreshold": 150000,
+    "MinPriceThreshold": 100000,
+    "SellPricePercent": 50.0,
+    "MaxStockThreshold": 5,
+    "MinStockThreshold": 1,
+    "QuantityPercent": -1,
+    "SpawnAttachments": [
+        "expansionuazdriversdoor",
+        "expansionuazcodriver_door",
+        "expansionuazcargo1door",
+        "expansionuazcargo2door",
+        "expansionuazhood",
+        "expansionuaztrunk",
+        "expansionuazwheel",
+        "expansionuazwheel",
+        "expansionuazwheel",
+        "expansionuazwheel",
+        "carradiator",
+        "carbattery",
+        "sparkplug"
+    ],
+    "Variants": []
+}
+```
+
+**Arquivo Completo de Categoria:**
+
+`Weapons.json`:
+```json
+{
+    "m_Version": 12,
+    "DisplayName": "Armas",
+    "Icon": "Weapon",
+    "Color": "FF5733FF",
+    "IsExchange": 0,
+    "InitStockPercent": 75.0,
+    "Items": [
+        {
+            "ClassName": "akm",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 25000,
+            "SellPricePercent": -1.0,
+            "MaxStockThreshold": 10,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [
+                "ak_woodbttstck",
+                "ak_woodhndgrd"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "mag_akm_30rnd",
+            "MaxPriceThreshold": 5000,
+            "MinPriceThreshold": 2500,
+            "SellPricePercent": -1.0,
+            "MaxStockThreshold": 50,
+            "MinStockThreshold": 10,
+            "QuantityPercent": 100,
+            "SpawnAttachments": [],
+            "Variants": []
+        }
+    ]
+}
+```
+
+**Dicas e Boas Práticas:**
+
+1. **Balanceamento de Preços:**
+   - Armas básicas: 10,000 - 25,000
+   - Armas militares: 25,000 - 75,000
+   - Armas raras: 75,000 - 150,000
+   - Munição: 500 - 5,000 por magazine
+   - Comida: 100 - 1,000
+   - Médicos: 500 - 5,000
+   - Veículos: 100,000 - 500,000
+
+2. **Balanceamento de Estoque:**
+   - Itens comuns: 20-50 estoque
+   - Itens raros: 5-10 estoque
+   - Itens muito raros: 1-3 estoque
+   - Munição: 50-100 estoque
+
+3. **Uso de Variantes:**
+   - Use para cores diferentes do mesmo item
+   - Item base aparece no menu, variantes em dropdown
+   - Variante herda config do base (exceto se tiver entrada própria)
+
+4. **SpawnAttachments:**
+   - Útil para vender armas "prontas para uso"
+   - Pode incluir magazines, optics, attachments
+   - Jogador paga pelo pacote completo
+
+5. **QuantityPercent:**
+   - Use `-1` para itens que não têm quantidade
+   - Use `50-75` para magazines parcialmente cheios (mais barato)
+   - Use `100` para itens completamente cheios
+
+6. **Estoque Estático:**
+   - Use `-1` em ambos thresholds para estoque infinito
+   - Útil para itens básicos (comida, bandagens)
+   - Evita escassez de itens essenciais
+
+7. **Preço Estático:**
+   - Use mesmo valor em Min e Max para preço fixo
+   - Útil para itens de preço padrão
+   - Simplifica economia
+
+8. **InitStockPercent:**
+   - `75-100`: Bom para itens comuns
+   - `25-50`: Bom para itens raros
+   - `0`: Bom para economia player-driven
+
+9. **SellPricePercent:**
+   - `-1.0`: Usa configuração da zona (recomendado)
+   - `50.0`: Padrão balanceado
+   - `25.0`: Trader "avarento"
+   - `75.0`: Trader "generoso"
+
+##### 8.4. Configuração de Traders
+
+**Localização:** `profiles/ExpansionMod/Market/Traders/`
+
+⚠️ **Importante:** Traders só funcionam como traders se estiverem dentro do raio de uma traderzone. Veja seção 8.5 TraderZones.
+
+Cada arquivo `.json` representa um trader/NPC.
+
+**Estrutura:**
+```json
+{
+    "m_Version": 5,
+    "DisplayName": "Weapon Dealer",
+    "MinRequiredReputation": 0,
+    "MaxRequiredReputation": 2147483647,
+    "TraderIcon": "Weapon",
+    "Currencies": [
+        "expansionbanknotehryvnia",
+        "expansionbanknoteeuro"
+    ],
+    "Categories": [
+        "Weapons:1",
+        "Ammo:1",
+        "Attachments:3"
+    ],
+    "Items": {
+        "expansioncarkey": 0,
+        "engineoil": 2
+    }
+}
+```
+
+**Parâmetros:**
+
+- `m_Version`: Integer
+  - Versão do arquivo de configuração (não altere!)
+  - Usado internamente para conversão automática de configurações antigas
+
+- `DisplayName`: String
+  - Nome do trader exibido no topo do menu de mercado
+  - Suporta strings localizadas ou texto direto
+  - Exemplos:
+    - `"DisplayName": "#STR_EXPANSION_MARKET_TRADER_VEHICLE_PARTS"` (localizado)
+    - `"DisplayName": "Vendedor de Armas"` (texto direto)
+    - `"DisplayName": "Vehicle Parts"` (texto em inglês)
+
+- `MinRequiredReputation`: Integer (requer Expansion Hardline)
+  - Reputação mínima necessária para interagir com este trader
+  - Padrão: `0` (sem requisito)
+  - Valores negativos: Jogador precisa ter reputação negativa
+  - Valores positivos: Jogador precisa ter reputação positiva
+  - Exemplo: `1000` = jogador precisa ter pelo menos 1000 de reputação
+
+- `MaxRequiredReputation`: Integer (requer Expansion Hardline)
+  - Reputação máxima permitida para interagir com este trader
+  - Padrão: `2147483647` (sem limite superior)
+  - Útil para criar traders exclusivos para bandidos (reputação baixa)
+  - Exemplo: `-1000` = só jogadores com reputação abaixo de -1000 podem usar
+
+- `TraderIcon`: String
+  - Ícone do trader exibido no topo do menu de mercado
+  - Lista de ícones disponíveis: veja seção "Ícones Disponíveis" abaixo
+  - Exemplos: `"Weapon"`, `"Food"`, `"Medical"`, `"Vehicle"`, `"Gas"`
+
+- `Currencies`: Array [String]
+  - Classnames das moedas que este trader aceita
+  - Moedas devem estar configuradas primeiro no MarketSettings.json
+  - Permite traders com moedas diferentes (economia multi-moeda)
+  - Exemplo:
+```json
+"Currencies": [
+    "expansionbanknotehryvnia",
+    "expansionbanknoteeuro",
+    "expansionbanknote1"
+]
+```
+  - Guia de moedas customizadas: https://github.com/salutesh/DayZ-Expansion-Scripts/wiki/%5BServer-Hosting%5D-Setting-up-Custom-Market-Currencies
+
+- `Categories`: Array [String]
+  - Nomes de arquivos (sem extensão .json) de categorias do market
+  - Categorias devem existir em `ExpansionMod/Market/Categories/`
+  - Pode ser usado sozinho ou em combinação com `Items`
+  - Suporta modificadores de compra/venda (veja abaixo)
+  - Formato: `"NomeCategoria:Valor"`
+  - Valores:
+    - `:0` = Só pode comprar, não pode vender
+    - `:1` = Pode comprar E vender (padrão)
+    - `:2` = Só pode vender, não pode comprar
+    - `:3` = Não visível mas disponível para customização e attachments
+  - Exemplo:
+```json
+"Categories": [
+    "Cars:1",
+    "Vehicle_Parts:3",
+    "Weapons:0",
+    "Scrap:2"
+]
+```
+
+- `Items`: Map [String, Integer]
+  - Lista de itens específicos que o trader pode vender/comprar
+  - **Key**: ClassName do item (string em minúsculo)
+  - **Value**: Modo de compra/venda (integer)
+  - Valores:
+    - `0` = Só pode comprar do trader, não pode vender
+    - `1` = Pode comprar E vender
+    - `2` = Só pode vender ao trader, não pode comprar
+    - `3` = Não visível mas disponível como attachment/customização
+  - Exemplo:
+```json
+"Items": {
+    "expansioncarkey": 0,
+    "engineoil": 2,
+    "akm": 1,
+    "ak_woodbttstck": 3
+}
+```
+
+**Ícones Disponíveis:**
+- `Weapon`, `Ammo`, `Clothing`, `Food`, `Medical`, `Tools`
+- `Vehicle`, `Parts`, `Building`, `Misc`, `Deliver`
+- `Gas`, `Helicopter`, `Boat`, `Plane`
+- Lista completa: https://github.com/salutesh/DayZ-Expansion-Scripts/wiki/Market-Settings-Items-&-Categories
+
+**Tipos de Configuração:**
+
+**1. Trader por Categoria (Recomendado):**
+```json
+{
+    "m_Version": 5,
+    "DisplayName": "Loja Geral",
+    "TraderIcon": "Misc",
+    "Currencies": ["expansionbanknotehryvnia"],
+    "Categories": [
+        "Food:1",
+        "Medical:1",
+        "Tools:1"
+    ],
+    "Items": {}
+}
+```
+
+**2. Trader por Itens Específicos:**
+```json
+{
+    "m_Version": 5,
+    "DisplayName": "Black Market",
+    "TraderIcon": "Weapon",
+    "Currencies": ["expansionbanknotehryvnia"],
+    "Categories": [],
+    "Items": {
+        "akm": 1,
+        "m4a1": 1,
+        "svd": 1,
+        "vss": 0
+    }
+}
+```
+
+**3. Trader Misto (Categorias + Itens):**
+```json
+{
+    "m_Version": 5,
+    "DisplayName": "Vendedor de Veículos",
+    "TraderIcon": "Vehicle",
+    "Currencies": ["expansionbanknotehryvnia"],
+    "Categories": [
+        "Cars:1",
+        "Vehicle_Parts:3"
+    ],
+    "Items": {
+        "expansioncarkey": 0,
+        "carradiator": 1,
+        "carbattery": 1
+    }
+}
+```
+
+**Exemplos Práticos:**
+
+**Weapon Dealer (Vendedor de Armas):**
+```json
+{
+    "m_Version": 5,
+    "DisplayName": "Vendedor de Armas",
+    "MinRequiredReputation": 0,
+    "MaxRequiredReputation": 2147483647,
+    "TraderIcon": "Weapon",
+    "Currencies": ["expansionbanknotehryvnia"],
+    "Categories": [
+        "Weapons:1",
+        "Ammo:1",
+        "Attachments:3"
+    ],
+    "Items": {}
+}
+```
+
+**General Store (Loja Geral):**
+```json
+{
+    "m_Version": 5,
+    "DisplayName": "Loja Geral",
+    "MinRequiredReputation": 0,
+    "MaxRequiredReputation": 2147483647,
+    "TraderIcon": "Food",
+    "Currencies": ["expansionbanknotehryvnia"],
+    "Categories": [
+        "Food:1",
+        "Medical:1",
+        "Tools:1",
+        "Clothing:1"
+    ],
+    "Items": {}
+}
+```
+
+**Vehicle Dealer (Vendedor de Veículos):**
+```json
+{
+    "m_Version": 5,
+    "DisplayName": "Vendedor de Veículos",
+    "MinRequiredReputation": 0,
+    "MaxRequiredReputation": 2147483647,
+    "TraderIcon": "Vehicle",
+    "Currencies": ["expansionbanknotehryvnia"],
+    "Categories": [
+        "Cars:1",
+        "Vehicle_Parts:3"
+    ],
+    "Items": {
+        "expansioncarkey": 0
+    }
+}
+```
+
+**Scrap Dealer (Comprador de Sucata):**
+```json
+{
+    "m_Version": 5,
+    "DisplayName": "Comprador de Sucata",
+    "MinRequiredReputation": 0,
+    "MaxRequiredReputation": 2147483647,
+    "TraderIcon": "Parts",
+    "Currencies": ["expansionbanknotehryvnia"],
+    "Categories": [],
+    "Items": {
+        "metalplate": 2,
+        "woodenplank": 2,
+        "nails": 2,
+        "rope": 2,
+        "burlapsack": 2
+    }
+}
+```
+
+**Hero Trader (Trader para Heróis - requer Hardline):**
+```json
+{
+    "m_Version": 5,
+    "DisplayName": "Trader dos Heróis",
+    "MinRequiredReputation": 5000,
+    "MaxRequiredReputation": 2147483647,
+    "TraderIcon": "Medical",
+    "Currencies": ["expansionbanknotehryvnia"],
+    "Categories": [
+        "Medical:0",
+        "Food:0"
+    ],
+    "Items": {}
+}
+```
+
+**Bandit Trader (Trader para Bandidos - requer Hardline):**
+```json
+{
+    "m_Version": 5,
+    "DisplayName": "Trader dos Bandidos",
+    "MinRequiredReputation": -2147483647,
+    "MaxRequiredReputation": -5000,
+    "TraderIcon": "Weapon",
+    "Currencies": ["expansionbanknotehryvnia"],
+    "Categories": [
+        "Weapons:0",
+        "Explosives:0"
+    ],
+    "Items": {}
+}
+```
+
+**Casos de Uso dos Valores 0, 1, 2, 3:**
+
+**Valor 0 (Só Comprar):**
+- Itens que jogadores não devem vender de volta
+- Exemplos: Chaves de veículos, itens especiais, quest items
+```json
+"Items": {
+    "expansioncarkey": 0,
+    "expansionvehiclekey": 0
+}
+```
+
+**Valor 1 (Comprar e Vender):**
+- Itens normais de comércio
+- Exemplos: Armas, comida, ferramentas
+```json
+"Items": {
+    "akm": 1,
+    "apple": 1,
+    "hammer": 1
+}
+```
+
+**Valor 2 (Só Vender):**
+- Itens que trader compra mas não vende
+- Útil para "scrap dealers" ou reciclagem
+- Exemplos: Sucata, itens danificados
+```json
+"Items": {
+    "metalplate": 2,
+    "woodenplank": 2,
+    "nails": 2
+}
+```
+
+**Valor 3 (Oculto/Attachments):**
+- Itens não visíveis no menu principal
+- Disponíveis apenas como attachments ou customização
+- Exemplos: Peças de veículos, attachments de armas
+```json
+"Categories": [
+    "Vehicle_Parts:3"
+],
+"Items": {
+    "ak_woodbttstck": 3,
+    "ak_woodhndgrd": 3,
+    "pso1optic": 3
+}
+```
+
+**Dicas e Boas Práticas:**
+
+1. **Especialização**: Crie traders especializados (armas, comida, veículos)
+2. **Reputação**: Use requisitos de reputação para traders exclusivos (requer Hardline)
+3. **Moedas**: Considere traders com moedas diferentes para economia complexa
+4. **Categorias vs Itens**: Use Categories para facilidade, Items para controle preciso
+5. **Valor 3**: Use para attachments e peças que não devem aparecer sozinhos
+6. **Scrap Dealers**: Crie traders que só compram (valor 2) para economia de reciclagem
+7. **Nomes Descritivos**: Use DisplayName claro para jogadores identificarem facilmente
+8. **Ícones Apropriados**: Escolha ícone que represente o tipo de trader
+
+**Integração com TraderZones:**
+
+Lembre-se que traders precisam estar dentro de uma TraderZone para funcionar. Configure a zona correspondente em `mpmissions/dayzOffline.<mapname>/expansion/traderzones/`.
+
+**Links Úteis:**
+- Setup de Trader Entities/NPCs: https://github.com/salutesh/DayZ-Expansion-Scripts/wiki/%5BServer-Hosting%5D-Setting-up-Trader-Entities-and-NPCs
+- Moedas Customizadas: https://github.com/salutesh/DayZ-Expansion-Scripts/wiki/%5BServer-Hosting%5D-Setting-up-Custom-Market-Currencies
+
+##### 8.5. TraderZones (Safezones)
+
+**Localização:** `mpmissions/dayzOffline.<mapname>/expansion/traderzones/`
+
+⚠️ **Importante:** Diferente de outras configurações, TraderZones são específicas por mapa e ficam na pasta da missão.
+
+**Funcionamento:**
+- Traders só funcionam como traders se estiverem dentro do raio de uma traderzone
+- Zonas são esferas, então a altitude (Y) em Position precisa estar correta
+- Cada arquivo `.json` representa uma zona de trader
+
+**Estrutura de Arquivo:**
+```json
+{
+    "m_Version": 13,
+    "m_DisplayName": "Green Mountain Trader",
+    "Position": [3728.27, 403.0, 6003.60],
+    "Radius": 150.0,
+    "BuyPricePercent": 100.0,
+    "SellPricePercent": -1.0,
+    "Stock": {
+        "AKM": 5,
+        "Mag_AKM_30Rnd": 20,
+        "Apple": 0
+    }
+}
+```
+
+**Parâmetros:**
+
+- `m_Version`: Integer
+  - Versão do arquivo de configuração (não altere!)
+  - Usado internamente para conversão automática de configurações antigas
+
+- `m_DisplayName`: String
+  - Nome de exibição da zona de mercado
+  - Pode ser qualquer nome desejado
+  - Usado para logging e identificação
+
+- `Position`: Vector [X, Y, Z]
+  - Posição central da zona no mundo do jogo
+  - **X**: Coordenada horizontal (Leste/Oeste)
+  - **Y**: Altitude (altura) - **CRÍTICO**: Deve estar correta pois zona é esférica
+  - **Z**: Coordenada horizontal (Norte/Sul)
+  - Dica: Use DayZeEditor ou coordenadas do mapa para obter posição exata
+
+- `Radius`: Float
+  - Define o tamanho da zona de trader no mundo
+  - Valor em metros
+  - Recomendado: 100-200m para traders normais
+  - Zona é esférica (não cilíndrica), então altitude importa
+
+- `BuyPricePercent`: Float
+  - Controla o preço de COMPRA para todos itens nesta zona específica
+  - Valor padrão: `100.0` (100% do preço calculado)
+  - Cálculo: `Preço Final = Preço Base × (BuyPricePercent / 100)`
+  - Exemplos:
+    - `100.0`: Preço normal
+    - `150.0`: 50% mais caro (trader cobra mais)
+    - `75.0`: 25% de desconto (trader cobra menos)
+    - `200.0`: Dobro do preço
+  - Preço base é calculado do estoque, min/max price e thresholds do item
+
+- `SellPricePercent`: Float
+  - Controla o preço de VENDA (quando jogador vende para trader) nesta zona
+  - Valor padrão: `-1.0` (usa valor global de MarketSettings.json)
+  - Se >= 0, sobrescreve o valor global para esta zona
+  - Cálculo: `Preço de Venda = Preço de Compra × (SellPricePercent / 100)`
+  - Exemplos:
+    - `-1.0`: Usa configuração global (padrão)
+    - `50.0`: Trader paga 50% do preço de compra
+    - `75.0`: Trader paga 75% do preço de compra
+    - `25.0`: Trader paga apenas 25% (trader "avarento")
+
+- `Stock`: Map<String, Integer>
+  - Mapa de itens disponíveis nesta zona e estoque atual
+  - **Key**: ClassName do item (string)
+  - **Value**: Quantidade em estoque (integer)
+  - Funcionalidade:
+    - Define estoque inicial de cada item nesta zona
+    - Pode definir estoque individual por item
+    - `0`: Trader só começa a vender após jogador vender pelo menos 1 unidade
+    - Valor positivo: Estoque inicial disponível
+  - ⚠️ **Importante**: Estoque é específico por zona (zonas diferentes = estoques separados)
+
+**Tipos de Marcadores (se usando sistema de mapa):**
+- `ExpansionMarkerTrader`: Marcador padrão de trader
+- `ExpansionMarkerVehicle`: Marcador de veículos
+- `ExpansionMarkerAircraft`: Marcador de aeronaves
+- `ExpansionMarkerBoat`: Marcador de barcos
+
+**Exemplos Práticos:**
+
+**Exemplo 1: Trader Geral com Preços Normais**
+```json
+{
+    "m_Version": 13,
+    "m_DisplayName": "Green Mountain General Store",
+    "Position": [3728.27, 403.0, 6003.60],
+    "Radius": 150.0,
+    "BuyPricePercent": 100.0,
+    "SellPricePercent": -1.0,
+    "Stock": {
+        "AKM": 5,
+        "M4A1": 3,
+        "Mag_AKM_30Rnd": 20,
+        "Mag_STANAG_30Rnd": 15,
+        "Apple": 50,
+        "BakedBeansCan": 30,
+        "Bandage": 25
+    }
+}
+```
+
+**Exemplo 2: Black Market (Preços Altos, Vende Bem)**
+```json
+{
+    "m_Version": 13,
+    "m_DisplayName": "Black Market",
+    "Position": [5000.0, 10.0, 8000.0],
+    "Radius": 100.0,
+    "BuyPricePercent": 200.0,
+    "SellPricePercent": 75.0,
+    "Stock": {
+        "SVD": 1,
+        "VSS": 1,
+        "ExpansionC4": 2,
+        "RGD5Grenade": 5
+    }
+}
+```
+
+**Exemplo 3: Trader de Desconto (Preços Baixos)**
+```json
+{
+    "m_Version": 13,
+    "m_DisplayName": "Discount Trader",
+    "Position": [7500.0, 5.0, 5500.0],
+    "Radius": 120.0,
+    "BuyPricePercent": 75.0,
+    "SellPricePercent": 40.0,
+    "Stock": {
+        "TacticalShirt_Grey": 10,
+        "CargoPants_Beige": 10,
+        "MilitaryBoots_Black": 8,
+        "PlateCarrierVest": 5
+    }
+}
+```
+
+**Exemplo 4: Trader com Estoque Zero (Player-Driven)**
+```json
+{
+    "m_Version": 13,
+    "m_DisplayName": "Player Market",
+    "Position": [4500.0, 15.0, 6500.0],
+    "Radius": 100.0,
+    "BuyPricePercent": 100.0,
+    "SellPricePercent": 60.0,
+    "Stock": {
+        "AKM": 0,
+        "M4A1": 0,
+        "SVD": 0,
+        "Mag_AKM_30Rnd": 0,
+        "Mag_STANAG_30Rnd": 0
+    }
+}
+```
+*Neste exemplo, trader só vende itens após jogadores venderem para ele primeiro.*
+
+**Exemplo 5: Vehicle Trader**
+```json
+{
+    "m_Version": 13,
+    "m_DisplayName": "Vehicle Dealer",
+    "Position": [6000.0, 8.0, 7000.0],
+    "Radius": 200.0,
+    "BuyPricePercent": 100.0,
+    "SellPricePercent": 50.0,
+    "Stock": {
+        "ExpansionUAZ": 2,
+        "ExpansionVodnik": 1,
+        "ExpansionBus": 1,
+        "ExpansionTractor": 3,
+        "CarRadiator": 10,
+        "CarBattery": 10,
+        "SparkPlug": 15
+    }
+}
+```
+
+**Casos de Uso Avançados:**
+
+**Economia Regional:**
+Crie zonas com preços diferentes para simular economia regional:
+- Zona militar: Armas caras, comida barata
+- Zona rural: Comida cara, ferramentas baratas
+- Zona urbana: Preços balanceados
+
+**Estoque Progressivo:**
+Configure estoque inicial baixo e deixe economia crescer com vendas de jogadores:
+```json
+"Stock": {
+    "AKM": 1,
+    "M4A1": 0,
+    "SVD": 0
+}
+```
+
+**Trader Especializado:**
+Crie traders com estoque focado em categoria específica:
+```json
+"Stock": {
+    "Morphine": 10,
+    "Epinephrine": 8,
+    "Bandage": 30,
+    "BloodBagIV": 5,
+    "SalineBagIV": 10,
+    "Tetracycline": 15
+}
+```
+
+**Dicas Importantes:**
+
+1. **Altitude Correta**: Sempre verifique a altitude (Y) da posição, pois zona é esférica
+2. **Raio Apropriado**: Use raio suficiente para cobrir área de spawn dos NPCs
+3. **Estoque Balanceado**: Não coloque estoque muito alto (causa inflação)
+4. **Preços Regionais**: Use BuyPricePercent para criar variação econômica
+5. **Estoque Zero**: Útil para economia player-driven (jogadores alimentam o mercado)
+6. **Logging**: Use m_DisplayName descritivo para facilitar debug nos logs
+7. **Múltiplas Zonas**: Estoques são independentes entre zonas
+
+**Cálculos de Preço:**
+
+**Exemplo 1: Trader Normal**
+- Preço base do AKM: 50,000
+- BuyPricePercent: 100.0
+- Preço final: 50,000 × (100/100) = **50,000**
+
+**Exemplo 2: Black Market**
+- Preço base do AKM: 50,000
+- BuyPricePercent: 200.0
+- Preço final: 50,000 × (200/100) = **100,000**
+
+**Exemplo 3: Discount Trader**
+- Preço base do AKM: 50,000
+- BuyPricePercent: 75.0
+- Preço final: 50,000 × (75/100) = **37,500**
+
+**Exemplo 4: Venda ao Trader**
+- Preço de compra: 50,000
+- SellPricePercent: 50.0
+- Jogador recebe: 50,000 × (50/100) = **25,000**
+
+##### 8.6. Adicionando NPCs Traders ao Mapa
+
+Para spawnar NPCs traders no mundo, você precisa criar objetos no mapa.
+
+**Método 1: Via DayZeEditor (Recomendado)**
+1. Instale DayZeEditor mod
+2. Entre no servidor com admin
+3. Abra o editor (tecla configurável)
+4. Procure por "ExpansionTrader" + nome do trader
+5. Coloque no mapa e salve
+
+**Método 2: Via init.c**
+
+Adicione no arquivo `mpmissions/dayzOffline.chernarusplus/init.c`:
+
+```c
+void main()
+{
+    // ... código existente ...
+    
+    // Spawn traders
+    GetExpansionSettings().GetMarket().SpawnTraders();
+}
+```
+
+**Método 3: Via mapgrouppos.xml**
+
+Crie arquivo `mpmissions/dayzOffline.chernarusplus/mapgrouppos.xml`:
+
+```xml
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<map>
+    <group name="GreenMountainTraders" pos="3728.27 403.0 6003.60" rpy="0 0 0" a="0">
+        <object name="ExpansionTraderNPCMirek" pos="0 0 0" rpy="0 0 0" />
+        <object name="ExpansionTraderNPCDenis" pos="5 0 0" rpy="0 90 0" />
+        <object name="ExpansionTraderNPCBoris" pos="-5 0 0" rpy="0 -90 0" />
+    </group>
+</map>
+```
+
+##### 8.7. ATMs (Caixas Eletrônicos)
+
+**NPCs ATM Disponíveis:**
+- `ExpansionATM`: ATM padrão
+- `ExpansionATM_1`: Variante 1
+- `ExpansionATM_2`: Variante 2
+
+**Colocando ATMs:**
+
+Mesmo processo dos traders, via editor ou mapgrouppos.xml:
+
+```xml
+<group name="GreenMountainATM" pos="3720.0 403.0 6000.0" rpy="0 0 0" a="0">
+    <object name="ExpansionATM" pos="0 0 0" rpy="0 0 0" />
+</group>
+```
+
+##### 8.8. Estoque Estático vs Dinâmico
+
+**Estoque Dinâmico (Padrão):**
+- Estoque varia conforme compras/vendas
+- Preços flutuam baseado em estoque
+- Mais realista e balanceado
+
+**Estoque Estático:**
+
+Para fazer estoque estático, configure no item:
+
+```json
+{
+    "MaxStockThreshold": -1,
+    "MinStockThreshold": -1
+}
+```
+
+Ou configure todos itens como estáticos em `MarketSettings.json`:
+
+```json
+{
+    "UseStaticStock": 1
+}
+```
+
+##### 8.9. Ferramentas Úteis
+
+**Conversores e Editores:**
+
+1. **DayZeEditor** (GUI Tool)
+   - Editor visual para market, safezones, AI, basebuilding
+   - Link: https://github.com/DayZExpansion/DayZeEditor
+
+2. **CE-Editor** (GUI Tool)
+   - Editor para Expansion Market e DrJones Trader
+   - Por Henrik Lynge
+
+3. **Types To ExpansionMarket Converter**
+   - Converte types.xml para market items
+   - Por Ninjin#0487
+
+4. **Classnames To Expansion Market.json**
+   - Converte lista de classnames para market
+   - Por Buddster124#5168
+
+##### 8.10. Dicas e Boas Práticas
+
+**Balanceamento de Preços:**
+- Armas básicas: 10,000 - 25,000
+- Armas militares: 25,000 - 75,000
+- Armas raras: 75,000 - 150,000
+- Munição: 500 - 5,000 por magazine
+- Comida: 100 - 1,000
+- Médicos: 500 - 5,000
+- Veículos: 100,000 - 500,000
+
+**Balanceamento de Estoque:**
+- Itens comuns: 20-50 estoque
+- Itens raros: 5-10 estoque
+- Itens muito raros: 1-3 estoque
+- Munição: 50-100 estoque
+
+**Organização:**
+- Crie categorias lógicas (Weapons, Ammo, Food, Medical, etc.)
+- Separe traders por especialidade
+- Use múltiplas zonas de trader no mapa
+- Coloque ATMs próximos aos traders
+
+**Safezones:**
+- Raio recomendado: 100-200m para traders
+- Não coloque muito próximo de áreas militares
+- Considere adicionar no BaseBuildingSettings.json como zona de não-construção
+
+**Performance:**
+- Não coloque muitos itens em um único trader (máx 200-300)
+- Use NetworkBatchSize apropriado (10-20)
+- Evite estoque muito alto (causa lag)
+
+**Exemplo de Setup Completo para The LionZ:**
+
+1. Criar categorias: Weapons, Ammo, Clothing, Food, Medical, Tools, Building
+2. Criar 3-4 traders especializados
+3. Definir 2-3 zonas de trader no mapa
+4. Configurar preços balanceados para PvP
+5. Usar estoque dinâmico para economia realista
+6. Adicionar ATMs nas zonas de trader
+7. Proteger zonas com BaseBuildingSettings
+
+**Links Úteis:**
+- Wiki Oficial Market: https://github.com/salutesh/DayZ-Expansion-Scripts/wiki/The-Market-System
+- Configuração de Itens: https://github.com/salutesh/DayZ-Expansion-Scripts/wiki/Market-Settings-Items-&-Categories
+- Configuração de Traders: https://github.com/salutesh/DayZ-Expansion-Scripts/wiki/Market-Settings-Traders
+- Configuração de Zonas: https://github.com/salutesh/DayZ-Expansion-Scripts/wiki/Market-Settings-TraderZones
+    "ShowDistanceUnderQuickMarkers": 1,
+    "ShowNameOnQuickMarkers": 1,
+    "CanCreatePartyMarkers": 1,
     "ShowPartyMemberHUD": 1,
     "ShowHUDMemberBlood": 1,
     "ShowHUDMemberStates": 1,
