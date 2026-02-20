@@ -35,12 +35,11 @@ Do not forget to add attribute act="car", if root class represents moveable vehi
 		<default name="save_events_startup" value="true"/>
 		<default name="save_types_startup" value="true"/>
 	</defaults>
-		<!--BBP...-->
-	<ce folder="BBP_ce">
-		<file name="BBP_Crafted_Types.xml" type="types" />
-		<file name="BBP_Loot_Types.xml" type="types" />
+		<!--MMIO...-->
+	<ce folder="mmio_ce">
+		<file name="mmio_types.xml" type="types" />
 	</ce>
-		<!--End BBP-->
+		<!--End MMIO-->
 		<!--Expansion...-->
 	<ce folder="expansion_ce">
 		<file name="expansion_types.xml" type="types" />
