@@ -2,13 +2,13 @@
     "ConfigVersion": 22,
     "ID": 30,
     "Type": 1,
-    "Title": "Pacote Perdido",
+    "Title": "Airdrop Desviado",
     "Descriptions": [
-        "Um pacote misterioso precisa ser recuperado. O Avião nao conseguiu fazer o Airdrop na localização do Mercado. Este pacote esta em um aeroporto que vc ja conhece!",
-        "Ele parece ser de cor amarela.",
-        ""
+        "Tínhamos um airdrop programado para Green Mountain, mas o avião teve problemas mecânicos e fez um pouso forçado em um aeródromo próximo. O pacote amarelo com suprimentos táticos ficou para trás. Vá até o local, recupere a caixa e traga de volta.",
+        "Procure nos hangares e pista do aeródromo. O pacote é uma caixa amarela grande, impossível de não ver. Cuidado com saqueadores e infectados na área. Recupere o airdrop e retorne.",
+        "Pacote recuperado com sucesso! O equipamento tático estava intacto. Como recompensa pelo resgate, você pode ficar com o colete plate carrier e acessórios. Excelente trabalho!"
     ],
-    "ObjectiveText": "Procure o Avião",
+    "ObjectiveText": "Recupere o Pacote Amarelo",
     "FollowUpQuest": -1,
     "Repeatable": 1,
     "IsDailyQuest": 0,

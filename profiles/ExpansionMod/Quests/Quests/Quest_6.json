@@ -2,13 +2,13 @@
     "ConfigVersion": 22,
     "ID": 6,
     "Type": 1,
-    "Title": "Elimine os Bandidos no Vilarejo",
+    "Title": "Operação: Rota Segura",
     "Descriptions": [
-        "Precisamos eliminar bandidos em uma vila proximo a Green Mountain. É preciso manter o mercado seguro.",
-        "PLACEHOLDER",
-        "PLACEHOLDER"
+        "Bandidos estão aterrorizando comerciantes nas proximidades da Green Mountain. O mercado está em risco e precisamos de alguém corajoso para eliminar essa ameaça. Limpe o vilarejo e garanta a segurança das rotas comerciais. Recompensa: Dinheiro Vivo!",
+        "Os bandidos foram avistados na vila próxima à torre de transmissão. Eles estão armados e perigosos. Elimine todos os hostis e retorne para receber sua recompensa.",
+        "Missão concluída! O vilarejo está seguro e o mercado da Green Mountain pode operar sem medo. Sua recompensa está garantida."
     ],
-    "ObjectiveText": "Elimine os Bandidos",
+    "ObjectiveText": "Elimine os Bandidos no Vilarejo",
     "FollowUpQuest": -1,
     "Repeatable": 0,
     "IsDailyQuest": 0,

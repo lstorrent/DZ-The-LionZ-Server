@@ -2,13 +2,13 @@
     "ConfigVersion": 22,
     "ID": 28,
     "Type": 1,
-    "Title": "A Fazenda Roubada",
+    "Title": "Fazenda Roubada",
     "Descriptions": [
-        "O Mercado da Green Mountain é generoso e as vezes praticamos caridade!",
-        "",
-        ""
+        "Uma fazenda local foi invadida por bandidos armados que expulsaram os moradores e estão saqueando tudo. Os fazendeiros pediram ajuda ao mercado de Green Mountain. Liberte a propriedade eliminando todos os invasores e receba equipamento militar como recompensa.",
+        "Os bandidos estão entrincheirados na fazenda. Aproxime-se com cautela, use cobertura e elimine todos os hostis. A família que vive lá está contando com você para recuperar seu lar.",
+        "Missão cumprida! A fazenda foi libertada e os bandidos eliminados. Os fazendeiros estão eternamente gratos. Como recompensa, você recebeu um conjunto completo de equipamento tático TTsKO. Bom trabalho, sobrevivente!"
     ],
-    "ObjectiveText": "Libere a fazenda dos Bandidos.",
+    "ObjectiveText": "Elimine os Bandidos na Fazenda",
     "FollowUpQuest": -1,
     "Repeatable": 1,
     "IsDailyQuest": 0,

@@ -4,11 +4,11 @@
     "Type": 1,
     "Title": "Carga Recuperada",
     "Descriptions": [
-        "Um avião caiu nas proximidades de Balota. Precisamos que recupere uma carga importante.",
-        "Não me pergunte o que é.",
-        "Apenas recupere!"
+        "Um avião de transporte militar caiu próximo ao aeródromo de Balota. A carga que transportava é extremamente valiosa e confidencial. Recupere a maleta preta dos destroços antes que outros sobreviventes a encontrem. Não faça perguntas, apenas traga de volta.",
+        "Localize os destroços do avião em Balota. A área pode estar infestada de infectados ou saqueadores. Encontre a maleta preta e retorne imediatamente. Discrição é essencial.",
+        "Excelente trabalho. A carga foi recuperada sem comprometer a operação. Seu profissionalismo será recompensado com equipamento tático de alto nível. Não mencione isso a ninguém."
     ],
-    "ObjectiveText": "Recuperar carga misteriosa.",
+    "ObjectiveText": "Recupere a carga dos Destroços",
     "FollowUpQuest": -1,
     "Repeatable": 1,
     "IsDailyQuest": 0,

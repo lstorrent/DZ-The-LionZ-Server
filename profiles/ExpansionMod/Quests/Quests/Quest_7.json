@@ -2,13 +2,13 @@
     "ConfigVersion": 22,
     "ID": 7,
     "Type": 1,
-    "Title": "Infectados",
+    "Title": "Controle da Infecção",
     "Descriptions": [
-        "PLACEHOLDER",
-        "PLACEHOLDER",
-        "PLACEHOLDER"
+        "A população de infectados está crescendo descontroladamente nas áreas urbanas. Precisamos de sobreviventes experientes para reduzir os números e tornar as cidades mais seguras. Elimine 100 infectados civis e ajude a comunidade a respirar aliviada.",
+        "Continue caçando os infectados. Cada morto-vivo eliminado é uma vida que pode ser salva no futuro. Mantenha distância, economize munição e não se deixe cercar. Progresso atual: infectados eliminados.",
+        "Excelente trabalho, sobrevivente! Você eliminou 100 infectados e tornou Chernarus um pouco mais seguro. A comunidade agradece sua coragem e dedicação. Sua recompensa semanal está garantida."
     ],
-    "ObjectiveText": "Elimine 100 civis Infectados.",
+    "ObjectiveText": "Elimine 100 Infectados Civis",
     "FollowUpQuest": -1,
     "Repeatable": 0,
     "IsDailyQuest": 0,

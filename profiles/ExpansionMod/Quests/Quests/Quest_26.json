@@ -4,11 +4,11 @@
     "Type": 1,
     "Title": "Recuperar Radio Militar",
     "Descriptions": [
-        "Briefing: Um rádio militar foi roubado de nossa base. Temos informações que ele se encontra nas proximidades da cidade de Rogovo. Encontre o rádio e traga de volta!",
+        "Um rádio militar foi roubado de nossa base. Temos informações que ele se encontra nas proximidades da cidade de Rogovo. Encontre o rádio e traga de volta!",
         "Ainda procurando o rádio? Ele deve estar perto de Rogovo. Tome cuidado com forças hostis!",
         "Você encontrou o rádio! Excelente trabalho, sobrevivente. Aqui está sua recompensa."
     ],
-    "ObjectiveText": "Encontre o Rádio.",
+    "ObjectiveText": "Encontre o Rádio",
     "FollowUpQuest": -1,
     "Repeatable": 1,
     "IsDailyQuest": 0,

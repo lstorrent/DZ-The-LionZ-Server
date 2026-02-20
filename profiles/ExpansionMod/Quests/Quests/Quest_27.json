@@ -8,7 +8,7 @@
         "Ainda procurando a placa-mãe? Ela deve estar na Base de Zeleno. Tome cuidado com forças hostis!",
         "Você encontrou a placa-mãe! Excelente trabalho, sobrevivente. Aqui está sua recompensa."
     ],
-    "ObjectiveText": "Procure o uma placa mae de computador.",
+    "ObjectiveText": "Procure o uma placa mae de computador",
     "FollowUpQuest": -1,
     "Repeatable": 1,
     "IsDailyQuest": 0,
