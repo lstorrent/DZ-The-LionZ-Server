@@ -4,11 +4,11 @@
     "Type": 1,
     "Title": "Loot",
     "Descriptions": [
-        "PLACEHOLDER",
-        "PLACEHOLDER",
-        "PLACEHOLDER"
+        "No mercado da Green Mountain, ex-comerciantes enterraram seus pertences quando o apocalipse começou. Consegui mapear alguns desses esconderijos. Pegue uma pá e desenterre o que encontrar. O que você achar é seu.",
+        "Está esperando o quê? Pegue a pá e vá cavar! Esses suprimentos não vão se desenterrar sozinhos.",
+        "Bom trabalho, sobrevivente! Você encontrou o que estava enterrado. Guarde bem esses suprimentos. Volte amanhã, sempre descubro novos locais."
     ],
-    "ObjectiveText": "Find the treasure.",
+    "ObjectiveText": "Procure o Loot",
     "FollowUpQuest": -1,
     "Repeatable": 1,
     "IsDailyQuest": 1,

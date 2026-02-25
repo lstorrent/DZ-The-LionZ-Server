@@ -1,0 +1,28 @@
+{
+    "ConfigVersion": 28,
+    "ID": 2,
+    "ObjectiveType": 6,
+    "ObjectiveText": "",
+    "TimeLimit": -1,
+    "Active": 1,
+    "ShowDistance": 0,
+    "ContainerName": "ExpansionQuestSeaChest",
+    "DigInStash": 1,
+    "MarkerName": "",
+    "MarkerVisibility": 4,
+    "Positions": [
+        [3449.711182, 196.535690, 13195.477539]
+    ],
+    "LootItemsAmount": 8,
+    "MaxDistance": 10.0,
+    "Loot": [
+        {"Name": "SVD", "Chance": 1.0, "Attachments": [{"Name": "PSO1Optic"}], "QuantityPercent": -1.0, "Max": 1, "Min": 1, "Variants": []},
+        {"Name": "Mag_SVD_10Rnd", "Chance": 1.0, "Attachments": [], "QuantityPercent": -1.0, "Max": 1, "Min": 1, "Variants": []},
+        {"Name": "AK_Suppressor", "Chance": 1.0, "Attachments": [], "QuantityPercent": -1.0, "Max": 1, "Min": 1, "Variants": []},
+        {"Name": "PSO6Optic", "Chance": 1.0, "Attachments": [], "QuantityPercent": -1.0, "Max": 1, "Min": 1, "Variants": []},
+        {"Name": "Battery9V", "Chance": 1.0, "Attachments": [], "QuantityPercent": -1.0, "Max": 2, "Min": 2, "Variants": []},
+        {"Name": "StarlightOptic", "Chance": 1.0, "Attachments": [], "QuantityPercent": -1.0, "Max": 1, "Min": 1, "Variants": []},
+        {"Name": "Ammo_762x54", "Chance": 1.0, "Attachments": [], "QuantityPercent": -1.0, "Max": 3, "Min": 2, "Variants": []},
+        {"Name": "ExpansionBanknoteUSD", "Chance": 1.0, "Attachments": [], "QuantityPercent": -1.0, "Max": 250, "Min": 250, "Variants": []}
+    ]
+}

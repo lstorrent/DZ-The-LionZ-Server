@@ -4,14 +4,14 @@
     "Icon": "Deliver",
     "Color": "FBFCFEFF",
     "IsExchange": 0,
-    "InitStockPercent": 25.0,
+    "InitStockPercent": 20.0,
     "Items": [
         {
             "ClassName": "fal",
-            "MaxPriceThreshold": 85000,
-            "MinPriceThreshold": 65000,
-            "SellPricePercent": -1.0,
-            "MaxStockThreshold": 3,
+            "MaxPriceThreshold": 45135,
+            "MinPriceThreshold": 33850,
+            "SellPricePercent": 12.0,
+            "MaxStockThreshold": 4,
             "MinStockThreshold": 1,
             "QuantityPercent": -1,
             "SpawnAttachments": [
@@ -22,10 +22,10 @@
         },
         {
             "ClassName": "akm",
-            "MaxPriceThreshold": 75000,
-            "MinPriceThreshold": 55000,
-            "SellPricePercent": -1.0,
-            "MaxStockThreshold": 5,
+            "MaxPriceThreshold": 50355,
+            "MinPriceThreshold": 37765,
+            "SellPricePercent": 12.0,
+            "MaxStockThreshold": 4,
             "MinStockThreshold": 1,
             "QuantityPercent": -1,
             "SpawnAttachments": [
@@ -37,10 +37,10 @@
         },
         {
             "ClassName": "ak101",
-            "MaxPriceThreshold": 65000,
-            "MinPriceThreshold": 45000,
-            "SellPricePercent": -1.0,
-            "MaxStockThreshold": 4,
+            "MaxPriceThreshold": 22750,
+            "MinPriceThreshold": 17060,
+            "SellPricePercent": 12.0,
+            "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityPercent": -1,
             "SpawnAttachments": [
@@ -52,9 +52,9 @@
         },
         {
             "ClassName": "ak74",
-            "MaxPriceThreshold": 70000,
-            "MinPriceThreshold": 50000,
-            "SellPricePercent": -1.0,
+            "MaxPriceThreshold": 44550,
+            "MinPriceThreshold": 33410,
+            "SellPricePercent": 12.0,
             "MaxStockThreshold": 4,
             "MinStockThreshold": 1,
             "QuantityPercent": -1,
@@ -67,10 +67,10 @@
         },
         {
             "ClassName": "m4a1",
-            "MaxPriceThreshold": 95000,
-            "MinPriceThreshold": 75000,
-            "SellPricePercent": -1.0,
-            "MaxStockThreshold": 2,
+            "MaxPriceThreshold": 12240,
+            "MinPriceThreshold": 9180,
+            "SellPricePercent": 12.0,
+            "MaxStockThreshold": 6,
             "MinStockThreshold": 1,
             "QuantityPercent": -1,
             "SpawnAttachments": [
@@ -83,10 +83,10 @@
         },
         {
             "ClassName": "m16a2",
-            "MaxPriceThreshold": 80000,
-            "MinPriceThreshold": 60000,
-            "SellPricePercent": -1.0,
-            "MaxStockThreshold": 3,
+            "MaxPriceThreshold": 22750,
+            "MinPriceThreshold": 17060,
+            "SellPricePercent": 12.0,
+            "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityPercent": -1,
             "SpawnAttachments": [
@@ -96,10 +96,10 @@
         },
         {
             "ClassName": "famas",
-            "MaxPriceThreshold": 72000,
-            "MinPriceThreshold": 52000,
-            "SellPricePercent": -1.0,
-            "MaxStockThreshold": 3,
+            "MaxPriceThreshold": 22750,
+            "MinPriceThreshold": 17060,
+            "SellPricePercent": 12.0,
+            "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityPercent": -1,
             "SpawnAttachments": [
@@ -109,10 +109,10 @@
         },
         {
             "ClassName": "aug",
-            "MaxPriceThreshold": 88000,
-            "MinPriceThreshold": 68000,
-            "SellPricePercent": -1.0,
-            "MaxStockThreshold": 2,
+            "MaxPriceThreshold": 12240,
+            "MinPriceThreshold": 9180,
+            "SellPricePercent": 12.0,
+            "MaxStockThreshold": 6,
             "MinStockThreshold": 1,
             "QuantityPercent": -1,
             "SpawnAttachments": [
@@ -122,10 +122,10 @@
         },
         {
             "ClassName": "augshort",
-            "MaxPriceThreshold": 78000,
-            "MinPriceThreshold": 58000,
-            "SellPricePercent": -1.0,
-            "MaxStockThreshold": 3,
+            "MaxPriceThreshold": 22750,
+            "MinPriceThreshold": 17060,
+            "SellPricePercent": 12.0,
+            "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityPercent": -1,
             "SpawnAttachments": [
@@ -135,10 +135,10 @@
         },
         {
             "ClassName": "expansion_m16",
-            "MaxPriceThreshold": 82000,
-            "MinPriceThreshold": 62000,
-            "SellPricePercent": -1.0,
-            "MaxStockThreshold": 3,
+            "MaxPriceThreshold": 22750,
+            "MinPriceThreshold": 17060,
+            "SellPricePercent": 12.0,
+            "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityPercent": -1,
             "SpawnAttachments": [
@@ -148,10 +148,10 @@
         },
         {
             "ClassName": "expansion_g36",
-            "MaxPriceThreshold": 92000,
-            "MinPriceThreshold": 72000,
-            "SellPricePercent": -1.0,
-            "MaxStockThreshold": 2,
+            "MaxPriceThreshold": 12240,
+            "MinPriceThreshold": 9180,
+            "SellPricePercent": 12.0,
+            "MaxStockThreshold": 6,
             "MinStockThreshold": 1,
             "QuantityPercent": -1,
             "SpawnAttachments": [

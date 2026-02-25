@@ -1,0 +1,16 @@
+{
+    "ConfigVersion": 28,
+    "ID": 2,
+    "ObjectiveType": 9,
+    "ObjectiveText": "",
+    "TimeLimit": 180,
+    "Active": 1,
+    "Position": [7410.846680, 217.285995, 5175.179688],
+    "MaxDistance": 20.0,
+    "MarkerName": "",
+    "ShowDistance": 0,
+    "CanLootAI": 0,
+    "NPCLoadoutFile": "SurvivorLoadout",
+    "NPCClassName": "eAI_SurvivorM_Niki",
+    "NPCName": "Saix"
+}

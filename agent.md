@@ -550,6 +550,281 @@ Arquivos de objetivos podem ter qualquer nome com extensão `.json` na pasta `Ob
 - Travel Objective: https://github.com/salutesh/DayZ-Expansion-Scripts/wiki/Travel-Objective-Configuration
 - Treasure Hunt Objective: https://github.com/salutesh/DayZ-Expansion-Scripts/wiki/Treasure-Hunt-Objective-Configuration
 
+##### 4.2.1. Action Objective - Lista Completa de Actions
+
+**Estrutura do Action Objective:**
+```json
+{
+    "ConfigVersion": 28,
+    "ID": 1,
+    "ObjectiveType": 10,
+    "ObjectiveText": "Descrição do objetivo",
+    "TimeLimit": -1,
+    "Active": 1,
+    "ActionNames": ["ActionName"],
+    "AllowedClassNames": [],
+    "ExcludedClassNames": [],
+    "ExecutionAmount": 1
+}
+```
+
+**Parâmetros:**
+- `ActionNames`: Array com nome(s) da(s) ação(ões) que contam para o objetivo
+- `AllowedClassNames`: Array de itens específicos permitidos (vazio = qualquer item)
+- `ExcludedClassNames`: Array de itens excluídos
+- `ExecutionAmount`: Quantas vezes a ação deve ser executada
+
+**📋 ACTIONS DO DAYZ POR CATEGORIA:**
+
+**🩹 MÉDICO / PRIMEIROS SOCORROS:**
+- `ActionBandageSelf` / `ActionBandageTarget` - Enfaixar
+- `ActionSplintSelf` / `ActionSplintTarget` - Aplicar tala
+- `ActionDisinfectSelf` / `ActionDisinfectTarget` - Desinfetar feridas
+- `ActionSewSelf` / `ActionSewTarget` - Costurar feridas
+- `ActionBurnSewSelf` / `ActionBurnSewTarget` - Cauterizar feridas
+- `ActionInjectSelf` / `ActionInjectTarget` - Injetar medicamento
+- `ActionInjectEpinephrineSelf` / `ActionInjectEpinephrineTarget` - Injetar epinefrina
+- `ActionInjectMorphineSelf` / `ActionInjectMorphineTarget` - Injetar morfina
+- `ActionGiveBloodSelf` / `ActionGiveBloodTarget` - Transfusão de sangue
+- `ActionGiveSalineSelf` / `ActionGiveSalineTarget` - Dar soro
+- `ActionCollectBloodSelf` / `ActionCollectBloodTarget` - Coletar sangue
+- `ActionTestBloodSelf` / `ActionTestBloodTarget` - Testar tipo sanguíneo
+- `ActionCheckPulse` - Checar pulso
+- `ActionCPR` - Fazer RCP
+- `ActionDefibrilateSelf` / `ActionDefibrilateTarget` - Usar desfibrilador
+- `ActionMeasureTemperatureSelf` / `ActionMeasureTemperatureTarget` - Medir temperatura
+
+**💊 CONSUMIR MEDICAMENTOS:**
+- `ActionBiteCharcoalTablets` / `ActionEatCharcoalTablets` - Carvão ativado
+- `ActionBitePainkillerTablets` / `ActionEatPainkillerTablets` - Analgésico
+- `ActionBitePurificationTablets` / `ActionEatPurificationTablets` - Purificador
+- `ActionBiteTetracyclineAntibiotics` / `ActionEatTetracyclineAntibiotics` - Antibiótico
+- `ActionBiteVitaminBottle` / `ActionEatVitaminBottle` - Vitamina
+
+**🍖 COMIDA E BEBIDA:**
+- `ActionEat` - Comer (genérico)
+- `ActionEatCan` - Comer lata
+- `ActionEatMeat` - Comer carne
+- `ActionEatFruit` - Comer fruta
+- `ActionEatSmall` - Comer item pequeno
+- `ActionDrink` - Beber
+- `ActionDrinkCan` - Beber de lata
+- `ActionDrinkAlcohol` - Beber álcool
+- `ActionDrinkCookingPot` - Beber de panela
+- `ActionDrinkPondContinuous` - Beber de lagoa
+- `ActionDrinkWellContinuous` - Beber de poço
+- `ActionTakeABite` / `ActionTakeABiteCan` - Dar mordida
+- `ActionTakeASip` - Dar gole
+- `ActionCookOnStick` - Cozinhar no espeto
+
+**🏗️ CONSTRUÇÃO:**
+- `ActionBuildPart` - Construir parte
+- `ActionDismantlePart` - Desmontar parte
+- `ActionDestroyPart` - Destruir parte
+- `ActionRepairPart` - Reparar parte
+- `ActionAttachToConstruction` - Anexar à construção
+- `ActionBuildShelter` - Construir abrigo
+- `ActionDeconstructShelter` - Desconstruir abrigo
+- `ActionRepairShelter` - Reparar abrigo
+- `ActionBuildOvenCB` - Construir forno
+- `ActionDismantleOvenCB` - Desmontar forno
+- `ActionBuildStoneCircleCB` - Construir círculo de pedras
+- `ActionMountBarbedWire` - Montar arame farpado
+- `ActionUnmountBarbedWire` - Desmontar arame farpado
+
+**🔥 FOGUEIRA:**
+- `ActionIgniteFireplaceByAir` - Acender fogueira
+- `ActionExtinguishFireplaceByExtinguisher` - Apagar com extintor
+- `ActionExtinguishFireplaceByLiquid` - Apagar com líquido
+- `ActionCreateIndoorFireplace` - Criar fogueira indoor
+- `ActionPlaceFireplaceIndoor` - Colocar fogueira indoor
+- `ActionPlaceFireplaceIntoBarrel` - Colocar em barril
+- `ActionTurnOnChemlight` - Ligar chemlight
+- `ActionTurnOnHeatpack` - Ativar heatpack
+
+**🌳 COLETA DE RECURSOS:**
+- `ActionMineBush` / `ActionMineBushByHand` - Coletar gravetos
+- `ActionMineTree` - Cortar árvore
+- `ActionMineTreeBark` - Tirar casca
+- `ActionMineRock` / `ActionMineRock1H` - Minerar pedra
+- `ActionDigWorms` - Cavar minhocas
+- `ActionPickBerry` - Colher frutas
+- `ActionSkinning` - Esfolar animal
+- `ActionFishingNew` - Pescar
+
+**🌱 AGRICULTURA:**
+- `ActionPlantSeed` - Plantar semente
+- `ActionWaterPlant` / `ActionWaterGardenSlot` - Regar
+- `ActionFertilizeSlot` - Fertilizar
+- `ActionDisinfectPlant` - Desinfetar planta
+- `ActionHarvestCrops` - Colher plantação
+- `ActionRemovePlant` - Remover planta
+- `ActionDigGardenPlot` - Cavar canteiro
+- `ActionDismantleGardenPlot` - Desmontar canteiro
+
+**🔧 CRAFTING:**
+- `ActionCraft` - Craftar
+- `ActionWorldCraft` - Craftar no mundo
+- `ActionSawPlanks` - Serrar tábuas
+- `ActionBreakLongWoodenStick` - Quebrar graveto
+- `ActionSortAmmoPile` - Organizar munição
+
+**🚗 VEÍCULOS:**
+- `ActionCarDoors` / `ActionCarDoorsOutside` - Porta de carro
+- `ActionOpenCarDoors` / `ActionCloseCarDoors` - Abrir/fechar porta
+- `ActionLockDoors` / `ActionUnlockDoors` - Trancar/destrancar
+- `ActionStartEngine` / `ActionStopEngine` - Ligar/desligar motor
+- `ActionSwitchSeats` - Trocar assento
+- `ActionGetInTransport` - Entrar em veículo
+- `ActionFillFuel` - Abastecer
+- `ActionFillOil` - Adicionar óleo
+- `ActionFillCoolant` - Adicionar líquido arrefecimento
+- `ActionFillBrakes` - Adicionar fluido freio
+- `ActionRepairCarPart` - Reparar peça
+- `ActionRepairCarEngine` - Reparar motor
+- `ActionRepairCarChassis` - Reparar chassi
+- `ActionAttachWheels` - Anexar rodas
+- `ActionInsertSparkplug` - Inserir vela
+- `ActionSwitchLights` - Ligar/desligar faróis
+
+**🔒 SEGURANÇA:**
+- `ActionHandcuffTarget` - Algemar
+- `ActionRestrainSelf` / `ActionRestrainTarget` - Amarrar
+- `ActionUnrestrainSelf` / `ActionUnrestrainTarget` - Desamarrar
+- `ActionGagSelf` / `ActionGagTarget` - Amordaçar
+- `ActionUngagSelf` / `ActionUngagTarget` - Desamordaçar
+- `ActionDestroyCombinationLock` - Destruir cadeado
+- `ActionDialCombinationLockCB` - Discar código
+
+**🚪 PORTAS E CONTAINERS:**
+- `ActionOpenDoors` / `ActionCloseDoors` - Portas
+- `ActionOpenFence` / `ActionCloseFence` - Cerca
+- `ActionOpenBarrel` / `ActionCloseBarrel` - Barril
+- `ActionLockedDoors` - Tentar porta trancada
+
+**🎒 ITENS:**
+- `ActionDropItem` - Soltar item
+- `ActionTakeItem` / `ActionTakeItemToHands` - Pegar item
+- `ActionSwapItemToHands` - Trocar para mãos
+- `ActionDeployObject` - Colocar objeto
+- `ActionPlaceObject` / `ActionPlaceOnGround` - Posicionar
+- `ActionFoldObject` / `ActionUnfoldEntity` - Dobrar/desdobrar
+- `ActionUnpackBox` - Desempacotar
+
+**🔦 ILUMINAÇÃO:**
+- `ActionTurnOnHeadtorch` / `ActionTurnOffHeadtorch` - Lanterna cabeça
+- `ActionTurnOnHelmetFlashlight` / `ActionTurnOffHelmetFlashlight` - Luz capacete
+- `ActionTurnOnWeaponFlashlight` / `ActionTurnOffWeaponFlashlight` - Lanterna arma
+- `ActionTurnOnWhileInHands` / `ActionTurnOffWhileInHands` - Ligar/desligar nas mãos
+- `ActionSwitchLights` - Alternar luzes
+
+**🔋 ENERGIA:**
+- `ActionTurnOnPowerGenerator` / `ActionTurnOffPowerGenerator` - Gerador
+- `ActionFillGeneratorTank` - Abastecer gerador
+- `ActionAttachPowerSourceToPanel` - Conectar energia
+- `ActionPlugIn` / `ActionPullOutPlug` - Conectar/desconectar
+- `ActionMeasureBattery` - Medir bateria
+
+**📻 COMUNICAÇÃO:**
+- `ActionTuneFrequencyCB` - Sintonizar frequência
+- `ActionTuneRadioStationCB` - Sintonizar rádio
+- `ActionTurnOnTransmitterCB` / `ActionTurnOffTransmitterCB` - Transmissor
+- `ActionRaiseMegaphoneCB` - Levantar megafone
+
+**🔭 ÓTICA:**
+- `ActionViewBinoculars` - Ver binóculos
+- `ActionViewOptics` - Ver mira
+- `ActionViewCompass` - Ver bússola
+- `ActionUseRangefinder` - Usar telêmetro
+- `ActionToggleNVG` - Alternar visão noturna
+- `ActionZoomIn` / `ActionZoomOut` - Zoom
+
+**🏴 BANDEIRAS:**
+- `ActionRaiseFlag` / `ActionLowerFlag` - Levantar/baixar bandeira
+- `ActionManipulateFlagCB` - Manipular bandeira
+
+**🧥 ROUPAS:**
+- `ActionStripCarrierVest` - Remover colete
+- `ActionShaveSelf` / `ActionShaveTarget` - Barbear
+- `ActionCoverHeadSelf` / `ActionCoverHeadTarget` - Cobrir cabeça
+- `ActionUncoverHeadSelf` / `ActionUncoverHeadTarget` - Descobrir cabeça
+- `ActionFoldBandanaToHead` / `ActionFoldBandanaToMask` - Dobrar bandana
+- `ActionWringClothes` - Torcer roupas
+
+**🧼 HIGIENE:**
+- `ActionWashHandsWater` - Lavar mãos
+- `ActionWashHandsWell` - Lavar mãos no poço
+
+**💀 CORPO:**
+- `ActionBuryBody` - Enterrar corpo
+- `ActionBuryAshesCB` - Enterrar cinzas
+- `ActionPullBodyFromTransport` - Puxar corpo
+
+**🏕️ TENDAS:**
+- `ActionToggleTentOpen` - Abrir/fechar tenda
+- `ActionPackTentCB` / `ActionRepackTent` - Empacotar tenda
+- `ActionRepairTent` / `ActionRepairTentPart` - Reparar tenda
+
+**🪜 ESCADAS:**
+- `ActionEnterLadder` / `ActionExitLadder` - Entrar/sair escada
+
+**🔫 ARMAS:**
+- `ActionLoadMagazine` / `ActionLoadMagazineQuick` - Carregar magazine
+- `ActionEmptyMagazine` - Esvaziar magazine
+
+**💧 LÍQUIDOS:**
+- `ActionFillBottleBase` - Encher garrafa
+- `ActionEmptyBottleBase` - Esvaziar garrafa
+- `ActionEmptyCookingPot` - Esvaziar panela
+- `ActionTransferLiquid` - Transferir líquido
+
+**🪤 ARMADILHAS:**
+- `ActionActivateTrap` - Ativar armadilha
+- `ActionClapBearTrapWithThisItem` - Desarmar armadilha
+
+**📄 LEITURA:**
+- `ActionReadPaper` / `ActionWritePaper` - Ler/escrever papel
+- `ActionUnfoldMapCB` - Desdobrar mapa
+
+**💡 EXEMPLOS DE USO:**
+
+```json
+// Comer 3 latas de comida
+{
+    "ActionNames": ["ActionEatCan"],
+    "AllowedClassNames": [],
+    "ExecutionAmount": 3
+}
+
+// Plantar 5 sementes de abóbora
+{
+    "ActionNames": ["ActionPlantSeed"],
+    "AllowedClassNames": ["PumpkinSeeds"],
+    "ExecutionAmount": 5
+}
+
+// Reparar 2 peças de carro
+{
+    "ActionNames": ["ActionRepairCarPart"],
+    "AllowedClassNames": [],
+    "ExecutionAmount": 2
+}
+
+// Pescar 10 vezes
+{
+    "ActionNames": ["ActionFishingNew"],
+    "AllowedClassNames": [],
+    "ExecutionAmount": 10
+}
+
+// Construir 1 parte de base
+{
+    "ActionNames": ["ActionBuildPart"],
+    "AllowedClassNames": [],
+    "ExecutionAmount": 1
+}
+```
+
 ##### 4.3. Quest NPC Configuration
 
 Arquivos de NPC podem ter qualquer nome com extensão `.json` na pasta `NPCs/`.

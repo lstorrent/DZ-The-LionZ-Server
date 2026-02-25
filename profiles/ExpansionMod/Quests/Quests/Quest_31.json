@@ -1,0 +1,54 @@
+{
+    "ConfigVersion": 22,
+    "ID": 31,
+    "Type": 1,
+    "Title": "Espólio Militar",
+    "Descriptions": [
+        "Antes da grande revolução, ex-combatentes da guerra russa esconderam seu poderio bélico em locais estratégicos. Esses veteranos sabiam que tempos sombrios viriam e enterraram armamento pesado para se proteger do caos. Consegui informações sobre alguns desses esconderijos. Este parece que foi enterrado proximo de um estacionamento em Novaya Petrovka nas proximidades do hospital. Pegue uma pá e desenterre o arsenal que eles deixaram para trás.",
+        "O que está esperando? Esses veteranos russos não esconderam essas armas à toa. Vá cavar antes que outro sobrevivente encontre o carro vermelho!",
+        "Impressionante! Você desenterrou equipamento militar de verdadeiros combatentes. Esse arsenal russo vai te manter vivo por um bom tempo. Volte amanhã, sempre há mais esconderijos para descobrir."
+    ],
+    "ObjectiveText": "Procurar e Desenterrar",
+    "FollowUpQuest": -1,
+    "Repeatable": 0,
+    "IsDailyQuest": 0,
+    "IsWeeklyQuest": 0,
+    "CancelQuestOnPlayerDeath": 0,
+    "Autocomplete": 1,
+    "IsGroupQuest": 0,
+    "ObjectSetFileName": "",
+    "QuestItems": [],
+    "Rewards": [],
+    "NeedToSelectReward": 0,
+    "RandomReward": 0,
+    "RandomRewardAmount": -1,
+    "RewardsForGroupOwnerOnly": 1,
+    "RewardBehavior": 0,
+    "QuestGiverIDs": [
+        3
+    ],
+    "QuestTurnInIDs": [
+        3
+    ],
+    "IsAchievement": 0,
+    "Objectives": [
+        {
+            "ConfigVersion": 28,
+            "ID": 2,
+            "ObjectiveType": 6
+        }
+    ],
+    "QuestColor": 0,
+    "ReputationReward": 0,
+    "ReputationRequirement": -1,
+    "PreQuestIDs": [],
+    "RequiredFaction": "",
+    "FactionReward": "",
+    "PlayerNeedQuestItems": 1,
+    "DeleteQuestItems": 1,
+    "SequentialObjectives": 1,
+    "FactionReputationRequirements": {},
+    "FactionReputationRewards": {},
+    "SuppressQuestLogOnCompetion": 0,
+    "Active": 1
+}

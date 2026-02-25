@@ -13,11 +13,7 @@
     "DisplayCurrencyName": "",
     "UseCategoryOrder": 0,
     "Categories": [
-        "Drinks",
-        "Food",
-        "Fruit_And_Vegetables",
-        "Meat",
-        "Fish"
+        "hard_food"
     ],
     "Items": {}
 }

@@ -16,11 +16,9 @@
         "Gardening",
         "Tools",
         "Supplies",
-        "Locks",
         "Containers",
         "Tents",
-        "Furnishings",
-        "Flags"
+        "Furnishings"
     ],
     "Items": {}
 }

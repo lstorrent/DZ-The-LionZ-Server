@@ -1042,7 +1042,7 @@
         </children>
     </event>
     <event name="VehicleBoat">
-        <nominal>22</nominal>
+        <nominal>6</nominal>
         <min>18</min>
         <max>24</max>
         <lifetime>600</lifetime>
@@ -1062,7 +1062,7 @@
         </children>
     </event>
     <event name="VehicleCivilianSedan">
-        <nominal>8</nominal>
+        <nominal>2</nominal>
         <min>5</min>
         <max>11</max>
         <lifetime>300</lifetime>
@@ -1081,7 +1081,7 @@
         </children>
     </event>
     <event name="VehicleHatchback02">
-        <nominal>8</nominal>
+        <nominal>2</nominal>
         <min>5</min>
         <max>11</max>
         <lifetime>300</lifetime>
@@ -1100,7 +1100,7 @@
         </children>
     </event>
     <event name="VehicleOffroad02">
-        <nominal>3</nominal>
+        <nominal>1</nominal>
         <min>2</min>
         <max>3</max>
         <lifetime>300</lifetime>
@@ -1117,7 +1117,7 @@
         </children>
     </event>
     <event name="VehicleOffroadHatchback">
-        <nominal>8</nominal>
+        <nominal>2</nominal>
         <min>5</min>
         <max>11</max>
         <lifetime>300</lifetime>
@@ -1136,7 +1136,7 @@
         </children>
     </event>
     <event name="VehicleSedan02">
-        <nominal>8</nominal>
+        <nominal>2</nominal>
         <min>5</min>
         <max>11</max>
         <lifetime>300</lifetime>
@@ -1155,7 +1155,7 @@
         </children>
     </event>
     <event name="VehicleTruck01">
-        <nominal>8</nominal>
+        <nominal>4</nominal>
         <min>5</min>
         <max>11</max>
         <lifetime>300</lifetime>

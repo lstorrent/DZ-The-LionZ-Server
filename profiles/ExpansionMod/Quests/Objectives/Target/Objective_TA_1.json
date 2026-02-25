@@ -2,15 +2,11 @@
     "ConfigVersion": 28,
     "ID": 1,
     "ObjectiveType": 2,
-    "ObjectiveText": "Kill 10 Infected with a sledgehammer",
+    "ObjectiveText": "Mate 10 infectados com a Marreta do Steve",
     "TimeLimit": -1,
     "Active": 1,
-    "Position": [
-        2596.699951171875,
-        306.1000061035156,
-        6378.47021484375
-    ],
-    "MaxDistance": 150.0,
+    "Position": [2483.677002, 309.750183, 6382.409180],
+    "MaxDistance": 200.0,
     "MinDistance": -1.0,
     "Amount": 10,
     "ClassNames": [],

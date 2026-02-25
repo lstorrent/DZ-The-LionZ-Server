@@ -2,13 +2,13 @@
     "ConfigVersion": 22,
     "ID": 1,
     "Type": 1,
-    "Title": "A dirty rat's job",
+    "Title": "Trabalho Sujo",
     "Descriptions": [
-        "Shit man, who are you? Is your name %1? I thought we already dealt with you. ** (He stares at you for a moment and then begins to smile) ** Ah nevermind... Today is your lucky day, my friend! If you do me a little favor, I'll make sure you get off this island as soon as possible. I swear by my mother's beard! All you have to do is take this NOTE here to my useless colleague Steve and have him read it, then he will give something to you. Bring it to me! You can find Steve in the little village down the street in the north west. Make sure he reads the note and don't come back empty handed!",
-        "I thought I made clear what you need to do?! Go to Steve now and don't come back empty handed!",
-        "Look at that... Another little bambi in the forests of death..."
+        "Merda cara, quem é você? Seu nome é %1? Pensei que já tínhamos resolvido isso com você. ** (Ele te encara por um momento e então começa a sorrir) ** Ah, deixa pra lá... Hoje é seu dia de sorte, meu amigo! Se você me fizer um pequeno favor, vou garantir que você saia desta ilha o mais rápido possível. Juro pela barba da minha mãe! Tudo que você precisa fazer é levar esta NOTA aqui para meu colega inútil Steve e fazer ele ler, então ele vai te dar algo. Traga para mim! Você pode encontrar o Steve na pequena vila descendo a rua a noroeste. Certifique-se de que ele leia a nota e não volte de mãos vazias!",
+        "Achei que tinha deixado claro o que você precisa fazer?! Vá até o Steve agora e não volte de mãos vazias!",
+        "Olha só isso... Mais um bambizinho nas florestas da morte..."
     ],
-    "ObjectiveText": "Deliver the note and talk to Steve.",
+    "ObjectiveText": "Entregue a nota e fale com Steve",
     "FollowUpQuest": 2,
     "Repeatable": 0,
     "IsDailyQuest": 0,
@@ -38,7 +38,7 @@
             "ObjectiveType": 5
         }
     ],
-    "QuestColor": 0,
+    "QuestColor": -256,
     "ReputationReward": 0,
     "ReputationRequirement": -1,
     "PreQuestIDs": [],
