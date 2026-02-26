@@ -16,7 +16,7 @@
     "CancelQuestOnPlayerDeath": 0,
     "Autocomplete": 0,
     "IsGroupQuest": 0,
-    "ObjectSetFileName": "Quest_30",
+    "ObjectSetFileName": "Quest_33",
     "QuestItems": [],
     "Rewards": [
         {

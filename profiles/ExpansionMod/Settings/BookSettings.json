@@ -192,6 +192,58 @@
     ],
     "Descriptions": [
         {
+            "CategoryName": "ORIENTACAO - MAPA E GPS",
+            "Descriptions": [
+                {
+                    "DescriptionText": "BEM-VINDO AO LARGADO-Z: Neste servidor, voce esta verdadeiramente perdido. O sistema de navegacao foi desativado e voce precisara encontrar ferramentas de orientacao para sobreviver em Chernarus."
+                },
+                {
+                    "DescriptionText": "SISTEMA DE MAPA DESATIVADO: O mapa digital NAO esta disponivel por atalho de teclado. Voce precisara encontrar um MAPA FISICO no mundo para consultar sua localizacao. Sem mapa em maos, voce esta completamente as cegas."
+                },
+                {
+                    "DescriptionText": "GPS E BUSSOLA OBRIGATORIOS: Para visualizar sua posicao exata no mapa, voce DEVE possuir um dispositivo GPS E um mapa fisico. O GPS sozinho nao funciona. A bussola e essencial para orientacao basica."
+                },
+                {
+                    "DescriptionText": "HUD DE BUSSOLA: Uma bussola HUD pode ser exibida na tela, mas APENAS se voce possuir uma bussola fisica E um GPS no inventario. Sem estes itens, voce nao tera indicacao de direcao."
+                },
+                {
+                    "DescriptionText": "MARCADORES PERSONALIZADOS: Voce pode criar marcadores no mapa para marcar locais importantes. Marcadores 3D tambem estao disponiveis. A distancia ate seus marcadores pessoais e exibida para facilitar navegacao."
+                },
+                {
+                    "DescriptionText": "MARCADOR DE MORTE: Quando voce morrer, um marcador sera automaticamente criado no mapa indicando o local da sua morte. Use-o para tentar recuperar seu equipamento."
+                },
+                {
+                    "DescriptionText": "DICA DE SOBREVIVENCIA: Priorize encontrar mapa, bussola e GPS logo no inicio. Estes itens sao fundamentais para navegacao eficiente. Memorize pontos de referencia e aprenda a ler o terreno. No Largado-Z, se orientar e questao de vida ou morte!"
+                }
+            ]
+        },
+        {
+            "CategoryName": "LOOT - AIRDROP",
+            "Descriptions": [
+                {
+                    "DescriptionText": "ALERTA DE SUPRIMENTOS: Airdrops sao lancamentos aereos de suprimentos valiosos que ocorrem aleatoriamente no mapa. Quando um airdrop e ativado, voce recebera APENAS um aviso informando a CIDADE mais proxima do local de queda."
+                },
+                {
+                    "DescriptionText": "INFORMACAO LIMITADA: Diferente de outros servidores, aqui NAO ha marcadores no mapa, coordenadas exatas ou avisos detalhados. Voce deve usar sua inteligencia e conhecimento do mapa para localizar o airdrop baseado apenas no nome da cidade mencionada."
+                },
+                {
+                    "DescriptionText": "LOOT DE ALTO VALOR: Os airdrops contem equipamento militar de primeira linha, armas raras, suprimentos medicos, ferramentas de construcao e itens essenciais para sobrevivencia. Sao containers de 4 tipos: Geral, Medico, Construcao e Militar - cada um com loot especifico."
+                },
+                {
+                    "DescriptionText": "PERIGO EXTREMO: Forcas hostis estao SEMPRE a caca de airdrops. Patrulhas de IA armadas e outros sobreviventes convergiram para o local assim que o aviao for avistado. Espere resistencia pesada e combate intenso."
+                },
+                {
+                    "DescriptionText": "INFECTADOS ATRAIDOS: O barulho do aviao e a queda do container atraem hordas de infectados para a area. Prepare-se para enfrentar dezenas de zumbis enquanto tenta saquear o airdrop."
+                },
+                {
+                    "DescriptionText": "TATICA RECOMENDADA: Va em grupo sempre que possivel. Um jogador vigia enquanto outros saqueiam. Chegue rapido, pegue o essencial e saia imediatamente. Quanto mais tempo voce ficar, maior o risco de ser emboscado."
+                },
+                {
+                    "DescriptionText": "AVISO FINAL: Airdrops sao zonas de guerra. Se voce nao esta preparado para combate pesado, evite a area. Mas se voce e corajoso o suficiente, as recompensas podem mudar completamente seu jogo. Boa caca, sobrevivente!"
+                }
+            ]
+        },
+        {
             "CategoryName": "MERCADO - GREEN MOUNTAIN",
             "Descriptions": [
                 {
