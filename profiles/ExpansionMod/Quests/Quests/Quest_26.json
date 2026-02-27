@@ -2,13 +2,13 @@
     "ConfigVersion": 22,
     "ID": 26,
     "Type": 1,
-    "Title": "Recuperar Radio Militar",
+    "Title": "Airdrop Desviado",
     "Descriptions": [
-        "Um rádio militar foi roubado de nossa base. Temos informações que ele se encontra nas proximidades da cidade de Rogovo. Encontre o rádio e traga de volta!",
-        "Ainda procurando o rádio? Ele deve estar perto de Rogovo. Tome cuidado com forças hostis!",
-        "Você encontrou o rádio! Excelente trabalho, sobrevivente. Aqui está sua recompensa."
+        "Tínhamos um airdrop programado para Green Mountain, mas o avião teve problemas mecânicos e fez um pouso forçado em um aeródromo próximo. O pacote amarelo com suprimentos táticos ficou para trás. Vá até o local, recupere a caixa e traga de volta.",
+        "Procure nos hangares e pista do aeródromo. O pacote é uma caixa amarela grande, impossível de não ver. Cuidado com saqueadores e infectados na área. Recupere o airdrop e retorne.",
+        "Pacote recuperado com sucesso! O equipamento tático estava intacto. Como recompensa pelo resgate, você pode ficar com o colete plate carrier e acessórios. Excelente trabalho!"
     ],
-    "ObjectiveText": "Encontre o Rádio",
+    "ObjectiveText": "Recupere o Pacote Amarelo",
     "FollowUpQuest": -1,
     "Repeatable": 1,
     "IsDailyQuest": 0,
@@ -16,11 +16,23 @@
     "CancelQuestOnPlayerDeath": 0,
     "Autocomplete": 0,
     "IsGroupQuest": 0,
-    "ObjectSetFileName": "Quest_26",
+    "ObjectSetFileName": "Quest_30",
     "QuestItems": [],
     "Rewards": [
         {
-            "ClassName": "CrossBow_Wood",
+            "ClassName": "PlateCarrierVest_Camo",
+            "Amount": 1,
+            "Attachments": [
+                "PlateCarrierPouches_Camo",
+                "PlateCarrierHolster_Camo"
+            ],
+            "DamagePercent": 0,
+            "HealthPercent": 0,
+            "QuestID": -1,
+            "Chance": 1.0
+        },
+        {
+            "ClassName": "MilitaryBelt",
             "Amount": 1,
             "Attachments": [],
             "DamagePercent": 0,
@@ -29,8 +41,8 @@
             "Chance": 1.0
         },
         {
-            "ClassName": "ammo_huntingbolt",
-            "Amount": 5,
+            "ClassName": "TacticalGloves_Green",
+            "Amount": 1,
             "Attachments": [],
             "DamagePercent": 0,
             "HealthPercent": 0,
@@ -53,16 +65,16 @@
     "Objectives": [
         {
             "ConfigVersion": 28,
-            "ID": 9,
+            "ID": 13,
             "ObjectiveType": 3
         },
         {
             "ConfigVersion": 28,
-            "ID": 4,
+            "ID": 7,
             "ObjectiveType": 4
         }
     ],
-    "QuestColor": -16711936,
+    "QuestColor": -256,
     "ReputationReward": 0,
     "ReputationRequirement": -1,
     "PreQuestIDs": [],

@@ -2,13 +2,13 @@
     "ConfigVersion": 22,
     "ID": 29,
     "Type": 1,
-    "Title": "Carga Recuperada",
+    "Title": "Manter a Ordem",
     "Descriptions": [
-        "Um avião de transporte militar caiu próximo ao aeródromo de Balota. A carga que transportava é extremamente valiosa e confidencial. Recupere a maleta preta dos destroços antes que outros sobreviventes a encontrem. Não faça perguntas, apenas traga de volta.",
-        "Localize os destroços do avião em Balota. A área pode estar infestada de infectados ou saqueadores. Encontre a maleta preta e retorne imediatamente. Discrição é essencial.",
-        "Excelente trabalho. A carga foi recuperada sem comprometer a operação. Seu profissionalismo será recompensado com equipamento tático de alto nível. Não mencione isso a ninguém."
+        "O Mercado de Green Mountain não tolera bandidos operando próximo à região. Temos informações que um hostil esta na redondezas de Kozlovka. Elimine-o e mantenha a ordem. Recompensa: escolha uma pistola.",
+        "Kozlovka ainda está sob controle dele. Não falhe!",
+        "A ordem foi restaurada. O Mercado reconhece seu serviço - escolha sua arma."
     ],
-    "ObjectiveText": "Recupere a carga dos Destroços",
+    "ObjectiveText": "Elimine-o do Vilarejo",
     "FollowUpQuest": -1,
     "Repeatable": 1,
     "IsDailyQuest": 0,
@@ -16,38 +16,38 @@
     "CancelQuestOnPlayerDeath": 0,
     "Autocomplete": 0,
     "IsGroupQuest": 0,
-    "ObjectSetFileName": "Quest_29",
+    "ObjectSetFileName": "",
     "QuestItems": [],
     "Rewards": [
         {
-            "ClassName": "Mich2001Helmet",
+            "ClassName": "Glock19",
             "Amount": 1,
-            "Attachments": [],
+            "Attachments": ["Mag_Glock_15Rnd"],
             "DamagePercent": 0,
             "HealthPercent": 0,
             "QuestID": -1,
             "Chance": 1.0
         },
         {
-            "ClassName": "NVGoggles",
+            "ClassName": "FNX45",
             "Amount": 1,
-            "Attachments": ["Battery9V"],
+            "Attachments": ["Mag_FNX45_15Rnd"],
             "DamagePercent": 0,
             "HealthPercent": 0,
             "QuestID": -1,
             "Chance": 1.0
         },
         {
-            "ClassName": "ExpansionBanknoteUSD",
-            "Amount": 500,
-            "Attachments": [],
+            "ClassName": "Deagle",
+            "Amount": 1,
+            "Attachments": ["Mag_Deagle_9rnd"],
             "DamagePercent": 0,
             "HealthPercent": 0,
             "QuestID": -1,
             "Chance": 1.0
         }
     ],
-    "NeedToSelectReward": 0,
+    "NeedToSelectReward": 1,
     "RandomReward": 0,
     "RandomRewardAmount": -1,
     "RewardsForGroupOwnerOnly": 1,
@@ -62,13 +62,13 @@
     "Objectives": [
         {
             "ConfigVersion": 28,
-            "ID": 12,
+            "ID": 8,
             "ObjectiveType": 3
         },
         {
             "ConfigVersion": 28,
-            "ID": 6,
-            "ObjectiveType": 4
+            "ID": 2,
+            "ObjectiveType": 8
         }
     ],
     "QuestColor": -16711936,

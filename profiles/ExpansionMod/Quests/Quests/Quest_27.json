@@ -2,25 +2,25 @@
     "ConfigVersion": 22,
     "ID": 27,
     "Type": 1,
-    "Title": "A Procura de Recursos",
+    "Title": "Bandidos Perigosos",
     "Descriptions": [
-        "Precisamos de uma placa-mãe de computador. Temos informações que há uma na Base Militar de Zeleno. Encontre a placa-mãe e traga de volta!",
-        "Ainda procurando a placa-mãe? Ela deve estar na Base de Zeleno. Tome cuidado com forças hostis!",
-        "Você encontrou a placa-mãe! Excelente trabalho, sobrevivente. Aqui está sua recompensa."
+            "Recebemos relatos de uma patrulha de bandidos bem armados na área. Elimine-os e você será recompensado com um traje NBC completo - essencial para explorar zonas contaminadas.",
+            "Os bandidos continuam à solta. Não volte sem completar a missão!",
+            "Trabalho bem feito! Este equipamento NBC vai te manter vivo nas áreas mais mortais de Chernarus."
     ],
-    "ObjectiveText": "Procure o uma placa mae de computador",
+    "ObjectiveText": "Encontre o Castelo",
     "FollowUpQuest": -1,
-    "Repeatable": 1,
+    "Repeatable": 0,
     "IsDailyQuest": 0,
-    "IsWeeklyQuest": 0,
+    "IsWeeklyQuest": 1,
     "CancelQuestOnPlayerDeath": 0,
     "Autocomplete": 0,
     "IsGroupQuest": 0,
-    "ObjectSetFileName": "Quest_27",
+    "ObjectSetFileName": "",
     "QuestItems": [],
     "Rewards": [
         {
-            "ClassName": "SmershBag",
+            "ClassName": "NBCJacketYellow",
             "Amount": 1,
             "Attachments": [],
             "DamagePercent": 0,
@@ -29,8 +29,53 @@
             "Chance": 1.0
         },
         {
-            "ClassName": "SmershVest",
+            "ClassName": "NBCPantsYellow",
             "Amount": 1,
+            "Attachments": [],
+            "DamagePercent": 0,
+            "HealthPercent": 0,
+            "QuestID": -1,
+            "Chance": 1.0
+        },
+        {
+            "ClassName": "NBCBootsYellow",
+            "Amount": 1,
+            "Attachments": [],
+            "DamagePercent": 0,
+            "HealthPercent": 0,
+            "QuestID": -1,
+            "Chance": 1.0
+        },
+        {
+            "ClassName": "NBCHoodYellow",
+            "Amount": 1,
+            "Attachments": [],
+            "DamagePercent": 0,
+            "HealthPercent": 0,
+            "QuestID": -1,
+            "Chance": 1.0
+        },
+        {
+            "ClassName": "NBCGlovesYellow",
+            "Amount": 1,
+            "Attachments": [],
+            "DamagePercent": 0,
+            "HealthPercent": 0,
+            "QuestID": -1,
+            "Chance": 1.0
+        },
+        {
+            "ClassName": "GasMask",
+            "Amount": 1,
+            "Attachments": [],
+            "DamagePercent": 0,
+            "HealthPercent": 0,
+            "QuestID": -1,
+            "Chance": 1.0
+        },
+        {
+            "ClassName": "GasMask_Filter",
+            "Amount": 2,
             "Attachments": [],
             "DamagePercent": 0,
             "HealthPercent": 0,
@@ -53,13 +98,13 @@
     "Objectives": [
         {
             "ConfigVersion": 28,
-            "ID": 10,
+            "ID": 4,
             "ObjectiveType": 3
         },
         {
             "ConfigVersion": 28,
-            "ID": 5,
-            "ObjectiveType": 4
+            "ID": 1,
+            "ObjectiveType": 7
         }
     ],
     "QuestColor": -16711936,

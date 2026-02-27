@@ -2,26 +2,35 @@
     "ConfigVersion": 22,
     "ID": 6,
     "Type": 1,
-    "Title": "Operação: Rota Segura",
+    "Title": "Recuperar Radio Militar",
     "Descriptions": [
-        "Bandidos estão aterrorizando comerciantes nas proximidades da Green Mountain. O mercado está em risco e precisamos de alguém corajoso para eliminar essa ameaça. Limpe o vilarejo e garanta a segurança das rotas comerciais. Recompensa: Dinheiro Vivo!",
-        "Os bandidos foram avistados na vila próxima à torre de transmissão. Eles estão armados e perigosos. Elimine todos os hostis e retorne para receber sua recompensa.",
-        "Missão concluída! O vilarejo está seguro e o mercado da Green Mountain pode operar sem medo. Sua recompensa está garantida."
+        "Um rádio militar foi roubado de nossa base. Temos informações que ele se encontra nas proximidades da cidade de Rogovo. Encontre o rádio e traga de volta!",
+        "Ainda procurando o rádio? Ele deve estar perto de Rogovo. Tome cuidado com forças hostis!",
+        "Você encontrou o rádio! Excelente trabalho, sobrevivente. Aqui está sua recompensa."
     ],
-    "ObjectiveText": "Elimine os Bandidos no Vilarejo",
+    "ObjectiveText": "Encontre o Rádio",
     "FollowUpQuest": -1,
-    "Repeatable": 0,
+    "Repeatable": 1,
     "IsDailyQuest": 0,
     "IsWeeklyQuest": 0,
     "CancelQuestOnPlayerDeath": 0,
     "Autocomplete": 0,
     "IsGroupQuest": 0,
-    "ObjectSetFileName": "",
+    "ObjectSetFileName": "Quest_26",
     "QuestItems": [],
     "Rewards": [
         {
-            "ClassName": "ExpansionBanknoteHryvnia",
-            "Amount": 500,
+            "ClassName": "CrossBow_Wood",
+            "Amount": 1,
+            "Attachments": [],
+            "DamagePercent": 0,
+            "HealthPercent": 0,
+            "QuestID": -1,
+            "Chance": 1.0
+        },
+        {
+            "ClassName": "ammo_huntingbolt",
+            "Amount": 5,
             "Attachments": [],
             "DamagePercent": 0,
             "HealthPercent": 0,
@@ -44,13 +53,13 @@
     "Objectives": [
         {
             "ConfigVersion": 28,
-            "ID": 1,
+            "ID": 9,
             "ObjectiveType": 3
         },
         {
             "ConfigVersion": 28,
-            "ID": 1,
-            "ObjectiveType": 8
+            "ID": 4,
+            "ObjectiveType": 4
         }
     ],
     "QuestColor": -16711936,

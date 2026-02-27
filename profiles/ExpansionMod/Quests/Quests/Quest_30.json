@@ -2,47 +2,26 @@
     "ConfigVersion": 22,
     "ID": 30,
     "Type": 1,
-    "Title": "Airdrop Desviado",
+    "Title": "Operação: Rota Segura",
     "Descriptions": [
-        "Tínhamos um airdrop programado para Green Mountain, mas o avião teve problemas mecânicos e fez um pouso forçado em um aeródromo próximo. O pacote amarelo com suprimentos táticos ficou para trás. Vá até o local, recupere a caixa e traga de volta.",
-        "Procure nos hangares e pista do aeródromo. O pacote é uma caixa amarela grande, impossível de não ver. Cuidado com saqueadores e infectados na área. Recupere o airdrop e retorne.",
-        "Pacote recuperado com sucesso! O equipamento tático estava intacto. Como recompensa pelo resgate, você pode ficar com o colete plate carrier e acessórios. Excelente trabalho!"
+        "Bandidos estão aterrorizando comerciantes nas proximidades da Green Mountain. O mercado está em risco e precisamos de alguém corajoso para eliminar essa ameaça. Limpe o vilarejo e garanta a segurança das rotas comerciais. Recompensa: Dinheiro Vivo!",
+        "Os bandidos foram avistados na vila próxima à torre de transmissão. Eles estão armados e perigosos. Elimine todos os hostis e retorne para receber sua recompensa.",
+        "Missão concluída! O vilarejo está seguro e o mercado da Green Mountain pode operar sem medo. Sua recompensa está garantida."
     ],
-    "ObjectiveText": "Recupere o Pacote Amarelo",
+    "ObjectiveText": "Elimine os Bandidos no Vilarejo",
     "FollowUpQuest": -1,
-    "Repeatable": 1,
+    "Repeatable": 0,
     "IsDailyQuest": 0,
     "IsWeeklyQuest": 0,
     "CancelQuestOnPlayerDeath": 0,
     "Autocomplete": 0,
     "IsGroupQuest": 0,
-    "ObjectSetFileName": "Quest_30",
+    "ObjectSetFileName": "",
     "QuestItems": [],
     "Rewards": [
         {
-            "ClassName": "PlateCarrierVest_Camo",
-            "Amount": 1,
-            "Attachments": [
-                "PlateCarrierPouches_Camo",
-                "PlateCarrierHolster_Camo"
-            ],
-            "DamagePercent": 0,
-            "HealthPercent": 0,
-            "QuestID": -1,
-            "Chance": 1.0
-        },
-        {
-            "ClassName": "MilitaryBelt",
-            "Amount": 1,
-            "Attachments": [],
-            "DamagePercent": 0,
-            "HealthPercent": 0,
-            "QuestID": -1,
-            "Chance": 1.0
-        },
-        {
-            "ClassName": "TacticalGloves_Green",
-            "Amount": 1,
+            "ClassName": "ExpansionBanknoteHryvnia",
+            "Amount": 500,
             "Attachments": [],
             "DamagePercent": 0,
             "HealthPercent": 0,
@@ -65,16 +44,16 @@
     "Objectives": [
         {
             "ConfigVersion": 28,
-            "ID": 13,
+            "ID": 1,
             "ObjectiveType": 3
         },
         {
             "ConfigVersion": 28,
-            "ID": 7,
-            "ObjectiveType": 4
+            "ID": 1,
+            "ObjectiveType": 8
         }
     ],
-    "QuestColor": -256,
+    "QuestColor": -16711936,
     "ReputationReward": 0,
     "ReputationRequirement": -1,
     "PreQuestIDs": [],
