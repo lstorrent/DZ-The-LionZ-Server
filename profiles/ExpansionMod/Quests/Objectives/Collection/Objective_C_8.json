@@ -1,14 +1,14 @@
 {
     "ConfigVersion": 28,
-    "ID": 4,
+    "ID": 8,
     "ObjectiveType": 4,
-    "ObjectiveText": "Encontro o rádio",
+    "ObjectiveText": "Leve o caminhão para Green Mountain",
     "TimeLimit": -1,
     "Active": 1,
     "Collections": [
         {
             "Amount": 1,
-            "ClassName": "BaseRadio",
+            "ClassName": "Truck_01_Covered",
             "QuantityPercent": -1,
             "MinQuantityPercent": -1
         }

@@ -1,15 +1,16 @@
 {
     "ConfigVersion": 28,
-    "ID": 2,
+    "ID": 4,
     "ObjectiveType": 10,
-    "ObjectiveText": "Plantar sementes de abóbora",
+    "ObjectiveText": "Construa um abrigo de galhos",
     "TimeLimit": -1,
     "Active": 1,
     "ActionNames": [
-        "ActionPlantSeed"
+        "ActionBuildShelter"
     ],
     "AllowedClassNames": [
-        "PumpkinSeeds"
+        "ShelterStick",
+        "ShelterKit"
     ],
     "ExcludedClassNames": [],
     "ExecutionAmount": 1

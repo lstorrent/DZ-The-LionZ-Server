@@ -16,15 +16,14 @@
     "CancelQuestOnPlayerDeath": 0,
     "Autocomplete": 0,
     "IsGroupQuest": 0,
-    "ObjectSetFileName": "Quest_30",
+    "ObjectSetFileName": "Quest_32",
     "QuestItems": [],
     "Rewards": [
         {
-            "ClassName": "PlateCarrierVest_Camo",
+            "ClassName": "CZ527",
             "Amount": 1,
             "Attachments": [
-                "PlateCarrierPouches_Camo",
-                "PlateCarrierHolster_Camo"
+                "HuntingOptic"
             ],
             "DamagePercent": 0,
             "HealthPercent": 0,
@@ -32,17 +31,8 @@
             "Chance": 1.0
         },
         {
-            "ClassName": "MilitaryBelt",
-            "Amount": 1,
-            "Attachments": [],
-            "DamagePercent": 0,
-            "HealthPercent": 0,
-            "QuestID": -1,
-            "Chance": 1.0
-        },
-        {
-            "ClassName": "TacticalGloves_Green",
-            "Amount": 1,
+            "ClassName": "Mag_CZ527_5rnd",
+            "Amount": 2,
             "Attachments": [],
             "DamagePercent": 0,
             "HealthPercent": 0,
@@ -65,13 +55,8 @@
     "Objectives": [
         {
             "ConfigVersion": 28,
-            "ID": 13,
-            "ObjectiveType": 3
-        },
-        {
-            "ConfigVersion": 28,
-            "ID": 7,
-            "ObjectiveType": 4
+            "ID": 2,
+            "ObjectiveType": 9
         }
     ],
     "QuestColor": -256,

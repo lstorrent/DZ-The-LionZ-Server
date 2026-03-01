@@ -2,13 +2,13 @@
     "ConfigVersion": 22,
     "ID": 21,
     "Type": 1,
-    "Title": "You need the Honor",
+    "Title": "Um acampamento",
     "Descriptions": [
-        "PLACEHOLDER",
-        "PLACEHOLDER",
-        "PLACEHOLDER"
+        "Monte um abrigo Shelter ou melhor uma cabana de mato para ganhar um pouco de reputação.",
+        "Fique esperto vc deve montar longe da Safe Zone.",
+        ""
     ],
-    "ObjectiveText": "PLACEHOLDER",
+    "ObjectiveText": "Construir um Shelter",
     "FollowUpQuest": -1,
     "Repeatable": 1,
     "IsDailyQuest": 0,
@@ -34,8 +34,8 @@
     "Objectives": [
         {
             "ConfigVersion": 28,
-            "ID": 3,
-            "ObjectiveType": 2
+            "ID": 4,
+            "ObjectiveType": 10
         }
     ],
     "QuestColor": 0,

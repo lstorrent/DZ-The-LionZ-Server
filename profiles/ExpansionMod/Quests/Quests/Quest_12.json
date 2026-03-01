@@ -2,13 +2,13 @@
     "ConfigVersion": 22,
     "ID": 12,
     "Type": 1,
-    "Title": "Apple Juice",
+    "Title": "Me ajuda ai!!!",
     "Descriptions": [
-        "PLACEHOLDER",
-        "Obtain 5 apples.",
-        "Turn in quest to get reward."
+        "Me ajuda com apenas 5 maçãs!",
+        "Coisa simples!",
+        ""
     ],
-    "ObjectiveText": "Get 5 apples",
+    "ObjectiveText": "Colete 5 maçãs",
     "FollowUpQuest": -1,
     "Repeatable": 1,
     "IsDailyQuest": 1,

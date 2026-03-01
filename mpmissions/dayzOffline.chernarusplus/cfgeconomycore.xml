@@ -35,11 +35,17 @@ Do not forget to add attribute act="car", if root class represents moveable vehi
 		<default name="save_events_startup" value="true"/>
 		<default name="save_types_startup" value="true"/>
 	</defaults>
-		<!--MMIO...-->
-	<ce folder="mmio_ce">
-		<file name="mmio_types.xml" type="types" />
+		<!--AJ...-->
+	<ce folder="aj_ce">
+		<file name="Ammo_types.xml" type="types" />
+		<file name="WeaponAttachments_types.xml" type="types" />
+		<file name="WeaponMagazines_types.xml" type="types" />
+		<file name="Weapon_types.xml" type="types" />
+		<file name="WeaponMelee_types.xml" type="types" />
+		<file name="WeaponOptics_types.xml" type="types" />
+		<file name="Weapons_spawnabletypes.xml" type="types" />
 	</ce>
-		<!--End MMIO-->
+		<!--End AJ-->
 		<!--Expansion...-->
 	<ce folder="expansion_ce">
 		<file name="expansion_types.xml" type="types" />

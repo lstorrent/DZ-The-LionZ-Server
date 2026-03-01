@@ -2,13 +2,13 @@
     "ConfigVersion": 22,
     "ID": 15,
     "Type": 1,
-    "Title": "Plant a Pumpkin",
+    "Title": "Plantar abóboras",
     "Descriptions": [
-        "PLACEHOLDER",
-        "PLACEHOLDER",
-        "PLACEHOLDER"
+        "É preciso aprender o cultivo. É preciso sobreviver.",
+        "Trabalhar um pouco é bom.",
+        ""
     ],
-    "ObjectiveText": "Plant a pumpkin seed.",
+    "ObjectiveText": "Plantar sementes de abóbora",
     "FollowUpQuest": -1,
     "Repeatable": 0,
     "IsDailyQuest": 0,
@@ -21,7 +21,7 @@
     "Rewards": [
         {
             "ClassName": "ExpansionBanknoteHryvnia",
-            "Amount": 500,
+            "Amount": 100,
             "Attachments": [],
             "DamagePercent": 0,
             "HealthPercent": 0,

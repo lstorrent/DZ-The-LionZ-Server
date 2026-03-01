@@ -2,13 +2,13 @@
     "ConfigVersion": 22,
     "ID": 13,
     "Type": 1,
-    "Title": "Catch a Fish",
+    "Title": "Pescador",
     "Descriptions": [
-        "PLACEHOLDER",
-        "Craft an improvised fishing rod and catch a mackerel.",
-        "Turn in quest to get reward."
+        "Vou te ajudar a pescar. Vai precisar fazer uma vara de pesca estilho Largados e PeladosCraft. E vc precisa pegar um Mackerel.",
+        "Não fique viciado em pescaria",
+        ""
     ],
-    "ObjectiveText": "Craft an improvised fishing rod and catch a mackerel!",
+    "ObjectiveText": "Pescar com a vara que vc crafitou",
     "FollowUpQuest": -1,
     "Repeatable": 0,
     "IsDailyQuest": 0,

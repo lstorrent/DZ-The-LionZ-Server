@@ -2,13 +2,13 @@
     "ConfigVersion": 22,
     "ID": 10,
     "Type": 1,
-    "Title": "[VIP] Test quest",
+    "Title": "Mercador VIP",
     "Descriptions": [
-        "PLACEHOLDER",
-        "PLACEHOLDER",
+        "Um grande client da Green Mountain esta aqui esperando uma ajuda para voltar a sua casa. O caminho é perigoso e estamos aqui para isso.",
+        "Tente não mata-lo.",
         "PLACEHOLDER"
     ],
-    "ObjectiveText": "PLACEHOLDER",
+    "ObjectiveText": "Leve-o para casa",
     "FollowUpQuest": -1,
     "Repeatable": 0,
     "IsDailyQuest": 0,

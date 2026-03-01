@@ -2,13 +2,13 @@
     "ConfigVersion": 22,
     "ID": 16,
     "Type": 1,
-    "Title": "For the Lich... I mean Yellow King!",
+    "Title": "Lich - O Rei Amarelo!",
     "Descriptions": [
         "PLACEHOLDER",
         "PLACEHOLDER",
         "PLACEHOLDER"
     ],
-    "ObjectiveText": "Find the yellow king's helmet.",
+    "ObjectiveText": "Encontre o capacete do Rei Amarelo (Lich)",
     "FollowUpQuest": -1,
     "Repeatable": 0,
     "IsDailyQuest": 0,

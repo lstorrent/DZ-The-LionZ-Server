@@ -2,13 +2,13 @@
     "ConfigVersion": 22,
     "ID": 33,
     "Type": 1,
-    "Title": "RAID",
+    "Title": "Recuperar suprimentos para o Mercado",
     "Descriptions": [
-        "TESTE",
-        "TESTE",
+        "Nosso caminhão foi interceptado. Nao sabemos se ainda vamos conseguir recuperar. De qualquer forma recupere nosso caminhão. Interceptamos o sinal do rádio do caminhão na base militar de Cherno. Use seu mapa e traga o caminhão.",
+        "Vamos te recompesar!",
         ""
     ],
-    "ObjectiveText": "TESTE",
+    "ObjectiveText": "Recuperar suprimentos para o Mercado",
     "FollowUpQuest": -1,
     "Repeatable": 1,
     "IsDailyQuest": 0,
@@ -20,11 +20,13 @@
     "QuestItems": [],
     "Rewards": [
         {
-            "ClassName": "PlateCarrierVest_Camo",
+            "ClassName": "AJW_SCARH_MCT",
             "Amount": 1,
             "Attachments": [
-                "PlateCarrierPouches_Camo",
-                "PlateCarrierHolster_Camo"
+                "AJW_SCARH_PMM_HG_Black",
+                "AJW_Mag_SCARH_20rnd_Black",
+                "AJW_SV98_Suppressor_Black",
+                "AJW_BD_Car15_Optic"
             ],
             "DamagePercent": 0,
             "HealthPercent": 0,
@@ -32,17 +34,8 @@
             "Chance": 1.0
         },
         {
-            "ClassName": "MilitaryBelt",
-            "Amount": 1,
-            "Attachments": [],
-            "DamagePercent": 0,
-            "HealthPercent": 0,
-            "QuestID": -1,
-            "Chance": 1.0
-        },
-        {
-            "ClassName": "TacticalGloves_Green",
-            "Amount": 1,
+            "ClassName": "AmmoBox_308WinTracer_20Rnd",
+            "Amount": 2,
             "Attachments": [],
             "DamagePercent": 0,
             "HealthPercent": 0,
@@ -70,7 +63,7 @@
         },
         {
             "ConfigVersion": 28,
-            "ID": 7,
+            "ID": 8,
             "ObjectiveType": 4
         }
     ],

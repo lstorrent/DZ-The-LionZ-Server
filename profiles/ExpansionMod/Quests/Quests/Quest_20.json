@@ -2,15 +2,15 @@
     "ConfigVersion": 22,
     "ID": 20,
     "Type": 1,
-    "Title": "For the Honor",
+    "Title": "Plantar cannabis",
     "Descriptions": [
-        "PLACEHOLDER",
-        "PLACEHOLDER",
+        "Parece engraçado mas é bom vc aprender essas coisas. Logo isso vai te deixar bem.",
+        "São apenas sementes",
         "PLACEHOLDER"
     ],
-    "ObjectiveText": "PLACEHOLDER",
+    "ObjectiveText": "Plantar sementes de cannabis",
     "FollowUpQuest": -1,
-    "Repeatable": 1,
+    "Repeatable": 0,
     "IsDailyQuest": 0,
     "IsWeeklyQuest": 0,
     "CancelQuestOnPlayerDeath": 0,
@@ -35,7 +35,7 @@
         {
             "ConfigVersion": 28,
             "ID": 3,
-            "ObjectiveType": 2
+            "ObjectiveType": 10
         }
     ],
     "QuestColor": 0,

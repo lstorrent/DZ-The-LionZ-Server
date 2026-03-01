@@ -1,16 +1,16 @@
 {
     "ConfigVersion": 28,
-    "ID": 2,
+    "ID": 3,
     "ObjectiveType": 10,
-    "ObjectiveText": "Plantar sementes de abóbora",
+    "ObjectiveText": "Plantar sementes de cannabis",
     "TimeLimit": -1,
     "Active": 1,
     "ActionNames": [
         "ActionPlantSeed"
     ],
     "AllowedClassNames": [
-        "PumpkinSeeds"
+        "CannabisSeeds"
     ],
     "ExcludedClassNames": [],
-    "ExecutionAmount": 1
+    "ExecutionAmount": 9
 }

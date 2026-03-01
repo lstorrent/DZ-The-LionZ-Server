@@ -5,10 +5,10 @@
     "ObjectiveText": "",
     "TimeLimit": -1,
     "Active": 1,
-    "Position": [6192.350098, 15.031527, 2383.905518],
+    "Position": [7229.409668, 28.603956, 3038.258545],
     "MaxDistance": 20.0,
     "MarkerName": "",
-    "ShowDistance": 1,
+    "ShowDistance": 0,
     "TriggerOnEnter": 1,
     "TriggerOnExit": 0
 }
