@@ -13,7 +13,7 @@
         0.0
     ],
     "NPCName": "Peter",
-    "DefaultNPCText": "Hmm?",
+    "DefaultNPCText": "Esta gostando daqui ?",
     "Waypoints": [
         [
             3706.27001953125,
@@ -23,7 +23,7 @@
     ],
     "NPCEmoteID": 46,
     "NPCEmoteIsStatic": 0,
-    "NPCLoadoutFile": "NBCLoadout",
+    "NPCLoadoutFile": "MMGLoadout",
     "NPCInteractionEmoteID": 1,
     "NPCQuestCancelEmoteID": 60,
     "NPCQuestStartEmoteID": 58,

@@ -922,13 +922,13 @@
             ]
         },
         {
-            "Name": "",
+            "Name": "From Bor to Drozhino - Survivor",
             "Persist": 0,
             "Faction": "Civilian",
             "Formation": "",
             "FormationScale": 0.0,
             "FormationLooseness": 0.0,
-            "Loadout": "",
+            "Loadout": "SurvivorLoadout",
             "Units": [],
             "NumberOfAI": 1,
             "NumberOfAIMax": 3,
@@ -966,21 +966,8 @@
             "WaypointInterpolation": "",
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
-                [
-                    9963.3466796875,
-                    55.640098571777347,
-                    10900.8447265625
-                ],
-                [
-                    9965.3984375,
-                    54.729034423828128,
-                    10969.5361328125
-                ],
-                [
-                    9924.380859375,
-                    57.23215103149414,
-                    10901.9677734375
-                ]
+                [3206.618408, 199.051163, 3655.525391],
+                [3485.607910, 287.658630, 5223.054199]
             ]
         }
     ]

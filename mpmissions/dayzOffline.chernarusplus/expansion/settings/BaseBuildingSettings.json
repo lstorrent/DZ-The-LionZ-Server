@@ -255,6 +255,40 @@
             ],
             "IsWhitelist": 1,
             "CustomMessage": "Proibido construir prox. base militar"
+        },
+        {
+            "Name": "Military Staroye",
+            "Center": [10438.646484, 283.059998, 5962.847168],
+            "Radius": 700.0,
+            "Items": [
+                "Fireplace",
+                "LandMineTrap",
+                "BearTrap",
+                "FishNetTrap",
+                "RabbitSnareTrap",
+                "SmallFishTrap",
+                "TripwireTrap",
+                "ExplosivesBase"
+            ],
+            "IsWhitelist": 1,
+            "CustomMessage": "Proibido construir prox. base militar"
+        },
+        {
+            "Name": "Military Zeleno",
+            "Center": [2519.203857, 189.966003, 5143.857910],
+            "Radius": 1000.0,
+            "Items": [
+                "Fireplace",
+                "LandMineTrap",
+                "BearTrap",
+                "FishNetTrap",
+                "RabbitSnareTrap",
+                "SmallFishTrap",
+                "TripwireTrap",
+                "ExplosivesBase"
+            ],
+            "IsWhitelist": 1,
+            "CustomMessage": "Proibido construir prox. base militar"
         }
     ],
     "ZonesAreNoBuildZones": 1,
