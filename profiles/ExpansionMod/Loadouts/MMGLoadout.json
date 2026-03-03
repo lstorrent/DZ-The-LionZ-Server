@@ -30,9 +30,10 @@
         {
             "SlotName": "Feet",
             "Items": [
-                {"ClassName": "MMG_boots_multicam", "Chance": 0.33, "Health": [{"Min": 0.7, "Max": 1.0}]},
-                {"ClassName": "MMG_boots_black", "Chance": 0.33, "Health": [{"Min": 0.7, "Max": 1.0}]},
-                {"ClassName": "MMG_boots_tan", "Chance": 0.34, "Health": [{"Min": 0.7, "Max": 1.0}]}
+                {"ClassName": "CombatBoots_Black", "Chance": 0.25, "Health": [{"Min": 0.7, "Max": 1.0}]},
+                {"ClassName": "CombatBoots_Brown", "Chance": 0.25, "Health": [{"Min": 0.7, "Max": 1.0}]},
+                {"ClassName": "CombatBoots_Green", "Chance": 0.25, "Health": [{"Min": 0.7, "Max": 1.0}]},
+                {"ClassName": "CombatBoots_Grey", "Chance": 0.25, "Health": [{"Min": 0.7, "Max": 1.0}]}
             ]
         },
         {

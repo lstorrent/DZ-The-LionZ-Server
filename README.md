@@ -25,14 +25,14 @@ Juntos, estamos construindo uma comunidade onde todos são bem-vindos para compa
 ## 🚀 Como Conectar
 
 **Informações do Servidor:**
-- 🎮 **Nome:** Lion-Z Hardcore
+- 🎮 **Nome:** Largado-Z Hardcore
 - 🌐 **IP:** 188.255.171.173
 - 🔌 **Porta:** 2332
 
 **Passos para conectar:**
 1. Abra o DayZ
 2. Vá para a aba "Community"
-3. Procure por "Lion-Z"
+3. Procure por "Largado-Z"
 4. Conecte-se e comece sua jornada!
 
 ## 📋 Regras do Servidor
@@ -44,7 +44,7 @@ Juntos, estamos construindo uma comunidade onde todos são bem-vindos para compa
 
 ## 💰 Apoie o Servidor
 
-A jornada no mundo implacável do DayZ é emocionante, mas manter nosso refúgio, o **The Lion-Z**, demanda esforços constantes. Se você valoriza a experiência única que estamos construindo juntos, consideraria contribuir para a sustentabilidade do servidor?
+A jornada no mundo implacável do DayZ é emocionante, mas manter nosso refúgio, o **Largado-Z**, demanda esforços constantes. Se você valoriza a experiência única que estamos construindo juntos, consideraria contribuir para a sustentabilidade do servidor?
 
 Suas doações nos ajudarão a:
 - ✅ Manter a qualidade do servidor
@@ -54,7 +54,7 @@ Suas doações nos ajudarão a:
 
 Cada contribuição é vital para enfrentarmos os desafios e continuar proporcionando um espaço incrível para todos.
 
-> **Lembre-se:** É com o apoio de sobreviventes generosos como você que podemos manter viva a chama do The Lion-Z.
+> **Lembre-se:** É com o apoio de sobreviventes generosos como você que podemos manter viva a chama do Largado-Z.
 
 ## 📞 Contato
 
