@@ -107,10 +107,10 @@
             "ObjectiveType": 7
         }
     ],
-    "QuestColor": -16711936,
+    "QuestColor": -256,
     "ReputationReward": 0,
     "ReputationRequirement": -1,
-    "PreQuestIDs": [],
+    "PreQuestIDs": [26],
     "RequiredFaction": "",
     "FactionReward": "",
     "PlayerNeedQuestItems": 1,

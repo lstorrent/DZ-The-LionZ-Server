@@ -23,6 +23,11 @@
         {"Name": "Battery9V", "Chance": 1.0, "Attachments": [], "QuantityPercent": -1.0, "Max": 2, "Min": 2, "Variants": []},
         {"Name": "StarlightOptic", "Chance": 1.0, "Attachments": [], "QuantityPercent": -1.0, "Max": 1, "Min": 1, "Variants": []},
         {"Name": "Ammo_762x54", "Chance": 1.0, "Attachments": [], "QuantityPercent": -1.0, "Max": 3, "Min": 2, "Variants": []},
-        {"Name": "ExpansionBanknoteUSD", "Chance": 1.0, "Attachments": [], "QuantityPercent": -1.0, "Max": 250, "Min": 250, "Variants": []}
+        {"Name": "ExpansionBanknoteUSD", "Chance": 1.0, "Attachments": [], "QuantityPercent": -1.0, "Max": 250, "Min": 250, "Variants": []},
+        {"Name": "MMG_supplybag_black", "Chance": 1.0, "Attachments": [], "QuantityPercent": -1.0, "Max": 250, "Min": 250, "Variants": []},
+        {"Name": "MMG_tt_vest_black", "Chance": 1.0, "Attachments": [], "QuantityPercent": -1.0, "Max": 250, "Min": 250, "Variants": []},
+        {"Name": "MMG_double_magpouch_black", "Chance": 1.0, "Attachments": [], "QuantityPercent": -1.0, "Max": 250, "Min": 250, "Variants": []},
+        {"Name": "MMG_Med_pouch_black", "Chance": 1.0, "Attachments": [], "QuantityPercent": -1.0, "Max": 250, "Min": 250, "Variants": []},
+        {"Name": "MMG_tactical_pouch_black", "Chance": 1.0, "Attachments": [], "QuantityPercent": -1.0, "Max": 250, "Min": 250, "Variants": []}
     ]
 }
