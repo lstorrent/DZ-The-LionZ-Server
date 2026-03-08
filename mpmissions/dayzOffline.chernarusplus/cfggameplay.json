@@ -10,6 +10,16 @@
     "PlayerData":
 	{
 		"disablePersonalLight": false,
+		"StatsData":
+		{
+			"heatComfortTimeModifier": 1.0,
+			"energyDecayModifier": 1.4,
+			"waterDecayModifier": 1.5,
+			"staminaDecayModifier": 1.0,
+			"shockDecayModifier": 1.0,
+			"healthDecayModifier": 1.0,
+			"bloodDecayModifier": 1.0
+		},
 		"StaminaData":
 		{
 			"sprintStaminaModifierErc": 1.0,

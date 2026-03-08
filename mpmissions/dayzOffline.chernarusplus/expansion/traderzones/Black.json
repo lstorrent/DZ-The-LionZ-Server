@@ -1,0 +1,11 @@
+{
+    "m_Version": 6,
+    "m_DisplayName": "Black Market Zone",
+    "Position": [
+        8307.937500, 442.086945, 7515.248535
+    ],
+    "Radius": 500.0,
+    "BuyPricePercent": 100.0,
+    "SellPricePercent": -1.0,
+    "Stock": {}
+}
