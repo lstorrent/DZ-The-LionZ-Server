@@ -1,0 +1,46 @@
+{
+    "m_Version": 12,
+    "DisplayName": "AJ's Submachine Guns",
+    "Icon": "SMG",
+    "Color": "FFD700",
+    "IsExchange": 0,
+    "InitStockPercent": 75.0,
+    "Items": [
+        {
+            "ClassName": "AJW_Vityaz_Black",
+            "MaxPriceThreshold": 15000,
+            "MinPriceThreshold": 12000,
+            "SellPricePercent": -1.0,
+            "MaxStockThreshold": 2,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [],
+            "Variants": []
+        },
+        {
+            "ClassName": "AJW_EVO3_Black",
+            "MaxPriceThreshold": 15000,
+            "MinPriceThreshold": 12000,
+            "SellPricePercent": -1.0,
+            "MaxStockThreshold": 2,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [],
+            "Variants": [
+                "AJW_EVO3_Grey",
+                "AJW_EVO3_FDE"
+            ]
+        },
+        {
+            "ClassName": "AJW_PPSH_Classic",
+            "MaxPriceThreshold": 14000,
+            "MinPriceThreshold": 11000,
+            "SellPricePercent": -1.0,
+            "MaxStockThreshold": 2,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [],
+            "Variants": []
+        }
+    ]
+}

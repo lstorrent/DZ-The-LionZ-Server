@@ -1,0 +1,21 @@
+{
+    "m_Version": 12,
+    "DisplayName": "AJ's Melee Weapons",
+    "Icon": "Knife",
+    "Color": "C0C0C0",
+    "IsExchange": 0,
+    "InitStockPercent": 75.0,
+    "Items": [
+        {
+            "ClassName": "AJW_M1897_Bayonet",
+            "MaxPriceThreshold": 800,
+            "MinPriceThreshold": 500,
+            "SellPricePercent": -1.0,
+            "MaxStockThreshold": 3,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [],
+            "Variants": []
+        }
+    ]
+}

@@ -3119,10 +3119,10 @@
         <usage name="Town"/>
     </type>
     <type name="Battery9V">
-        <nominal>100</nominal>
+        <nominal>70</nominal>
         <lifetime>14400</lifetime>
         <restock>0</restock>
-        <min>80</min>
+        <min>60</min>
         <quantmin>50</quantmin>
         <quantmax>100</quantmax>
         <cost>100</cost>
@@ -3133,7 +3133,7 @@
         <usage name="Village"/>
     </type>
     <type name="BatteryCharger">
-        <nominal>30</nominal>
+        <nominal>25</nominal>
         <lifetime>604800</lifetime>
         <restock>360</restock>
         <min>20</min>
@@ -4247,7 +4247,7 @@
         <usage name="Industrial"/>
     </type>
     <type name="Camonet">
-        <nominal>40</nominal>
+        <nominal>35</nominal>
         <lifetime>14400</lifetime>
         <restock>0</restock>
         <min>20</min>
@@ -4341,7 +4341,7 @@
         <category name="tools"/>
     </type>
     <type name="CanisterGasoline">
-        <nominal>50</nominal>
+        <nominal>40</nominal>
         <lifetime>28800</lifetime>
         <restock>0</restock>
         <min>30</min>
@@ -4515,7 +4515,7 @@
         <usage name="Village"/>
     </type>
     <type name="CarBattery">
-        <nominal>60</nominal>
+        <nominal>50</nominal>
         <lifetime>28800</lifetime>
         <restock>360</restock>
         <min>40</min>
@@ -7162,10 +7162,10 @@
         <category name="tools"/>
     </type>
     <type name="FieldShovel">
-        <nominal>35</nominal>
+        <nominal>25</nominal>
         <lifetime>14400</lifetime>
         <restock>0</restock>
-        <min>28</min>
+        <min>20</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
         <cost>100</cost>
@@ -9743,10 +9743,10 @@
         <category name="tools"/>
     </type>
     <type name="HeadlightH7_Box">
-        <nominal>60</nominal>
+        <nominal>40</nominal>
         <lifetime>14400</lifetime>
         <restock>0</restock>
-        <min>40</min>
+        <min>30</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
         <cost>100</cost>
@@ -11511,7 +11511,7 @@
         <category name="food"/>
     </type>
     <type name="LargeGasCanister">
-        <nominal>40</nominal>
+        <nominal>35</nominal>
         <lifetime>14400</lifetime>
         <restock>0</restock>
         <min>30</min>
@@ -13530,7 +13530,7 @@
         <usage name="Historical"/>
     </type>
     <type name="MediumGasCanister">
-        <nominal>40</nominal>
+        <nominal>35</nominal>
         <lifetime>14400</lifetime>
         <restock>0</restock>
         <min>30</min>
@@ -13599,10 +13599,10 @@
         <value name="Tier4"/>
     </type>
     <type name="MetalPlate">
-        <nominal>60</nominal>
+        <nominal>35</nominal>
         <lifetime>14400</lifetime>
         <restock>0</restock>
-        <min>40</min>
+        <min>30</min>
         <quantmin>10</quantmin>
         <quantmax>60</quantmax>
         <cost>100</cost>
@@ -18131,10 +18131,10 @@
         <value name="Tier2"/>
     </type>
     <type name="Shovel">
-        <nominal>70</nominal>
+        <nominal>40</nominal>
         <lifetime>14400</lifetime>
         <restock>0</restock>
-        <min>50</min>
+        <min>35</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
         <cost>100</cost>
@@ -18528,7 +18528,7 @@
         <category name="tools"/>
     </type>
     <type name="SmallGasCanister">
-        <nominal>40</nominal>
+        <nominal>35</nominal>
         <lifetime>14400</lifetime>
         <restock>0</restock>
         <min>30</min>

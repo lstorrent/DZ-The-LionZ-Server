@@ -1,11 +1,11 @@
 {
     "m_Version": 13,
-    "DisplayName": "#STR_EXPANSION_BLACK_MARKET_WEAPONS",
+    "DisplayName": "#STR_EXPANSION_BLACK_MARKET_TRADER_CLOTHING_ACCESSORIES",
     "MinRequiredReputation": 0,
     "MaxRequiredReputation": 0,
     "RequiredFaction": "",
     "RequiredCompletedQuestID": -1,
-    "TraderIcon": "Shotgun",
+    "TraderIcon": "Backpack",
     "Currencies": [
         "expansionbanknotedollar",
         "expansiongoldbar",
@@ -17,16 +17,9 @@
     "DisplayCurrencyName": "",
     "UseCategoryOrder": 0,
     "Categories": [
-        "Black_Assault_Rifles"
+        "Black_MMG_Backpacks:1",
+        "Black_MMG_Pouches:1",
+        "Black_MMG_More:1"
     ],
-    "Items": {
-        "expansionammorpg": 3,
-        "ammo_expansion_m203_sticky_smoke_teargas": 3,
-        "tlrlight": 3,
-        "ammo_expansion_m203_smoke_teargas": 3,
-        "expansion_ammo_taser": 3,
-        "universallight": 3,
-        "expansionammolaw": 3,
-        "ammo_expansion_m203_sticky_smoke_white": 3
-    }
+    "Items": {}
 }

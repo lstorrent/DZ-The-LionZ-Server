@@ -1,0 +1,24 @@
+{
+    "m_Version": 12,
+    "DisplayName": "AJ's Light Machine Guns",
+    "Icon": "LMG",
+    "Color": "DC143C",
+    "IsExchange": 0,
+    "InitStockPercent": 75.0,
+    "Items": [
+        {
+            "ClassName": "AJW_PKM",
+            "MaxPriceThreshold": 30000,
+            "MinPriceThreshold": 25000,
+            "SellPricePercent": -1.0,
+            "MaxStockThreshold": 1,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [],
+            "Variants": [
+                "AJW_PKM_Worn",
+                "AJW_PKM_WL_Painted"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "m_Version": 12,
+    "DisplayName": "MMG Pants",
+    "Icon": "Pants",
+    "Color": "000000",
+    "IsExchange": 0,
+    "InitStockPercent": 75.0,
+    "Items": [
+        {
+            "ClassName": "MMG_combatpants_black",
+            "MaxPriceThreshold": 10000,
+            "MinPriceThreshold": 7500,
+            "SellPricePercent": -1.0,
+            "MaxStockThreshold": 3,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [],
+            "Variants": []
+        },
+        {
+            "ClassName": "mmg_tactical_pants_black",
+            "MaxPriceThreshold": 11000,
+            "MinPriceThreshold": 8500,
+            "SellPricePercent": -1.0,
+            "MaxStockThreshold": 3,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [],
+            "Variants": []
+        }
+    ]
+}

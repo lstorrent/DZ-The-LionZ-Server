@@ -1,0 +1,21 @@
+{
+    "m_Version": 12,
+    "DisplayName": "MMG Gloves",
+    "Icon": "Gloves",
+    "Color": "000000",
+    "IsExchange": 0,
+    "InitStockPercent": 75.0,
+    "Items": [
+        {
+            "ClassName": "mmg_tactical_gloves_black",
+            "MaxPriceThreshold": 8000,
+            "MinPriceThreshold": 6000,
+            "SellPricePercent": -1.0,
+            "MaxStockThreshold": 3,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [],
+            "Variants": []
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "m_Version": 13,
+    "DisplayName": "STR_EXPANSION_BLACK_MARKET_TRADER_WEAPON_ATTACHMENTS",
+    "MinRequiredReputation": 0,
+    "MaxRequiredReputation": 0,
+    "RequiredFaction": "",
+    "RequiredCompletedQuestID": -1,
+    "TraderIcon": "Attachment",
+    "Currencies": [
+        "expansionbanknotedollar",
+        "expansiongoldbar",
+        "expansiongoldnugget",
+        "expansionsilverbar",
+        "expansionsilvernugget"
+    ],
+    "DisplayCurrencyValue": 1,
+    "DisplayCurrencyName": "",
+    "UseCategoryOrder": 0,
+    "Categories": [
+        "Black_ajs_Optics:1",
+        "Black_ajs_Attachments:1",
+        "Black_ajs_Magazines:1",
+        "Black_ajs_Ammo:1"
+    ],
+    "Items": {}
+}

@@ -1,0 +1,29 @@
+{
+    "m_Version": 13,
+    "DisplayName": "#STR_EXPANSION_BLACK_MARKET_TRADER_CLOTHING",
+    "MinRequiredReputation": 0,
+    "MaxRequiredReputation": 0,
+    "RequiredFaction": "",
+    "RequiredCompletedQuestID": -1,
+    "TraderIcon": "Backpack",
+    "Currencies": [
+        "expansionbanknotedollar",
+        "expansiongoldbar",
+        "expansiongoldnugget",
+        "expansionsilverbar",
+        "expansionsilvernugget"
+    ],
+    "DisplayCurrencyValue": 1,
+    "DisplayCurrencyName": "",
+    "UseCategoryOrder": 0,
+    "Categories": [
+        "Black_MMG_Helmets:1",
+        "Black_MMG_Masks:1",
+        "Black_MMG_Vests:1",
+        "Black_MMG_Jackets:1",
+        "Black_MMG_Pants:1",
+        "Black_MMG_Boots:1",
+        "Black_MMG_Gloves:1"
+    ],
+    "Items": {}
+}
