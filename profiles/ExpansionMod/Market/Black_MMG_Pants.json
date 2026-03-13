@@ -1,8 +1,8 @@
 {
     "m_Version": 12,
     "DisplayName": "MMG Pants",
-    "Icon": "Pants",
-    "Color": "000000",
+    "Icon": "Deliver",
+    "Color": "FBFCFEFF",
     "IsExchange": 0,
     "InitStockPercent": 75.0,
     "Items": [
@@ -15,7 +15,12 @@
             "MinStockThreshold": 1,
             "QuantityPercent": -1,
             "SpawnAttachments": [],
-            "Variants": []
+            "Variants": [
+                "MMG_combatpants_olive",
+                "MMG_combatpants_tan",
+                "MMG_combatpants_multicam",
+                "MMG_combatpants_alpine"
+            ]
         },
         {
             "ClassName": "mmg_tactical_pants_black",
@@ -26,7 +31,12 @@
             "MinStockThreshold": 1,
             "QuantityPercent": -1,
             "SpawnAttachments": [],
-            "Variants": []
+            "Variants": [
+                "mmg_tactical_pants_green",
+                "mmg_tactical_pants_tan",
+                "mmg_tactical_pants_multicam",
+                "mmg_tactical_pants_alpine"
+            ]
         }
     ]
 }

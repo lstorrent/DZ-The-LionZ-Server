@@ -17,13 +17,13 @@
     "DisplayCurrencyName": "",
     "UseCategoryOrder": 0,
     "Categories": [
-        "Black_ajs_Pistols:1",
-        "Black_ajs_submachine_guns:1",
-        "Black_ajs_assault_rifles:1",
-        "Black_ajs_sniper_rifles:1",
-        "Black_ajs_Rifles:1",
-        "Black_ajs_Shotguns:1",
-        "Black_ajs_light_machine_guns:1",
+        "Black_ajs_Pistols:3",
+        "Black_ajs_submachine_guns:3",
+        "Black_ajs_assault_rifles:3",
+        "Black_ajs_sniper_rifles:3",
+        "Black_ajs_Rifles:3",
+        "Black_ajs_Shotguns:3",
+        "Black_ajs_light_machine_guns:3",
         "Black_ajs_Melee:1"
     ],
     "Items": {}

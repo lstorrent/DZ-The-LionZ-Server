@@ -1,8 +1,8 @@
 {
     "m_Version": 12,
     "DisplayName": "AJ's Light Machine Guns",
-    "Icon": "LMG",
-    "Color": "DC143C",
+    "Icon": "Deliver",
+    "Color": "FBFCFEFF",
     "IsExchange": 0,
     "InitStockPercent": 75.0,
     "Items": [

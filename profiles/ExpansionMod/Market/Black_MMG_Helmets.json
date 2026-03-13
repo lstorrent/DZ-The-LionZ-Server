@@ -1,8 +1,8 @@
 {
     "m_Version": 12,
     "DisplayName": "MMG Helmets",
-    "Icon": "Helmet",
-    "Color": "000000",
+    "Icon": "Deliver",
+    "Color": "FBFCFEFF",
     "IsExchange": 0,
     "InitStockPercent": 75.0,
     "Items": [
@@ -15,18 +15,28 @@
             "MinStockThreshold": 1,
             "QuantityPercent": -1,
             "SpawnAttachments": [],
-            "Variants": []
+            "Variants": [
+                "MMG_tactical_helmet_green",
+                "MMG_tactical_helmet_tan",
+                "MMG_tactical_helmet_multicam",
+                "MMG_tactical_helmet_alpine"
+            ]
         },
         {
             "ClassName": "MMG_striker_helmet_black",
             "MaxPriceThreshold": 20000,
             "MinPriceThreshold": 16000,
             "SellPricePercent": -1.0,
-            "MaxStockThreshold": 2,
-            "MinStockThreshold": 1,
+            "MaxStockThreshold": 0,
+            "MinStockThreshold": 0,
             "QuantityPercent": -1,
             "SpawnAttachments": [],
-            "Variants": []
+            "Variants": [
+                "MMG_striker_helmet_green",
+                "MMG_striker_helmet_tan",
+                "MMG_striker_helmet_multicam",
+                "MMG_striker_helmet_alpine"
+            ]
         },
         {
             "ClassName": "mmg_armored_helmet_black",
@@ -37,7 +47,10 @@
             "MinStockThreshold": 1,
             "QuantityPercent": -1,
             "SpawnAttachments": [],
-            "Variants": []
+            "Variants": [
+                "mmg_armored_helmet_green",
+                "mmg_armored_helmet_tan"
+            ]
         },
         {
             "ClassName": "mmg_armored_helmet_visor_black",
@@ -48,7 +61,10 @@
             "MinStockThreshold": 1,
             "QuantityPercent": -1,
             "SpawnAttachments": [],
-            "Variants": []
+            "Variants": [
+                "mmg_armored_helmet_visor_green",
+                "mmg_armored_helmet_visor_tan"
+            ]
         },
         {
             "ClassName": "MMG_headphones_black",
@@ -59,7 +75,10 @@
             "MinStockThreshold": 1,
             "QuantityPercent": -1,
             "SpawnAttachments": [],
-            "Variants": []
+            "Variants": [
+                "MMG_headphones_green",
+                "MMG_headphones_tan"
+            ]
         }
     ]
 }

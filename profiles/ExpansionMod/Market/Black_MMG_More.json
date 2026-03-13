@@ -1,8 +1,8 @@
 {
     "m_Version": 12,
     "DisplayName": "MMG Accessories",
-    "Icon": "Misc",
-    "Color": "000000",
+    "Icon": "Deliver",
+    "Color": "FBFCFEFF",
     "IsExchange": 0,
     "InitStockPercent": 75.0,
     "Items": [
@@ -15,7 +15,12 @@
             "MinStockThreshold": 1,
             "QuantityPercent": -1,
             "SpawnAttachments": [],
-            "Variants": []
+            "Variants": [
+                "MMG_falcon_b1_belt_olive",
+                "MMG_falcon_b1_belt_tan",
+                "MMG_falcon_b1_belt_multicam",
+                "MMG_falcon_b1_belt_alpine"
+            ]
         },
         {
             "ClassName": "MMG_sheath_black",
@@ -26,7 +31,12 @@
             "MinStockThreshold": 1,
             "QuantityPercent": -1,
             "SpawnAttachments": [],
-            "Variants": []
+            "Variants": [
+                "MMG_sheath_olive",
+                "MMG_sheath_tan",
+                "MMG_sheath_multicam",
+                "MMG_sheath_alpine"
+            ]
         },
         {
             "ClassName": "MMG_bottle_black",
@@ -37,7 +47,12 @@
             "MinStockThreshold": 1,
             "QuantityPercent": -1,
             "SpawnAttachments": [],
-            "Variants": []
+            "Variants": [
+                "MMG_bottle_olive",
+                "MMG_bottle_tan",
+                "MMG_bottle_multicam",
+                "MMG_bottle_alpine"
+            ]
         },
         {
             "ClassName": "MMG_Holster_black",
@@ -48,7 +63,12 @@
             "MinStockThreshold": 1,
             "QuantityPercent": -1,
             "SpawnAttachments": [],
-            "Variants": []
+            "Variants": [
+                "MMG_Holster_green",
+                "MMG_Holster_tan",
+                "MMG_Holster_multicam",
+                "MMG_Holster_alpine"
+            ]
         },
         {
             "ClassName": "mmg_tac_goggles_red_black",
@@ -59,7 +79,10 @@
             "MinStockThreshold": 1,
             "QuantityPercent": -1,
             "SpawnAttachments": [],
-            "Variants": []
+            "Variants": [
+                "mmg_tac_goggles_red_green",
+                "mmg_tac_goggles_red_tan"
+            ]
         }
     ]
 }

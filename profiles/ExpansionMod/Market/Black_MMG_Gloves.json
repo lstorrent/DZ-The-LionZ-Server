@@ -1,8 +1,8 @@
 {
     "m_Version": 12,
     "DisplayName": "MMG Gloves",
-    "Icon": "Gloves",
-    "Color": "000000",
+    "Icon": "Deliver",
+    "Color": "FBFCFEFF",
     "IsExchange": 0,
     "InitStockPercent": 75.0,
     "Items": [
@@ -15,7 +15,12 @@
             "MinStockThreshold": 1,
             "QuantityPercent": -1,
             "SpawnAttachments": [],
-            "Variants": []
+            "Variants": [
+                "mmg_tactical_gloves_green",
+                "mmg_tactical_gloves_tan",
+                "mmg_tactical_gloves_multicam",
+                "mmg_tactical_gloves_alpine"
+            ]
         }
     ]
 }

@@ -1,8 +1,8 @@
 {
     "m_Version": 12,
-    "DisplayName": "AJ's_Assault_Rifles",
-    "Icon": "Rifle",
-    "Color": "4682B4",
+    "DisplayName": "AJ's Assault_Rifles",
+    "Icon": "Deliver",
+    "Color": "FBFCFEFF",
     "IsExchange": 0,
     "InitStockPercent": 75.0,
     "Items": [

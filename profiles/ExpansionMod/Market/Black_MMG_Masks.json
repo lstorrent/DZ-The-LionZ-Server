@@ -1,8 +1,8 @@
 {
     "m_Version": 12,
     "DisplayName": "MMG Masks",
-    "Icon": "Mask",
-    "Color": "000000",
+    "Icon": "Deliver",
+    "Color": "FBFCFEFF",
     "IsExchange": 0,
     "InitStockPercent": 75.0,
     "Items": [
@@ -15,7 +15,12 @@
             "MinStockThreshold": 1,
             "QuantityPercent": -1,
             "SpawnAttachments": [],
-            "Variants": []
+            "Variants": [
+                "MMG_facemask_green",
+                "MMG_facemask_tan",
+                "MMG_facemask_multicam",
+                "MMG_facemask_alpine"
+            ]
         },
         {
             "ClassName": "MMG_facemask_skull",
@@ -48,7 +53,27 @@
             "MinStockThreshold": 1,
             "QuantityPercent": -1,
             "SpawnAttachments": [],
-            "Variants": []
+            "Variants": [
+                "MMG_balaclava_olive",
+                "MMG_balaclava_tan",
+                "MMG_balaclava_multicam",
+                "MMG_balaclava_alpine"
+            ]
+        },
+        {
+            "ClassName": "mmg_boonie_green",
+            "MaxPriceThreshold": 4500,
+            "MinPriceThreshold": 3500,
+            "SellPricePercent": -1.0,
+            "MaxStockThreshold": 3,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [],
+            "Variants": [
+                "mmg_boonie_tan",
+                "mmg_boonie_multicam",
+                "mmg_boonie_alpine"
+            ]
         }
     ]
 }

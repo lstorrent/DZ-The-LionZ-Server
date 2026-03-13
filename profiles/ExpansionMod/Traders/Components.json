@@ -16,7 +16,8 @@
         "Kits",
         "Navigation",
         "Electronics",
-        "Lights"
+        "Lights",
+        "Spraycans"
     ],
     "Items": {
         "nvgoggles": 3,

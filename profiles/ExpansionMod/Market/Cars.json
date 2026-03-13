@@ -4,14 +4,14 @@
     "Icon": "Deliver",
     "Color": "FBFCFEFF",
     "IsExchange": 0,
-    "InitStockPercent": 75.0,
+    "InitStockPercent": 5.0,
     "Items": [
         {
             "ClassName": "offroadhatchback",
-            "MaxPriceThreshold": 33600,
-            "MinPriceThreshold": 20160,
-            "SellPricePercent": -1.0,
-            "MaxStockThreshold": 4,
+            "MaxPriceThreshold": 168000,
+            "MinPriceThreshold": 100800,
+            "SellPricePercent": 10.0,
+            "MaxStockThreshold": 2,
             "MinStockThreshold": 1,
             "QuantityPercent": -1,
             "SpawnAttachments": [
@@ -34,10 +34,10 @@
         },
         {
             "ClassName": "hatchback_02",
-            "MaxPriceThreshold": 24000,
-            "MinPriceThreshold": 14400,
-            "SellPricePercent": -1.0,
-            "MaxStockThreshold": 5,
+            "MaxPriceThreshold": 120000,
+            "MinPriceThreshold": 72000,
+            "SellPricePercent": 10.0,
+            "MaxStockThreshold": 2,
             "MinStockThreshold": 1,
             "QuantityPercent": -1,
             "SpawnAttachments": [
@@ -62,10 +62,10 @@
         },
         {
             "ClassName": "sedan_02",
-            "MaxPriceThreshold": 31200,
-            "MinPriceThreshold": 18720,
-            "SellPricePercent": -1.0,
-            "MaxStockThreshold": 5,
+            "MaxPriceThreshold": 156000,
+            "MinPriceThreshold": 93600,
+            "SellPricePercent": 10.0,
+            "MaxStockThreshold": 2,
             "MinStockThreshold": 1,
             "QuantityPercent": -1,
             "SpawnAttachments": [
@@ -90,10 +90,10 @@
         },
         {
             "ClassName": "civiliansedan",
-            "MaxPriceThreshold": 38400,
-            "MinPriceThreshold": 23040,
-            "SellPricePercent": -1.0,
-            "MaxStockThreshold": 4,
+            "MaxPriceThreshold": 192000,
+            "MinPriceThreshold": 115200,
+            "SellPricePercent": 10.0,
+            "MaxStockThreshold": 2,
             "MinStockThreshold": 1,
             "QuantityPercent": -1,
             "SpawnAttachments": [
@@ -118,10 +118,10 @@
         },
         {
             "ClassName": "truck_01_covered",
-            "MaxPriceThreshold": 48000,
-            "MinPriceThreshold": 28800,
-            "SellPricePercent": -1.0,
-            "MaxStockThreshold": 7,
+            "MaxPriceThreshold": 240000,
+            "MinPriceThreshold": 144000,
+            "SellPricePercent": 10.0,
+            "MaxStockThreshold": 1,
             "MinStockThreshold": 1,
             "QuantityPercent": -1,
             "SpawnAttachments": [
@@ -144,10 +144,10 @@
         },
         {
             "ClassName": "offroad_02",
-            "MaxPriceThreshold": 44400,
-            "MinPriceThreshold": 26640,
-            "SellPricePercent": -1.0,
-            "MaxStockThreshold": 4,
+            "MaxPriceThreshold": 222000,
+            "MinPriceThreshold": 133200,
+            "SellPricePercent": 10.0,
+            "MaxStockThreshold": 1,
             "MinStockThreshold": 1,
             "QuantityPercent": -1,
             "SpawnAttachments": [
@@ -171,10 +171,10 @@
         },
         {
             "ClassName": "expansiontractor",
-            "MaxPriceThreshold": 20000,
-            "MinPriceThreshold": 10000,
-            "SellPricePercent": -1.0,
-            "MaxStockThreshold": 7,
+            "MaxPriceThreshold": 100000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": 10.0,
+            "MaxStockThreshold": 2,
             "MinStockThreshold": 1,
             "QuantityPercent": -1,
             "SpawnAttachments": [
@@ -193,10 +193,10 @@
         },
         {
             "ClassName": "expansionuaz",
-            "MaxPriceThreshold": 60000,
-            "MinPriceThreshold": 30000,
-            "SellPricePercent": -1.0,
-            "MaxStockThreshold": 3,
+            "MaxPriceThreshold": 300000,
+            "MinPriceThreshold": 150000,
+            "SellPricePercent": 10.0,
+            "MaxStockThreshold": 1,
             "MinStockThreshold": 1,
             "QuantityPercent": -1,
             "SpawnAttachments": [
@@ -223,10 +223,10 @@
         },
         {
             "ClassName": "expansionbus",
-            "MaxPriceThreshold": 180000,
-            "MinPriceThreshold": 70000,
-            "SellPricePercent": -1.0,
-            "MaxStockThreshold": 3,
+            "MaxPriceThreshold": 900000,
+            "MinPriceThreshold": 350000,
+            "SellPricePercent": 10.0,
+            "MaxStockThreshold": 1,
             "MinStockThreshold": 1,
             "QuantityPercent": -1,
             "SpawnAttachments": [
@@ -244,10 +244,10 @@
         },
         {
             "ClassName": "expansionvodnik",
-            "MaxPriceThreshold": 200000,
-            "MinPriceThreshold": 100000,
-            "SellPricePercent": -1.0,
-            "MaxStockThreshold": 4,
+            "MaxPriceThreshold": 1000000,
+            "MinPriceThreshold": 500000,
+            "SellPricePercent": 10.0,
+            "MaxStockThreshold": 1,
             "MinStockThreshold": 1,
             "QuantityPercent": -1,
             "SpawnAttachments": [
@@ -265,10 +265,10 @@
         },
         {
             "ClassName": "expansion_landrover",
-            "MaxPriceThreshold": 180000,
-            "MinPriceThreshold": 70000,
-            "SellPricePercent": -1.0,
-            "MaxStockThreshold": 3,
+            "MaxPriceThreshold": 900000,
+            "MinPriceThreshold": 350000,
+            "SellPricePercent": 10.0,
+            "MaxStockThreshold": 1,
             "MinStockThreshold": 1,
             "QuantityPercent": -1,
             "SpawnAttachments": [

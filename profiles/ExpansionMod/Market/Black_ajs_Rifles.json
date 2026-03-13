@@ -1,8 +1,8 @@
 {
     "m_Version": 12,
     "DisplayName": "AJ's Rifles",
-    "Icon": "Rifle",
-    "Color": "8B4513",
+    "Icon": "Deliver",
+    "Color": "FBFCFEFF",
     "IsExchange": 0,
     "InitStockPercent": 75.0,
     "Items": [

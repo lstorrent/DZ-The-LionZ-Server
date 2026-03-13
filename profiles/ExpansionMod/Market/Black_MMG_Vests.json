@@ -1,8 +1,8 @@
 {
     "m_Version": 12,
     "DisplayName": "MMG Vests",
-    "Icon": "Vest",
-    "Color": "000000",
+    "Icon": "Deliver",
+    "Color": "FBFCFEFF",
     "IsExchange": 0,
     "InitStockPercent": 75.0,
     "Items": [
@@ -15,7 +15,12 @@
             "MinStockThreshold": 1,
             "QuantityPercent": -1,
             "SpawnAttachments": [],
-            "Variants": []
+            "Variants": [
+                "MMG_JPC_Vest_olive",
+                "MMG_JPC_Vest_tan",
+                "MMG_JPC_Vest_multicam",
+                "MMG_JPC_Vest_alpine"
+            ]
         },
         {
             "ClassName": "MMG_tt_Vest_black",
@@ -26,7 +31,12 @@
             "MinStockThreshold": 1,
             "QuantityPercent": -1,
             "SpawnAttachments": [],
-            "Variants": []
+            "Variants": [
+                "MMG_tt_Vest_green",
+                "MMG_tt_Vest_tan",
+                "MMG_tt_Vest_multicam",
+                "MMG_tt_Vest_alpine"
+            ]
         },
         {
             "ClassName": "MMG_chestrig_black",
@@ -37,29 +47,44 @@
             "MinStockThreshold": 1,
             "QuantityPercent": -1,
             "SpawnAttachments": [],
-            "Variants": []
+            "Variants": [
+                "MMG_chestrig_green",
+                "MMG_chestrig_tan",
+                "MMG_chestrig_multicam",
+                "MMG_chestrig_alpine"
+            ]
         },
         {
             "ClassName": "MMG_MK_III_Armor_black",
-            "MaxPriceThreshold": 35000,
-            "MinPriceThreshold": 28000,
+            "MaxPriceThreshold": 85000,
+            "MinPriceThreshold": 78000,
             "SellPricePercent": -1.0,
             "MaxStockThreshold": 2,
             "MinStockThreshold": 1,
             "QuantityPercent": -1,
             "SpawnAttachments": [],
-            "Variants": []
+            "Variants": [
+                "MMG_MK_III_Armor_green",
+                "MMG_MK_III_Armor_tan",
+                "MMG_MK_III_Armor_multicam",
+                "MMG_MK_III_Armor_alpine"
+            ]
         },
         {
             "ClassName": "MMG_MK_V_Armor_black",
             "MaxPriceThreshold": 45000,
             "MinPriceThreshold": 38000,
             "SellPricePercent": -1.0,
-            "MaxStockThreshold": 1,
-            "MinStockThreshold": 1,
+            "MaxStockThreshold": 0,
+            "MinStockThreshold": 0,
             "QuantityPercent": -1,
             "SpawnAttachments": [],
-            "Variants": []
+            "Variants": [
+                "MMG_MK_V_Armor_green",
+                "MMG_MK_V_Armor_tan",
+                "MMG_MK_V_Armor_multicam",
+                "MMG_MK_V_Armor_alpine"
+            ]
         }
     ]
 }

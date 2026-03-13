@@ -1,8 +1,8 @@
 {
     "m_Version": 12,
     "DisplayName": "AJ's Pistols",
-    "Icon": "Pistol",
-    "Color": "FFD700",
+    "Icon": "Deliver",
+    "Color": "FBFCFEFF",
     "IsExchange": 0,
     "InitStockPercent": 75.0,
     "Items": [

@@ -12,8 +12,6 @@
     "DisplayCurrencyValue": 1,
     "DisplayCurrencyName": "",
     "UseCategoryOrder": 0,
-    "Categories": [
-        "Spraycans"
-    ],
+    "Categories": [],
     "Items": {}
 }
