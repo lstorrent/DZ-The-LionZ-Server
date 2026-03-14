@@ -17,9 +17,13 @@
     "DisplayCurrencyName": "",
     "UseCategoryOrder": 0,
     "Categories": [
-        "Black_ajs_Optics",
         "Black_ajs_Attachments",
-        "Black_ajs_Magazines",
+        "Black_ajs_Attachments_Optics",
+        "Black_ajs_Attachments_Grips",
+        "Black_ajs_Attachments_Handguards",
+        "Black_ajs_Attachments_Buttstocks",
+        "Black_ajs_Attachments_Suppressors",
+        "Black_ajs_Attachments_Magazines",
         "Black_ajs_Ammo"
     ],
     "Items": {}

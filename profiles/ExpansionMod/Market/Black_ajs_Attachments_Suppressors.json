@@ -1,13 +1,13 @@
 {
     "m_Version": 12,
-    "DisplayName": "Black_ajs_Attachments",
+    "DisplayName": "Black_ajs_Attachments_Suppressors",
     "Icon": "Deliver",
     "Color": "FBFCFEFF",
     "IsExchange": 0,
     "InitStockPercent": 75.0,
     "Items": [
         {
-            "ClassName": "AJW_M4_CH_Aero_Black",
+            "ClassName": "AJW_SurefireRC2_Tan_Suppressor",
             "MaxPriceThreshold": 500,
             "MinPriceThreshold": 500,
             "SellPricePercent": -1.0,
@@ -18,7 +18,7 @@
             "Variants": []
         },
         {
-            "ClassName": "AJW_M4_CH_Aero_ANred",
+            "ClassName": "AJW_SurefireRC2_Black_Suppressor",
             "MaxPriceThreshold": 500,
             "MinPriceThreshold": 500,
             "SellPricePercent": -1.0,
@@ -29,7 +29,7 @@
             "Variants": []
         },
         {
-            "ClassName": "AJW_M4_CH_Aero_Gold",
+            "ClassName": "AJW_SurefireFA762K_Tan_Suppressor",
             "MaxPriceThreshold": 500,
             "MinPriceThreshold": 500,
             "SellPricePercent": -1.0,
@@ -40,7 +40,7 @@
             "Variants": []
         },
         {
-            "ClassName": "AJW_Vityaz_DC_SN_Black",
+            "ClassName": "AJW_SurefireFA762K_Black_Suppressor",
             "MaxPriceThreshold": 500,
             "MinPriceThreshold": 500,
             "SellPricePercent": -1.0,
@@ -51,7 +51,7 @@
             "Variants": []
         },
         {
-            "ClassName": "AJW_Vityaz_DC_SN_FDE",
+            "ClassName": "AJW_HKG28_BTQD_Suppressor_Tan",
             "MaxPriceThreshold": 500,
             "MinPriceThreshold": 500,
             "SellPricePercent": -1.0,
@@ -62,7 +62,7 @@
             "Variants": []
         },
         {
-            "ClassName": "AJW_AK_DC_B33_Black",
+            "ClassName": "AJW_HKG28_BTQD_Suppressor_Black",
             "MaxPriceThreshold": 500,
             "MinPriceThreshold": 500,
             "SellPricePercent": -1.0,
@@ -73,7 +73,7 @@
             "Variants": []
         },
         {
-            "ClassName": "AJW_AK_DC_B33_FDE",
+            "ClassName": "AJW_AACSDN_Suppressor_FDE",
             "MaxPriceThreshold": 500,
             "MinPriceThreshold": 500,
             "SellPricePercent": -1.0,
@@ -84,7 +84,7 @@
             "Variants": []
         },
         {
-            "ClassName": "AJW_74U_PDC_DC",
+            "ClassName": "AJW_AACSDN_Suppressor_Black",
             "MaxPriceThreshold": 500,
             "MinPriceThreshold": 500,
             "SellPricePercent": -1.0,
@@ -95,7 +95,7 @@
             "Variants": []
         },
         {
-            "ClassName": "AJW_Bipod_Harris",
+            "ClassName": "AJW_Rotor43_Suppressor_Black",
             "MaxPriceThreshold": 500,
             "MinPriceThreshold": 500,
             "SellPricePercent": -1.0,
@@ -106,7 +106,7 @@
             "Variants": []
         },
         {
-            "ClassName": "AJW_Surefire_Gunlight_Black",
+            "ClassName": "AJW_Rotor43_Suppressor_Rattle",
             "MaxPriceThreshold": 500,
             "MinPriceThreshold": 500,
             "SellPricePercent": -1.0,
@@ -117,7 +117,7 @@
             "Variants": []
         },
         {
-            "ClassName": "AJW_Surefire_Gunlight_FDE",
+            "ClassName": "AJW_Osprey_Suppressor_Black",
             "MaxPriceThreshold": 500,
             "MinPriceThreshold": 500,
             "SellPricePercent": -1.0,
@@ -128,7 +128,7 @@
             "Variants": []
         },
         {
-            "ClassName": "AJW_HKMk23SOCOM_LAM",
+            "ClassName": "AJW_Osprey_Suppressor_FDE",
             "MaxPriceThreshold": 500,
             "MinPriceThreshold": 500,
             "SellPricePercent": -1.0,
@@ -139,7 +139,7 @@
             "Variants": []
         },
         {
-            "ClassName": "AJW_12GA_MuzzleBreak",
+            "ClassName": "AJW_HKMk23SOCOM_Suppressor",
             "MaxPriceThreshold": 500,
             "MinPriceThreshold": 500,
             "SellPricePercent": -1.0,
@@ -150,7 +150,7 @@
             "Variants": []
         },
         {
-            "ClassName": "AJW_M4_MD_Noveske_Black",
+            "ClassName": "AJW_QDSSNT4_Suppressor_Black",
             "MaxPriceThreshold": 500,
             "MinPriceThreshold": 500,
             "SellPricePercent": -1.0,
@@ -161,7 +161,7 @@
             "Variants": []
         },
         {
-            "ClassName": "AJW_M4_MD_Noveske_FDE",
+            "ClassName": "AJW_QDSSNT4_Suppressor_FDE",
             "MaxPriceThreshold": 500,
             "MinPriceThreshold": 500,
             "SellPricePercent": -1.0,
@@ -172,7 +172,95 @@
             "Variants": []
         },
         {
-            "ClassName": "AJW_AK74M_Comp",
+            "ClassName": "AJW_Gemtech_Suppressor_Black",
+            "MaxPriceThreshold": 500,
+            "MinPriceThreshold": 500,
+            "SellPricePercent": -1.0,
+            "MaxStockThreshold": 1,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [],
+            "Variants": []
+        },
+        {
+            "ClassName": "AJW_Gemtech_Suppressor_FDE",
+            "MaxPriceThreshold": 500,
+            "MinPriceThreshold": 500,
+            "SellPricePercent": -1.0,
+            "MaxStockThreshold": 1,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [],
+            "Variants": []
+        },
+        {
+            "ClassName": "AJW_DTK4_Suppressor_Black",
+            "MaxPriceThreshold": 500,
+            "MinPriceThreshold": 500,
+            "SellPricePercent": -1.0,
+            "MaxStockThreshold": 1,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [],
+            "Variants": []
+        },
+        {
+            "ClassName": "AJW_DTK4_Suppressor_MC",
+            "MaxPriceThreshold": 500,
+            "MinPriceThreshold": 500,
+            "SellPricePercent": -1.0,
+            "MaxStockThreshold": 1,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [],
+            "Variants": []
+        },
+        {
+            "ClassName": "AJW_DTKP_Suppressor_Black",
+            "MaxPriceThreshold": 500,
+            "MinPriceThreshold": 500,
+            "SellPricePercent": -1.0,
+            "MaxStockThreshold": 1,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [],
+            "Variants": []
+        },
+        {
+            "ClassName": "AJW_DTKP_Suppressor_FDE",
+            "MaxPriceThreshold": 500,
+            "MinPriceThreshold": 500,
+            "SellPricePercent": -1.0,
+            "MaxStockThreshold": 1,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [],
+            "Variants": []
+        },
+        {
+            "ClassName": "AJW_Hexagon_Suppressor_Black",
+            "MaxPriceThreshold": 500,
+            "MinPriceThreshold": 500,
+            "SellPricePercent": -1.0,
+            "MaxStockThreshold": 1,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [],
+            "Variants": []
+        },
+        {
+            "ClassName": "AJW_PBS1_Suppressor",
+            "MaxPriceThreshold": 500,
+            "MinPriceThreshold": 500,
+            "SellPricePercent": -1.0,
+            "MaxStockThreshold": 1,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [],
+            "Variants": []
+        },
+        {
+            "ClassName": "AJW_PBS4_Suppressor",
             "MaxPriceThreshold": 500,
             "MinPriceThreshold": 500,
             "SellPricePercent": -1.0,

@@ -13,7 +13,7 @@
         <category name="weapons" />
         <usage name="Military" />
     </type>
-    <type name="AJW_AK74U_HNG_B11">
+    <type name="AJW_AK74U_HN_B11">
         <nominal>0</nominal>
         <lifetime>2700</lifetime>
         <restock>360</restock>
@@ -25,7 +25,7 @@
         <category name="weapons" />
         <usage name="Military" />
     </type>
-    <type name="AJW_AK74U_HNG_Goliaf_Black">
+    <type name="AJW_AK74U_HN_Goliaf_Black">
         <nominal>0</nominal>
         <lifetime>2700</lifetime>
         <restock>360</restock>
@@ -37,7 +37,7 @@
         <category name="weapons" />
         <usage name="Military" />
     </type>
-    <type name="AJW_AK74U_HNG_Goliaf_Copper">
+    <type name="AJW_AK74U_HN_Goliaf_Copper">
         <nominal>0</nominal>
         <lifetime>2700</lifetime>
         <restock>360</restock>
@@ -49,7 +49,7 @@
         <category name="weapons" />
         <usage name="Military" />
     </type>
-    <type name="AJW_AK74U_HNG_STD">
+    <type name="AJW_AK74U_HN_STD">
         <nominal>0</nominal>
         <lifetime>2700</lifetime>
         <restock>360</restock>

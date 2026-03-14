@@ -1,13 +1,13 @@
 {
     "m_Version": 12,
-    "DisplayName": "Black_ajs_Attachments",
+    "DisplayName": "Black_ajs_Attachments_Magazines",
     "Icon": "Deliver",
     "Color": "FBFCFEFF",
     "IsExchange": 0,
     "InitStockPercent": 75.0,
     "Items": [
         {
-            "ClassName": "AJW_M4_CH_Aero_Black",
+            "ClassName": "AJW_Mag_FALX_50rnd",
             "MaxPriceThreshold": 500,
             "MinPriceThreshold": 500,
             "SellPricePercent": -1.0,
@@ -18,7 +18,7 @@
             "Variants": []
         },
         {
-            "ClassName": "AJW_M4_CH_Aero_ANred",
+            "ClassName": "AJW_Mag_AKM_Poly_60rnd",
             "MaxPriceThreshold": 500,
             "MinPriceThreshold": 500,
             "SellPricePercent": -1.0,
@@ -29,7 +29,7 @@
             "Variants": []
         },
         {
-            "ClassName": "AJW_M4_CH_Aero_Gold",
+            "ClassName": "AJW_Mag_AK_6L31_60rnd_Black",
             "MaxPriceThreshold": 500,
             "MinPriceThreshold": 500,
             "SellPricePercent": -1.0,
@@ -40,7 +40,7 @@
             "Variants": []
         },
         {
-            "ClassName": "AJW_Vityaz_DC_SN_Black",
+            "ClassName": "AJW_Mag_AK_6L31_60rnd_MC",
             "MaxPriceThreshold": 500,
             "MinPriceThreshold": 500,
             "SellPricePercent": -1.0,
@@ -51,7 +51,7 @@
             "Variants": []
         },
         {
-            "ClassName": "AJW_Vityaz_DC_SN_FDE",
+            "ClassName": "AJW_Mag_AK_6L31_60rnd_ATAC",
             "MaxPriceThreshold": 500,
             "MinPriceThreshold": 500,
             "SellPricePercent": -1.0,
@@ -62,7 +62,7 @@
             "Variants": []
         },
         {
-            "ClassName": "AJW_AK_DC_B33_Black",
+            "ClassName": "AJW_Mag_STANAG_100Rnd",
             "MaxPriceThreshold": 500,
             "MinPriceThreshold": 500,
             "SellPricePercent": -1.0,
@@ -73,7 +73,7 @@
             "Variants": []
         },
         {
-            "ClassName": "AJW_AK_DC_B33_FDE",
+            "ClassName": "AJW_Mag_9x39_60Rnd",
             "MaxPriceThreshold": 500,
             "MinPriceThreshold": 500,
             "SellPricePercent": -1.0,
@@ -84,7 +84,7 @@
             "Variants": []
         },
         {
-            "ClassName": "AJW_74U_PDC_DC",
+            "ClassName": "AJW_Mag_Troy_30Rnd_Black",
             "MaxPriceThreshold": 500,
             "MinPriceThreshold": 500,
             "SellPricePercent": -1.0,
@@ -95,7 +95,7 @@
             "Variants": []
         },
         {
-            "ClassName": "AJW_Bipod_Harris",
+            "ClassName": "AJW_Mag_Troy_30Rnd_FDE",
             "MaxPriceThreshold": 500,
             "MinPriceThreshold": 500,
             "SellPricePercent": -1.0,
@@ -106,7 +106,7 @@
             "Variants": []
         },
         {
-            "ClassName": "AJW_Surefire_Gunlight_Black",
+            "ClassName": "AJW_Mag_D60_60Rnd_Black",
             "MaxPriceThreshold": 500,
             "MinPriceThreshold": 500,
             "SellPricePercent": -1.0,
@@ -117,7 +117,7 @@
             "Variants": []
         },
         {
-            "ClassName": "AJW_Surefire_Gunlight_FDE",
+            "ClassName": "AJW_Mag_D60_60Rnd_FDE",
             "MaxPriceThreshold": 500,
             "MinPriceThreshold": 500,
             "SellPricePercent": -1.0,
@@ -128,7 +128,7 @@
             "Variants": []
         },
         {
-            "ClassName": "AJW_HKMk23SOCOM_LAM",
+            "ClassName": "AJW_Mag_PMAG_30Rnd_Black",
             "MaxPriceThreshold": 500,
             "MinPriceThreshold": 500,
             "SellPricePercent": -1.0,
@@ -139,7 +139,7 @@
             "Variants": []
         },
         {
-            "ClassName": "AJW_12GA_MuzzleBreak",
+            "ClassName": "AJW_Mag_PMAG_30Rnd_FDE",
             "MaxPriceThreshold": 500,
             "MinPriceThreshold": 500,
             "SellPricePercent": -1.0,
@@ -150,7 +150,7 @@
             "Variants": []
         },
         {
-            "ClassName": "AJW_M4_MD_Noveske_Black",
+            "ClassName": "AJW_Mag_PMAG_30Rnd_CB",
             "MaxPriceThreshold": 500,
             "MinPriceThreshold": 500,
             "SellPricePercent": -1.0,
@@ -161,7 +161,7 @@
             "Variants": []
         },
         {
-            "ClassName": "AJW_M4_MD_Noveske_FDE",
+            "ClassName": "AJW_Mag_HKGen2PM_30Rnd_Black",
             "MaxPriceThreshold": 500,
             "MinPriceThreshold": 500,
             "SellPricePercent": -1.0,
@@ -172,7 +172,128 @@
             "Variants": []
         },
         {
-            "ClassName": "AJW_AK74M_Comp",
+            "ClassName": "AJW_Mag_HKGen2PM_30Rnd_FDE",
+            "MaxPriceThreshold": 500,
+            "MinPriceThreshold": 500,
+            "SellPricePercent": -1.0,
+            "MaxStockThreshold": 1,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [],
+            "Variants": []
+        },
+        {
+            "ClassName": "AJW_Mag_545_PMAG_30rnd_Black",
+            "MaxPriceThreshold": 500,
+            "MinPriceThreshold": 500,
+            "SellPricePercent": -1.0,
+            "MaxStockThreshold": 1,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [],
+            "Variants": []
+        },
+        {
+            "ClassName": "AJW_Mag_545_PMAG_30rnd_FDE",
+            "MaxPriceThreshold": 500,
+            "MinPriceThreshold": 500,
+            "SellPricePercent": -1.0,
+            "MaxStockThreshold": 1,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [],
+            "Variants": []
+        },
+        {
+            "ClassName": "AJW_Mag_545_Promag_73rnd_Black",
+            "MaxPriceThreshold": 500,
+            "MinPriceThreshold": 500,
+            "SellPricePercent": -1.0,
+            "MaxStockThreshold": 1,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [],
+            "Variants": []
+        },
+        {
+            "ClassName": "AJW_Mag_762_bklt_30rnd",
+            "MaxPriceThreshold": 500,
+            "MinPriceThreshold": 500,
+            "SellPricePercent": -1.0,
+            "MaxStockThreshold": 1,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [],
+            "Variants": []
+        },
+        {
+            "ClassName": "AJW_Mag_762_PMAG_30rnd_Black",
+            "MaxPriceThreshold": 500,
+            "MinPriceThreshold": 500,
+            "SellPricePercent": -1.0,
+            "MaxStockThreshold": 1,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [],
+            "Variants": []
+        },
+        {
+            "ClassName": "AJW_Mag_762_PMAG_30rnd_FDE",
+            "MaxPriceThreshold": 500,
+            "MinPriceThreshold": 500,
+            "SellPricePercent": -1.0,
+            "MaxStockThreshold": 1,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [],
+            "Variants": []
+        },
+        {
+            "ClassName": "AJW_Mag_762_PMAG_30rnd_Banana",
+            "MaxPriceThreshold": 500,
+            "MinPriceThreshold": 500,
+            "SellPricePercent": -1.0,
+            "MaxStockThreshold": 1,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [],
+            "Variants": []
+        },
+        {
+            "ClassName": "AJW_Mag_762_X47_50rnd",
+            "MaxPriceThreshold": 500,
+            "MinPriceThreshold": 500,
+            "SellPricePercent": -1.0,
+            "MaxStockThreshold": 1,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [],
+            "Variants": []
+        },
+        {
+            "ClassName": "AJW_MAGEXT_TTI_Black",
+            "MaxPriceThreshold": 500,
+            "MinPriceThreshold": 500,
+            "SellPricePercent": -1.0,
+            "MaxStockThreshold": 1,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [],
+            "Variants": []
+        },
+        {
+            "ClassName": "AJW_MAGEXT_TTI_Grey",
+            "MaxPriceThreshold": 500,
+            "MinPriceThreshold": 500,
+            "SellPricePercent": -1.0,
+            "MaxStockThreshold": 1,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [],
+            "Variants": []
+        },
+        {
+            "ClassName": "AJW_MAGEXT_TTI_Red",
             "MaxPriceThreshold": 500,
             "MinPriceThreshold": 500,
             "SellPricePercent": -1.0,

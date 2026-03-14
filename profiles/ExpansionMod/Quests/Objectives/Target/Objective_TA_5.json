@@ -1,0 +1,21 @@
+{
+    "ConfigVersion": 28,
+    "ID": 5,
+    "ObjectiveType": 2,
+    "ObjectiveText": "Destruir o caminhão",
+    "TimeLimit": -1,
+    "Active": 1,
+    "Position": [7235.703613, 28.115433, 3036.011230],
+    "MaxDistance": -1.0,
+    "MinDistance": -1.0,
+    "Amount": 10,
+    "ClassNames": [
+        "Truck_01_Covered"
+    ],
+    "CountSelfKill": 0,
+    "AllowedWeapons": [],
+    "ExcludedClassNames": [],
+    "CountAIPlayers": 0,
+    "AllowedTargetFactions": [],
+    "AllowedDamageZones": []
+}
