@@ -2,7 +2,7 @@
     "m_Version": 13,
     "DisplayName": "#STR_EXPANSION_BLACK_MARKET_TRADER_WEAPON",
     "MinRequiredReputation": 0,
-    "MaxRequiredReputation": 0,
+    "MaxRequiredReputation": 2147483647,
     "RequiredFaction": "",
     "RequiredCompletedQuestID": -1,
     "TraderIcon": "Shotgun",

@@ -40,28 +40,6 @@
             "Variants": []
         },
         {
-            "ClassName": "chips",
-            "MaxPriceThreshold": 3950,
-            "MinPriceThreshold": 2400,
-            "SellPricePercent": 10.0,
-            "MaxStockThreshold": 6,
-            "MinStockThreshold": 1,
-            "QuantityPercent": -1,
-            "SpawnAttachments": [],
-            "Variants": []
-        },
-        {
-            "ClassName": "pate",
-            "MaxPriceThreshold": 3500,
-            "MinPriceThreshold": 2100,
-            "SellPricePercent": 10.0,
-            "MaxStockThreshold": 5,
-            "MinStockThreshold": 1,
-            "QuantityPercent": -1,
-            "SpawnAttachments": [],
-            "Variants": []
-        },
-        {
             "ClassName": "sardinescan",
             "MaxPriceThreshold": 3800,
             "MinPriceThreshold": 2300,
