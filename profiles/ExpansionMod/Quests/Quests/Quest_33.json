@@ -2,13 +2,13 @@
     "ConfigVersion": 22,
     "ID": 33,
     "Type": 1,
-    "Title": "Recuperar suprimentos para o Mercado",
+    "Title": "Missão: Inativar transporte",
     "Descriptions": [
-        "Nosso caminhão foi interceptado. Nao sabemos se ainda vamos conseguir recuperar. De qualquer forma recupere nosso caminhão. Interceptamos o sinal do rádio do caminhão na base militar de Cherno. Use seu mapa e traga o caminhão.",
+        "Ainda temos muitos inimigos! Nossa inteligencia tem informações que os bandidos que tentam ocupar Zeleno vem recebendo suprimentos de uma base militar na costa! Ha indicios que o caminhão de transporte encontra-se em uma base militar abandonada. Parece que eles estao reparando o caminhão. Agora é a hora de atacar o inimigo!",
         "Vamos te recompesar!",
         ""
     ],
-    "ObjectiveText": "Recuperar suprimentos para o Mercado",
+    "ObjectiveText": "",
     "FollowUpQuest": -1,
     "Repeatable": 1,
     "IsDailyQuest": 0,
