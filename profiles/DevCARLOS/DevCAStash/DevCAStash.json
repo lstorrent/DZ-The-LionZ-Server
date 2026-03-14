@@ -1,0 +1,199 @@
+{
+    "m_Enable": 1,
+    "m_Logging": 0,
+    "m_ReloadInterval_minutes": 5,
+    "m_EnableWebhook": 0,
+    "m_WebhookURL": "",
+    "m_Stashs": [
+        {
+            "m_Name": "stash-01-sky-resort",
+            "m_Container": "DevCAStash_Box",
+            "m_ReloadTime_minutes": 180,
+            "m_Rewards": [
+                "food"
+            ],
+            "m_Quantity": 1,
+            "m_Positions": [
+                {
+                    "m_PosX": 229.36526489257813,
+                    "m_PosY": 545.871337890625,
+                    "m_PosZ": 11863.3349609375,
+                    "m_OriX": -36.24558639526367,
+                    "m_OriY": 0.0,
+                    "m_OriZ": 0.0
+                }
+            ],
+            "m_RandomSpawn": 0,
+            "m_FixedUntilLooted": 0
+        },
+        {
+            "m_Name": "stash-02-sky-resort",
+            "m_Container": "DevCAStash_Box",
+            "m_ReloadTime_minutes": 180,
+            "m_Rewards": [
+                "weapons"
+            ],
+            "m_Quantity": 1,
+            "m_Positions": [
+                {
+                    "m_PosX": 225.82357788085938,
+                    "m_PosY": 545.9336547851563,
+                    "m_PosZ": 11869.74609375,
+                    "m_OriX": -158.07749938964845,
+                    "m_OriY": 0.0,
+                    "m_OriZ": 0.0
+                }
+            ],
+            "m_RandomSpawn": 0,
+            "m_FixedUntilLooted": 0
+        },
+        {
+            "m_Name": "stash-03-sky-resort",
+            "m_Container": "DevCAStash_Box",
+            "m_ReloadTime_minutes": 180,
+            "m_Rewards": [
+                "weapons",
+                "food",
+                "Medical"
+            ],
+            "m_Quantity": 1,
+            "m_Positions": [
+                {
+                    "m_PosX": 226.48365783691407,
+                    "m_PosY": 546.8261108398438,
+                    "m_PosZ": 11833.1669921875,
+                    "m_OriX": 30.0,
+                    "m_OriY": 0.0,
+                    "m_OriZ": 0.0
+                },
+                {
+                    "m_PosX": 223.7353515625,
+                    "m_PosY": 545.9153442382813,
+                    "m_PosZ": 11868.8671875,
+                    "m_OriX": 60.0,
+                    "m_OriY": 0.0,
+                    "m_OriZ": 0.0
+                }
+            ],
+            "m_RandomSpawn": 1,
+            "m_FixedUntilLooted": 0
+        }
+    ],
+    "m_LootBoxes": [
+        {
+            "m_Name": "weapons",
+            "m_QuantityMax": 10,
+            "m_Items": [
+                {
+                    "m_Class": "AK74_Black",
+                    "m_Chance": 100,
+                    "m_QuantityMax": 2,
+                    "m_Attachments": [
+                        "Mag_AK74_30Rnd_Black",
+                        "KobraOptic",
+                        "AK_Bayonet",
+                        "AK74_WoodBttstck_Black",
+                        "AK74_Hndgrd_Black"
+                    ]
+                },
+                {
+                    "m_Class": "Mosin9130_Black",
+                    "m_Chance": 100,
+                    "m_QuantityMax": 2,
+                    "m_Attachments": [
+                        "Mag_AK74_30Rnd_Black",
+                        "PUScopeOptic"
+                    ]
+                },
+                {
+                    "m_Class": "Ammo_762x54",
+                    "m_Chance": 100,
+                    "m_QuantityMax": 4,
+                    "m_Attachments": []
+                },
+                {
+                    "m_Class": "Deagle",
+                    "m_Chance": 100,
+                    "m_QuantityMax": 2,
+                    "m_Attachments": [
+                        "Mag_Deagle_9rnd",
+                        "PistolOptic",
+                        "PistolSuppressor"
+                    ]
+                }
+            ]
+        },
+        {
+            "m_Name": "food",
+            "m_QuantityMax": 20,
+            "m_Items": [
+                {
+                    "m_Class": "apple",
+                    "m_Chance": 100,
+                    "m_QuantityMax": 6,
+                    "m_Attachments": []
+                },
+                {
+                    "m_Class": "Pear",
+                    "m_Chance": 100,
+                    "m_QuantityMax": 2,
+                    "m_Attachments": []
+                },
+                {
+                    "m_Class": "Rice",
+                    "m_Chance": 100,
+                    "m_QuantityMax": 2,
+                    "m_Attachments": []
+                },
+                {
+                    "m_Class": "TacticalBaconCan",
+                    "m_Chance": 100,
+                    "m_QuantityMax": 2,
+                    "m_Attachments": []
+                }
+            ]
+        },
+        {
+            "m_Name": "Medical",
+            "m_QuantityMax": 10,
+            "m_Items": [
+                {
+                    "m_Class": "VitaminBottle",
+                    "m_Chance": 100,
+                    "m_QuantityMax": 2,
+                    "m_Attachments": []
+                },
+                {
+                    "m_Class": "TetracyclineAntibiotics",
+                    "m_Chance": 100,
+                    "m_QuantityMax": 6,
+                    "m_Attachments": []
+                },
+                {
+                    "m_Class": "PurificationTablets",
+                    "m_Chance": 100,
+                    "m_QuantityMax": 3,
+                    "m_Attachments": []
+                },
+                {
+                    "m_Class": "GasMask_Filter",
+                    "m_Chance": 100,
+                    "m_QuantityMax": 1,
+                    "m_Attachments": []
+                }
+            ]
+        }
+    ],
+    "m_ConfigVersion": "2.1",
+    "m_LastModifiedHash": 0,
+    "_INFO_version": "Config version - DO NOT MODIFY (Auto-updated by system)",
+    "_INFO_m_Enable": "Master switch: 1=Mod enabled | 0=Mod disabled",
+    "_INFO_m_Logging": "Debug logs: 1=Enable | 0=Minimal",
+    "_INFO_m_ReloadInterval_minutes": "Auto-reload interval in minutes",
+    "_INFO_m_EnableWebhook": "Discord notifications 1=on 0=off",
+    "_INFO_m_WebhookURL": "Discord webhook URL",
+    "_INFO_m_Stashs": "Array of stash groups",
+    "_INFO_m_LootBoxes": "Global loot definitions",
+    "_GUIDE_StashStructure": "STASH: name, container, reload, rewards, quantity, positions",
+    "_GUIDE_LootStructure": "LOOT: name, quantityMax, items"
+}

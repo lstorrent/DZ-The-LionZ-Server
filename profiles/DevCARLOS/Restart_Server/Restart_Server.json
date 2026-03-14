@@ -1,0 +1,21 @@
+{
+  "_INFO_version": "Config version - DO NOT MODIFY (Auto-updated by system)",
+  "m_ConfigVersion": 4,
+  "m_Enable": 1,
+  "m_Schedules": [
+    {"m_Hour": 0, "m_Minute": 0, "m_Active": 1},
+    {"m_Hour": 6, "m_Minute": 0, "m_Active": 1},
+    {"m_Hour": 12, "m_Minute": 0, "m_Active": 1},
+    {"m_Hour": 18, "m_Minute": 0, "m_Active": 1}
+  ],
+  "m_Await_restart_after_seconds": 60,
+  "m_EnableKick": 1,
+  "m_Kick_Before_Seconds": 60,
+  "m_Reason": "O servidor vai reiniciar agora. Voltaremos em alguns minutos.",
+  "m_Notification": "O servidor vai reiniciar em %TimeMinutes% minutos.",
+  "m_NotificationTitle": "Server Restart",
+  "m_DiscordPrefix": "[Server Restart]",
+  "m_Intervals": [60, 45, 30, 20, 15, 10, 5, 4, 3, 2, 1],
+  "m_Webhook": "your_webhook_link_here"
+}
+
