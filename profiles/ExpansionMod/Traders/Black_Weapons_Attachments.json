@@ -17,10 +17,10 @@
     "DisplayCurrencyName": "",
     "UseCategoryOrder": 0,
     "Categories": [
-        "Black_ajs_Optics:1",
-        "Black_ajs_Attachments:1",
-        "Black_ajs_Magazines:1",
-        "Black_ajs_Ammo:1"
+        "Black_ajs_Optics",
+        "Black_ajs_Attachments",
+        "Black_ajs_Magazines",
+        "Black_ajs_Ammo"
     ],
     "Items": {}
 }
