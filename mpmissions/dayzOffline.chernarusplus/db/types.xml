@@ -11524,7 +11524,7 @@
         <usage name="Hunting"/>
     </type>
     <type name="LargeTent">
-        <nominal>8</nominal>
+        <nominal>6</nominal>
         <lifetime>3888000</lifetime>
         <restock>43200</restock>
         <min>4</min>
@@ -13543,7 +13543,7 @@
         <usage name="Hunting"/>
     </type>
     <type name="MediumTent">
-        <nominal>8</nominal>
+        <nominal>5</nominal>
         <lifetime>3888000</lifetime>
         <restock>43200</restock>
         <min>4</min>
@@ -13556,7 +13556,7 @@
         <usage name="Village"/>
     </type>
     <type name="MediumTent_Green">
-        <nominal>8</nominal>
+        <nominal>5</nominal>
         <lifetime>3888000</lifetime>
         <restock>43200</restock>
         <min>4</min>
@@ -13569,7 +13569,7 @@
         <usage name="Hunting"/>
     </type>
     <type name="MediumTent_Orange">
-        <nominal>8</nominal>
+        <nominal>6</nominal>
         <lifetime>3888000</lifetime>
         <restock>43200</restock>
         <min>4</min>

@@ -17,6 +17,13 @@
     "DisplayCurrencyName": "",
     "UseCategoryOrder": 0,
     "Categories": [
+        "Black_MMG_Helmets:1",
+        "Black_MMG_Masks:1",
+        "Black_MMG_Vests:1",
+        "Black_MMG_Jackets:1",
+        "Black_MMG_Pants:1",
+        "Black_MMG_Boots:1",
+        "Black_MMG_Gloves:1",
         "Black_MMG_Backpacks:1",
         "Black_MMG_Pouches:1",
         "Black_MMG_More:1"
