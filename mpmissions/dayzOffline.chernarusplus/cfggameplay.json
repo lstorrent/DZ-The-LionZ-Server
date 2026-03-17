@@ -13,8 +13,8 @@
 		"StatsData":
 		{
 			"heatComfortTimeModifier": 1.0,
-			"energyDecayModifier": 1.4,
-			"waterDecayModifier": 1.5,
+			"energyDecayModifier": 1.5,
+			"waterDecayModifier": 1.6,
 			"staminaDecayModifier": 1.0,
 			"shockDecayModifier": 1.0,
 			"healthDecayModifier": 1.0,
@@ -24,10 +24,10 @@
 		{
 			"sprintStaminaModifierErc": 1.0,
 			"sprintStaminaModifierCro": 1.0,
-			"staminaWeightLimitThreshold": 6000.0,
-			"staminaMax": 100.0,
-			"staminaKgToStaminaPercentPenalty": 1.75,
-			"staminaMinCap": 5.0,
+			"staminaWeightLimitThreshold": 10000.0,
+			"staminaMax": 120.0,
+			"staminaKgToStaminaPercentPenalty": 1.2,
+			"staminaMinCap": 8.0,
 			"sprintSwimmingStaminaModifier": 1.0,
 			"sprintLadderStaminaModifier": 1.0,
 			"meleeStaminaModifier": 1.0,
