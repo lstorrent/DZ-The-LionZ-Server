@@ -1,0 +1,14 @@
+{
+    "ConfigVersion": 28,
+    "ID": 5,
+    "ObjectiveType": 10,
+    "ObjectiveText": "Utilize o barco para chegar na ilha",
+    "TimeLimit": -1,
+    "Active": 1,
+    "ActionNames": [
+        "ActionGetInTransport"
+    ],
+    "AllowedClassNames": [],
+    "ExcludedClassNames": [],
+    "ExecutionAmount": 1
+}

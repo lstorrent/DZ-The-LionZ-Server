@@ -2,9 +2,9 @@
     "ConfigVersion": 22,
     "ID": 33,
     "Type": 1,
-    "Title": "Missão: Inativar transporte",
+    "Title": "Missão: A um passo de ser mercenário",
     "Descriptions": [
-        "Ainda temos muitos inimigos! Nossa inteligencia tem informações que os bandidos que tentam ocupar Zeleno vem recebendo suprimentos de uma base militar na costa! Ha indicios que o caminhão de transporte encontra-se em uma base militar abandonada. Parece que eles estao reparando o caminhão. Agora é a hora de atacar o inimigo!",
+        "O que vc deve saber: Em uma prisão nao muito distante, anotações importantes sobre o futuro da Green Mountain se perderam. Vc não precisa saber o que tem no livro. Apenas recupere e será muito bem recompensado. Lembre-se, está missão nao sera facil. Vc deve se preparar muito bem para ela. Vai precisar de poder de fogo. Vai precisar de proteção. Posso lhe oferecer algo.",
         "Vamos te recompesar!",
         ""
     ],
@@ -17,25 +17,50 @@
     "Autocomplete": 0,
     "IsGroupQuest": 0,
     "ObjectSetFileName": "Quest_33",
-    "QuestItems": [],
+    "QuestItems": [
+        {
+            "ClassName": "MMG_tt_vest_black",
+            "Amount": 1
+        },
+        {
+            "ClassName": "MMG_tactical_helmet_black",
+            "Amount": 1
+        },
+        {
+            "ClassName": "AJW_ACR_Black",
+            "Amount": 1
+        },
+        {
+            "ClassName": "Mag_STANAG_30Rnd",
+            "Amount": 2
+        },
+        {
+            "ClassName": "AmmoBox_556x45_20Rnd",
+            "Amount": 2
+        },
+        {
+            "ClassName": "CarBattery",
+            "Amount": 1
+        },
+        {
+            "ClassName": "SparkPlug",
+            "Amount": 1
+        }
+
+    ],
     "Rewards": [
         {
-            "ClassName": "AJW_SCARH_MCT",
-            "Amount": 1,
-            "Attachments": [
-                "AJW_SCARH_PMM_HG_Black",
-                "AJW_Mag_SCARH_20rnd_Black",
-                "AJW_SV98_Suppressor_Black",
-                "AJW_BD_Car15_Optic"
-            ],
+            "ClassName": "ExpansionBanknoteHryvnia",
+            "Amount": 5000,
+            "Attachments": [],
             "DamagePercent": 0,
             "HealthPercent": 0,
             "QuestID": -1,
             "Chance": 1.0
         },
         {
-            "ClassName": "AmmoBox_308WinTracer_20Rnd",
-            "Amount": 2,
+            "ClassName": "ExpansionGoldNugget",
+            "Amount": 1,
             "Attachments": [],
             "DamagePercent": 0,
             "HealthPercent": 0,
@@ -64,7 +89,22 @@
         {
             "ConfigVersion": 28,
             "ID": 5,
-            "ObjectiveType": 2
+            "ObjectiveType": 10
+        },
+        {
+            "ConfigVersion": 28,
+            "ID": 15,
+            "ObjectiveType": 3
+        },
+        {
+            "ConfigVersion": 28,
+            "ID": 4,
+            "ObjectiveType": 8
+        },
+        {
+            "ConfigVersion": 28,
+            "ID": 8,
+            "ObjectiveType": 4
         }
     ],
     "QuestColor": -16711936,
@@ -74,7 +114,7 @@
     "RequiredFaction": "",
     "FactionReward": "",
     "PlayerNeedQuestItems": 1,
-    "DeleteQuestItems": 1,
+    "DeleteQuestItems": 0,
     "SequentialObjectives": 1,
     "FactionReputationRequirements": {},
     "FactionReputationRewards": {},
