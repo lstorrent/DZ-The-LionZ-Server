@@ -8,8 +8,8 @@
     "Items": [
         {
             "ClassName": "cz61",
-            "MaxPriceThreshold": 19840,
-            "MinPriceThreshold": 14880,
+            "MaxPriceThreshold": 5000,
+            "MinPriceThreshold": 3750,
             "SellPricePercent": 12.0,
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
@@ -20,22 +20,35 @@
             "Variants": []
         },
         {
-            "ClassName": "ump45",
-            "MaxPriceThreshold": 27760,
-            "MinPriceThreshold": 20820,
+            "ClassName": "expansion_kedr",
+            "MaxPriceThreshold": 8000,
+            "MinPriceThreshold": 6000,
             "SellPricePercent": 12.0,
-            "MaxStockThreshold": 5,
+            "MaxStockThreshold": 6,
             "MinStockThreshold": 1,
             "QuantityPercent": -1,
             "SpawnAttachments": [
-                "mag_ump_25rnd"
+                "mag_expansion_kedr_20rnd"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "expansion_mpx",
+            "MaxPriceThreshold": 12000,
+            "MinPriceThreshold": 9000,
+            "SellPricePercent": 12.0,
+            "MaxStockThreshold": 6,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [
+                "mag_expansion_mpx_50rnd"
             ],
             "Variants": []
         },
         {
             "ClassName": "mp5k",
-            "MaxPriceThreshold": 22380,
-            "MinPriceThreshold": 16785,
+            "MaxPriceThreshold": 14000,
+            "MinPriceThreshold": 10500,
             "SellPricePercent": 12.0,
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
@@ -48,63 +61,22 @@
             "Variants": []
         },
         {
-            "ClassName": "aks74u",
-            "MaxPriceThreshold": 35920,
-            "MinPriceThreshold": 26940,
-            "SellPricePercent": 12.0,
-            "MaxStockThreshold": 4,
-            "MinStockThreshold": 1,
-            "QuantityPercent": -1,
-            "SpawnAttachments": [
-                "aks74u_bttstck",
-                "mag_ak74_30rnd"
-            ],
-            "Variants": []
-        },
-        {
-            "ClassName": "pp19",
-            "MaxPriceThreshold": 27760,
-            "MinPriceThreshold": 20820,
+            "ClassName": "expansion_mp7",
+            "MaxPriceThreshold": 16000,
+            "MinPriceThreshold": 12000,
             "SellPricePercent": 12.0,
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityPercent": -1,
             "SpawnAttachments": [
-                "pp19_bttstck",
-                "mag_pp19_64rnd"
-            ],
-            "Variants": []
-        },
-        {
-            "ClassName": "expansion_kedr",
-            "MaxPriceThreshold": 7000,
-            "MinPriceThreshold": 5250,
-            "SellPricePercent": 12.0,
-            "MaxStockThreshold": 6,
-            "MinStockThreshold": 1,
-            "QuantityPercent": -1,
-            "SpawnAttachments": [
-                "mag_expansion_kedr_20rnd"
-            ],
-            "Variants": []
-        },
-        {
-            "ClassName": "expansion_mpx",
-            "MaxPriceThreshold": 9000,
-            "MinPriceThreshold": 6750,
-            "SellPricePercent": 12.0,
-            "MaxStockThreshold": 6,
-            "MinStockThreshold": 1,
-            "QuantityPercent": -1,
-            "SpawnAttachments": [
-                "mag_expansion_mpx_50rnd"
+                "mag_expansion_mp7_40rnd"
             ],
             "Variants": []
         },
         {
             "ClassName": "expansion_mp5",
-            "MaxPriceThreshold": 11000,
-            "MinPriceThreshold": 8250,
+            "MaxPriceThreshold": 17000,
+            "MinPriceThreshold": 12750,
             "SellPricePercent": 12.0,
             "MaxStockThreshold": 6,
             "MinStockThreshold": 1,
@@ -116,8 +88,8 @@
         },
         {
             "ClassName": "expansion_mp5sd",
-            "MaxPriceThreshold": 12500,
-            "MinPriceThreshold": 9375,
+            "MaxPriceThreshold": 20000,
+            "MinPriceThreshold": 15000,
             "SellPricePercent": 12.0,
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
@@ -128,22 +100,9 @@
             "Variants": []
         },
         {
-            "ClassName": "expansion_mp7",
-            "MaxPriceThreshold": 12000,
-            "MinPriceThreshold": 9000,
-            "SellPricePercent": 12.0,
-            "MaxStockThreshold": 5,
-            "MinStockThreshold": 1,
-            "QuantityPercent": -1,
-            "SpawnAttachments": [
-                "mag_expansion_mp7_40rnd"
-            ],
-            "Variants": []
-        },
-        {
             "ClassName": "expansion_vityazsn",
-            "MaxPriceThreshold": 14000,
-            "MinPriceThreshold": 10500,
+            "MaxPriceThreshold": 22000,
+            "MinPriceThreshold": 16500,
             "SellPricePercent": 12.0,
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
@@ -152,6 +111,47 @@
                 "ak_plasticbttstck",
                 "ak_plastichndgrd",
                 "mag_expansion_vityaz_30rnd"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "ump45",
+            "MaxPriceThreshold": 24000,
+            "MinPriceThreshold": 18000,
+            "SellPricePercent": 12.0,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [
+                "mag_ump_25rnd"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "pp19",
+            "MaxPriceThreshold": 27000,
+            "MinPriceThreshold": 20250,
+            "SellPricePercent": 12.0,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [
+                "pp19_bttstck",
+                "mag_pp19_64rnd"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "aks74u",
+            "MaxPriceThreshold": 30000,
+            "MinPriceThreshold": 22500,
+            "SellPricePercent": 12.0,
+            "MaxStockThreshold": 4,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [
+                "aks74u_bttstck",
+                "mag_ak74_30rnd"
             ],
             "Variants": []
         }

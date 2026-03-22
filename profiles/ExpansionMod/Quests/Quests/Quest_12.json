@@ -10,7 +10,7 @@
     ],
     "ObjectiveText": "Colete 5 maçãs",
     "FollowUpQuest": -1,
-    "Repeatable": 1,
+    "Repeatable": 0,
     "IsDailyQuest": 1,
     "IsWeeklyQuest": 0,
     "CancelQuestOnPlayerDeath": 0,

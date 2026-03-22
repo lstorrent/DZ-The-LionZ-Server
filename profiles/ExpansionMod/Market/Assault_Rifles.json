@@ -8,8 +8,8 @@
     "Items": [
         {
             "ClassName": "fal",
-            "MaxPriceThreshold": 45135,
-            "MinPriceThreshold": 33850,
+            "MaxPriceThreshold": 90000,
+            "MinPriceThreshold": 67500,
             "SellPricePercent": 12.0,
             "MaxStockThreshold": 4,
             "MinStockThreshold": 1,
@@ -22,8 +22,8 @@
         },
         {
             "ClassName": "akm",
-            "MaxPriceThreshold": 50355,
-            "MinPriceThreshold": 37765,
+            "MaxPriceThreshold": 85000,
+            "MinPriceThreshold": 63750,
             "SellPricePercent": 12.0,
             "MaxStockThreshold": 4,
             "MinStockThreshold": 1,
@@ -36,24 +36,9 @@
             "Variants": []
         },
         {
-            "ClassName": "ak101",
-            "MaxPriceThreshold": 22750,
-            "MinPriceThreshold": 17060,
-            "SellPricePercent": 12.0,
-            "MaxStockThreshold": 5,
-            "MinStockThreshold": 1,
-            "QuantityPercent": -1,
-            "SpawnAttachments": [
-                "ak_plasticbttstck",
-                "ak_plastichndgrd",
-                "mag_ak101_30rnd"
-            ],
-            "Variants": []
-        },
-        {
             "ClassName": "ak74",
-            "MaxPriceThreshold": 44550,
-            "MinPriceThreshold": 33410,
+            "MaxPriceThreshold": 70000,
+            "MinPriceThreshold": 52500,
             "SellPricePercent": 12.0,
             "MaxStockThreshold": 4,
             "MinStockThreshold": 1,
@@ -66,9 +51,76 @@
             "Variants": []
         },
         {
+            "ClassName": "augshort",
+            "MaxPriceThreshold": 65000,
+            "MinPriceThreshold": 48750,
+            "SellPricePercent": 12.0,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [
+                "mag_aug_30rnd"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "famas",
+            "MaxPriceThreshold": 60000,
+            "MinPriceThreshold": 45000,
+            "SellPricePercent": 12.0,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [
+                "mag_famas_25rnd"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "ak101",
+            "MaxPriceThreshold": 55000,
+            "MinPriceThreshold": 41250,
+            "SellPricePercent": 12.0,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [
+                "ak_plasticbttstck",
+                "ak_plastichndgrd",
+                "mag_ak101_30rnd"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "m16a2",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 37500,
+            "SellPricePercent": 12.0,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [
+                "mag_stanag_30rnd"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "expansion_m16",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 37500,
+            "SellPricePercent": 12.0,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [
+                "mag_stanag_30rnd"
+            ],
+            "Variants": []
+        },
+        {
             "ClassName": "m4a1",
-            "MaxPriceThreshold": 12240,
-            "MinPriceThreshold": 9180,
+            "MaxPriceThreshold": 40000,
+            "MinPriceThreshold": 30000,
             "SellPricePercent": 12.0,
             "MaxStockThreshold": 6,
             "MinStockThreshold": 1,
@@ -82,35 +134,9 @@
             "Variants": []
         },
         {
-            "ClassName": "m16a2",
-            "MaxPriceThreshold": 22750,
-            "MinPriceThreshold": 17060,
-            "SellPricePercent": 12.0,
-            "MaxStockThreshold": 5,
-            "MinStockThreshold": 1,
-            "QuantityPercent": -1,
-            "SpawnAttachments": [
-                "mag_stanag_30rnd"
-            ],
-            "Variants": []
-        },
-        {
-            "ClassName": "famas",
-            "MaxPriceThreshold": 22750,
-            "MinPriceThreshold": 17060,
-            "SellPricePercent": 12.0,
-            "MaxStockThreshold": 5,
-            "MinStockThreshold": 1,
-            "QuantityPercent": -1,
-            "SpawnAttachments": [
-                "mag_famas_25rnd"
-            ],
-            "Variants": []
-        },
-        {
             "ClassName": "aug",
-            "MaxPriceThreshold": 12240,
-            "MinPriceThreshold": 9180,
+            "MaxPriceThreshold": 40000,
+            "MinPriceThreshold": 30000,
             "SellPricePercent": 12.0,
             "MaxStockThreshold": 6,
             "MinStockThreshold": 1,
@@ -121,35 +147,9 @@
             "Variants": []
         },
         {
-            "ClassName": "augshort",
-            "MaxPriceThreshold": 22750,
-            "MinPriceThreshold": 17060,
-            "SellPricePercent": 12.0,
-            "MaxStockThreshold": 5,
-            "MinStockThreshold": 1,
-            "QuantityPercent": -1,
-            "SpawnAttachments": [
-                "mag_aug_30rnd"
-            ],
-            "Variants": []
-        },
-        {
-            "ClassName": "expansion_m16",
-            "MaxPriceThreshold": 22750,
-            "MinPriceThreshold": 17060,
-            "SellPricePercent": 12.0,
-            "MaxStockThreshold": 5,
-            "MinStockThreshold": 1,
-            "QuantityPercent": -1,
-            "SpawnAttachments": [
-                "mag_stanag_30rnd"
-            ],
-            "Variants": []
-        },
-        {
             "ClassName": "expansion_g36",
-            "MaxPriceThreshold": 12240,
-            "MinPriceThreshold": 9180,
+            "MaxPriceThreshold": 38000,
+            "MinPriceThreshold": 28500,
             "SellPricePercent": 12.0,
             "MaxStockThreshold": 6,
             "MinStockThreshold": 1,

@@ -5542,10 +5542,10 @@
         <usage name="Village"/>
     </type>
     <type name="Colt1911">
-        <nominal>26</nominal>
+        <nominal>18</nominal>
         <lifetime>14400</lifetime>
         <restock>0</restock>
-        <min>22</min>
+        <min>15</min>
         <quantmin>30</quantmin>
         <quantmax>80</quantmax>
         <cost>100</cost>
@@ -15747,7 +15747,7 @@
         <usage name="Military"/>
     </type>
     <type name="PlateCarrierPouches">
-        <nominal>10</nominal>
+        <nominal>5</nominal>
         <lifetime>14400</lifetime>
         <restock>0</restock>
         <min>5</min>
@@ -15760,10 +15760,10 @@
         <usage name="Military"/>
     </type>
     <type name="PlateCarrierPouches_Black">
-        <nominal>0</nominal>
+        <nominal>3</nominal>
         <lifetime>14400</lifetime>
         <restock>0</restock>
-        <min>0</min>
+        <min>2</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
         <cost>100</cost>
@@ -15785,10 +15785,10 @@
         <value name="Tier4"/>
     </type>
     <type name="PlateCarrierPouches_Green">
-        <nominal>0</nominal>
+        <nominal>3</nominal>
         <lifetime>14400</lifetime>
         <restock>0</restock>
-        <min>0</min>
+        <min>1</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
         <cost>100</cost>

@@ -37,7 +37,7 @@
     ],
     "CanCraftVanillaBasebuilding": 1,
     "CanCraftExpansionBasebuilding": 1,
-    "DestroyFlagOnDismantle": 1,
+    "DestroyFlagOnDismantle": 0,
     "DismantleOutsideTerritory": 0,
     "DismantleInsideTerritory": 0,
     "DismantleAnywhere": 0,
@@ -47,9 +47,9 @@
     "DamageWhenEnterWrongCodeLock": 10.0,
     "RememberCode": 1,
     "CanCraftTerritoryFlagKit": 1,
-    "SimpleTerritory": 1,
+    "SimpleTerritory": 0,
     "AutomaticFlagOnCreation": 0,
-    "GetTerritoryFlagKitAfterBuild": 1,
+    "GetTerritoryFlagKitAfterBuild": 0,
     "BuildZoneRequiredCustomMessage": "",
     "Zones": [
         {

@@ -55,6 +55,7 @@ Do not forget to add attribute act="car", if root class represents moveable vehi
 		<!--End Expansion-->
 		<!--MMG...-->
 	<ce folder="mmg_ce">
+		<file name="mmg_storage.xml" type="types" />
 		<file name="mmg_types_ADMINGEAR.xml" type="types" />
 		<file name="mmg_types_alpine.xml" type="types" />
 		<file name="mmg_types_atacs.xml" type="types" />

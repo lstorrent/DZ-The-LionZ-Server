@@ -7,31 +7,9 @@
     "InitStockPercent": 30.0,
     "Items": [
         {
-            "ClassName": "mp133shotgun",
-            "MaxPriceThreshold": 33180,
-            "MinPriceThreshold": 24885,
-            "SellPricePercent": 12.0,
-            "MaxStockThreshold": 5,
-            "MinStockThreshold": 1,
-            "QuantityPercent": -1,
-            "SpawnAttachments": [],
-            "Variants": []
-        },
-        {
-            "ClassName": "izh43shotgun",
-            "MaxPriceThreshold": 4260,
-            "MinPriceThreshold": 3195,
-            "SellPricePercent": 12.0,
-            "MaxStockThreshold": 8,
-            "MinStockThreshold": 1,
-            "QuantityPercent": -1,
-            "SpawnAttachments": [],
-            "Variants": []
-        },
-        {
             "ClassName": "izh18shotgun",
-            "MaxPriceThreshold": 3460,
-            "MinPriceThreshold": 2595,
+            "MaxPriceThreshold": 2000,
+            "MinPriceThreshold": 1500,
             "SellPricePercent": 12.0,
             "MaxStockThreshold": 10,
             "MinStockThreshold": 1,
@@ -40,9 +18,53 @@
             "Variants": []
         },
         {
+            "ClassName": "expansion_dt11",
+            "MaxPriceThreshold": 3500,
+            "MinPriceThreshold": 2625,
+            "SellPricePercent": 12.0,
+            "MaxStockThreshold": 8,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [],
+            "Variants": []
+        },
+        {
+            "ClassName": "izh43shotgun",
+            "MaxPriceThreshold": 4000,
+            "MinPriceThreshold": 3000,
+            "SellPricePercent": 12.0,
+            "MaxStockThreshold": 8,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [],
+            "Variants": []
+        },
+        {
+            "ClassName": "mp133shotgun",
+            "MaxPriceThreshold": 7000,
+            "MinPriceThreshold": 5250,
+            "SellPricePercent": 12.0,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [],
+            "Variants": []
+        },
+        {
+            "ClassName": "expansion_benellim4",
+            "MaxPriceThreshold": 10500,
+            "MinPriceThreshold": 7875,
+            "SellPricePercent": 12.0,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [],
+            "Variants": []
+        },
+        {
             "ClassName": "saiga",
-            "MaxPriceThreshold": 27760,
-            "MinPriceThreshold": 20820,
+            "MaxPriceThreshold": 11000,
+            "MinPriceThreshold": 8250,
             "SellPricePercent": 12.0,
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
@@ -51,28 +73,6 @@
                 "saiga_bttstck",
                 "mag_saiga_8rnd"
             ],
-            "Variants": []
-        },
-        {
-            "ClassName": "expansion_benellim4",
-            "MaxPriceThreshold": 27760,
-            "MinPriceThreshold": 20820,
-            "SellPricePercent": 12.0,
-            "MaxStockThreshold": 5,
-            "MinStockThreshold": 1,
-            "QuantityPercent": -1,
-            "SpawnAttachments": [],
-            "Variants": []
-        },
-        {
-            "ClassName": "expansion_dt11",
-            "MaxPriceThreshold": 4240,
-            "MinPriceThreshold": 3180,
-            "SellPricePercent": 12.0,
-            "MaxStockThreshold": 8,
-            "MinStockThreshold": 1,
-            "QuantityPercent": -1,
-            "SpawnAttachments": [],
             "Variants": []
         }
     ]
