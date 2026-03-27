@@ -15,8 +15,8 @@
         <usage name="Farm"/>
     </type>
     <type name="mmg_craftable_tent">
-        <lifetime>864000</lifetime>
-        <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="1" deloot="0"/>
+        <lifetime>2592000</lifetime>
+        <flags count_in_cargo="0" count_in_hoarder="1" count_in_map="1" count_in_player="0" crafted="1" deloot="0"/>
     </type>
     <type name="mmg_crate04_olive">
         <nominal>2</nominal>
@@ -145,8 +145,8 @@
 		<usage name="Military"/>
     </type>
     <type name="mmg_equipment_locker_green">
-        <lifetime>864000</lifetime>
-        <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="1" deloot="0"/>
+        <lifetime>2592000</lifetime>
+        <flags count_in_cargo="0" count_in_hoarder="1" count_in_map="1" count_in_player="0" crafted="1" deloot="0"/>
     </type>
 	<type name="mmg_equipment_locker_black_kit">
         <nominal>2</nominal>
@@ -163,8 +163,8 @@
 		<usage name="Military"/>
     </type>
     <type name="mmg_equipment_locker_black">
-        <lifetime>864000</lifetime>
-        <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="1" deloot="0"/>
+        <lifetime>2592000</lifetime>
+        <flags count_in_cargo="0" count_in_hoarder="1" count_in_map="1" count_in_player="0" crafted="1" deloot="0"/>
     </type>
 	<type name="mmg_equipment_locker_grey_kit">
         <nominal>2</nominal>
@@ -181,8 +181,8 @@
 		<usage name="Military"/>
     </type>
     <type name="mmg_equipment_locker_grey">
-        <lifetime>864000</lifetime>
-        <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="1" deloot="0"/>
+        <lifetime>2592000</lifetime>
+        <flags count_in_cargo="0" count_in_hoarder="1" count_in_map="1" count_in_player="0" crafted="1" deloot="0"/>
     </type>
     <type name="mmg_armored_cabinet_grey">
         <nominal>2</nominal>
@@ -241,8 +241,8 @@
 		<usage name="Military"/>
     </type>
     <type name="mmg_locker02_blue">
-        <lifetime>864000</lifetime>
-        <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="1" deloot="0"/>
+        <lifetime>2592000</lifetime>
+        <flags count_in_cargo="0" count_in_hoarder="1" count_in_map="1" count_in_player="0" crafted="1" deloot="0"/>
     </type>
 	<type name="mmg_locker02_green_kit">
         <nominal>2</nominal>
@@ -259,8 +259,8 @@
 		<usage name="Military"/>
     </type>
     <type name="mmg_locker02_green">
-        <lifetime>864000</lifetime>
-        <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="1" deloot="0"/>
+        <lifetime>2592000</lifetime>
+        <flags count_in_cargo="0" count_in_hoarder="1" count_in_map="1" count_in_player="0" crafted="1" deloot="0"/>
     </type>
 	<type name="mmg_locker02_tan_kit">
         <nominal>2</nominal>
@@ -277,8 +277,8 @@
 		<usage name="Military"/>
     </type>
     <type name="mmg_locker02_tan">
-        <lifetime>864000</lifetime>
-        <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="1" deloot="0"/>
+        <lifetime>2592000</lifetime>
+        <flags count_in_cargo="0" count_in_hoarder="1" count_in_map="1" count_in_player="0" crafted="1" deloot="0"/>
     </type>
     <type name="mmg_old_safe_green">
         <nominal>2</nominal>
@@ -325,8 +325,8 @@
         <usage name="Military"/>
     </type>
     <type name="mmg_gun_rack_blue">
-        <lifetime>864000</lifetime>
-        <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="1" deloot="0"/>
+        <lifetime>2592000</lifetime>
+        <flags count_in_cargo="0" count_in_hoarder="1" count_in_map="1" count_in_player="0" crafted="1" deloot="0"/>
     </type>
 	<type name="mmg_gun_rack_kit_green">
         <nominal>1</nominal>
@@ -343,8 +343,8 @@
         <usage name="Military"/>
     </type>
     <type name="mmg_gun_rack_green">
-        <lifetime>864000</lifetime>
-        <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="1" deloot="0"/>
+        <lifetime>2592000</lifetime>
+        <flags count_in_cargo="0" count_in_hoarder="1" count_in_map="1" count_in_player="0" crafted="1" deloot="0"/>
     </type>
 	<type name="mmg_gun_rack_kit_tan">
         <nominal>1</nominal>
@@ -361,8 +361,8 @@
         <usage name="Military"/>
     </type>
     <type name="mmg_gun_rack_tan">
-        <lifetime>864000</lifetime>
-        <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="1" deloot="0"/>
+        <lifetime>2592000</lifetime>
+        <flags count_in_cargo="0" count_in_hoarder="1" count_in_map="1" count_in_player="0" crafted="1" deloot="0"/>
     </type>
     <type name="mmg_gun_rack_planks">
         <nominal>1</nominal>
@@ -380,8 +380,8 @@
 		<usage name="Farm"/>
     </type>
     <type name="mmg_craftable_gun_rack">
-        <lifetime>864000</lifetime>
-        <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="1" deloot="0"/>
+        <lifetime>2592000</lifetime>
+        <flags count_in_cargo="0" count_in_hoarder="1" count_in_map="1" count_in_player="0" crafted="1" deloot="0"/>
     </type>
 	<type name="mmg_lockable_gun_rack_kit_grey">
         <nominal>1</nominal>
@@ -398,8 +398,8 @@
         <usage name="Military"/>
     </type>
     <type name="mmg_lockable_gun_rack_grey">
-        <lifetime>864000</lifetime>
-        <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="1" deloot="0"/>
+        <lifetime>2592000</lifetime>
+        <flags count_in_cargo="0" count_in_hoarder="1" count_in_map="1" count_in_player="0" crafted="1" deloot="0"/>
     </type>
 	<type name="mmg_gun_wall_kit_wooden">
         <nominal>1</nominal>
@@ -417,8 +417,8 @@
 		<usage name="Farm"/>
     </type>
     <type name="mmg_gun_wall_wooden">
-        <lifetime>864000</lifetime>
-        <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="1" deloot="0"/>
+        <lifetime>2592000</lifetime>
+        <flags count_in_cargo="0" count_in_hoarder="1" count_in_map="1" count_in_player="0" crafted="1" deloot="0"/>
     </type>
 	<type name="mmg_gun_wall_kit_metal">
         <nominal>1</nominal>
@@ -436,8 +436,8 @@
 		<usage name="Farm"/>
     </type>
     <type name="mmg_gun_wall_metal">
-        <lifetime>864000</lifetime>
-        <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="1" deloot="0"/>
+        <lifetime>2592000</lifetime>
+        <flags count_in_cargo="0" count_in_hoarder="1" count_in_map="1" count_in_player="0" crafted="1" deloot="0"/>
     </type>
     <type name="mmg_army_box_green">
         <nominal>4</nominal>
@@ -541,8 +541,8 @@
         <usage name="Farm"/>
     </type>
     <type name="mmg_fridge_minsk_beige">
-        <lifetime>864000</lifetime>
-        <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="1" deloot="0"/>
+        <lifetime>2592000</lifetime>
+        <flags count_in_cargo="0" count_in_hoarder="1" count_in_map="1" count_in_player="0" crafted="1" deloot="0"/>
     </type>
 	<type name="mmg_fridge_kit_blue">
         <nominal>2</nominal>
@@ -560,8 +560,8 @@
         <usage name="Farm"/>
     </type>
     <type name="mmg_fridge_minsk_blue">
-        <lifetime>864000</lifetime>
-        <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="1" deloot="0"/>
+        <lifetime>2592000</lifetime>
+        <flags count_in_cargo="0" count_in_hoarder="1" count_in_map="1" count_in_player="0" crafted="1" deloot="0"/>
     </type>
     <type name="mmg_toolwagon_red">
         <nominal>4</nominal>
@@ -690,8 +690,8 @@
         <usage name="Farm"/>
     </type>
     <type name="mmg_planter_box">
-        <lifetime>864000</lifetime>
-        <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="1" deloot="0"/>
+        <lifetime>2592000</lifetime>
+        <flags count_in_cargo="0" count_in_hoarder="1" count_in_map="1" count_in_player="0" crafted="1" deloot="0"/>
     </type>
 	<type name="mmg_greenhouse_kit">
         <nominal>2</nominal>
@@ -708,8 +708,8 @@
         <usage name="Farm"/>
     </type>
     <type name="mmg_greenhouse">
-        <lifetime>864000</lifetime>
-        <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="1" deloot="0"/>
+        <lifetime>2592000</lifetime>
+        <flags count_in_cargo="0" count_in_hoarder="1" count_in_map="1" count_in_player="0" crafted="1" deloot="0"/>
     </type>
 	<type name="mmg_old_table">
         <nominal>2</nominal>
@@ -754,8 +754,8 @@
         <usage name="Farm"/>
     </type>
     <type name="mmg_solo_locker_yellow">
-        <lifetime>864000</lifetime>
-        <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="1" deloot="0"/>
+        <lifetime>2592000</lifetime>
+        <flags count_in_cargo="0" count_in_hoarder="1" count_in_map="1" count_in_player="0" crafted="1" deloot="0"/>
     </type>
 	<type name="mmg_solo_locker_blue_kit">
         <nominal>1</nominal>
@@ -772,8 +772,8 @@
         <usage name="Farm"/>
     </type>
     <type name="mmg_solo_locker_blue">
-        <lifetime>864000</lifetime>
-        <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="1" deloot="0"/>
+        <lifetime>2592000</lifetime>
+        <flags count_in_cargo="0" count_in_hoarder="1" count_in_map="1" count_in_player="0" crafted="1" deloot="0"/>
     </type>
 	<type name="mmg_solo_locker_red_kit">
         <nominal>1</nominal>
@@ -790,8 +790,8 @@
         <usage name="Farm"/>
     </type>
     <type name="mmg_solo_locker_red">
-        <lifetime>864000</lifetime>
-        <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="1" deloot="0"/>
+        <lifetime>2592000</lifetime>
+        <flags count_in_cargo="0" count_in_hoarder="1" count_in_map="1" count_in_player="0" crafted="1" deloot="0"/>
     </type>
 	<type name="mmg_solo_locker_grey_kit">
         <nominal>1</nominal>
@@ -808,8 +808,8 @@
         <usage name="Farm"/>
     </type>
     <type name="mmg_solo_locker_grey">
-        <lifetime>864000</lifetime>
-        <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="1" deloot="0"/>
+        <lifetime>2592000</lifetime>
+        <flags count_in_cargo="0" count_in_hoarder="1" count_in_map="1" count_in_player="0" crafted="1" deloot="0"/>
     </type>
 	<type name="mmg_solo_locker_purple_kit">
         <nominal>1</nominal>
@@ -826,8 +826,8 @@
         <usage name="Farm"/>
     </type>
     <type name="mmg_solo_locker_purple">
-        <lifetime>864000</lifetime>
-        <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="1" deloot="0"/>
+        <lifetime>2592000</lifetime>
+        <flags count_in_cargo="0" count_in_hoarder="1" count_in_map="1" count_in_player="0" crafted="1" deloot="0"/>
     </type>
 	<type name="mmg_solo_locker_green_kit">
         <nominal>1</nominal>
@@ -844,8 +844,8 @@
         <usage name="Farm"/>
     </type>
     <type name="mmg_solo_locker_green">
-        <lifetime>864000</lifetime>
-        <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="1" deloot="0"/>
+        <lifetime>2592000</lifetime>
+        <flags count_in_cargo="0" count_in_hoarder="1" count_in_map="1" count_in_player="0" crafted="1" deloot="0"/>
     </type>
 	<type name="mmg_solo_locker_medic_kit">
         <nominal>1</nominal>
@@ -862,7 +862,7 @@
         <usage name="Farm"/>
     </type>
     <type name="mmg_solo_locker_medic">
-        <lifetime>864000</lifetime>
-        <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="1" deloot="0"/>
+        <lifetime>2592000</lifetime>
+        <flags count_in_cargo="0" count_in_hoarder="1" count_in_map="1" count_in_player="0" crafted="1" deloot="0"/>
     </type>
 </types>
