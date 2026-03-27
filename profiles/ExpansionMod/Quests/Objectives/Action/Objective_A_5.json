@@ -8,7 +8,14 @@
     "ActionNames": [
         "ActionGetInTransport"
     ],
-    "AllowedClassNames": [],
+    "AllowedClassNames": [
+        "ExpansionUtilityBoat",
+        "ExpansionZodiacBoat",
+        "ExpansionZodiacBoat_Orange",
+        "ExpansionZodiacBoat_Black",
+        "ExpansionZodiacBoat_Green",
+        "ExpansionLHD"
+    ],
     "ExcludedClassNames": [],
     "ExecutionAmount": 1
 }
