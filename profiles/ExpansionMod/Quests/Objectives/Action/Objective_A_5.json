@@ -2,11 +2,11 @@
     "ConfigVersion": 28,
     "ID": 5,
     "ObjectiveType": 10,
-    "ObjectiveText": "Utilize o barco para chegar na ilha",
+    "ObjectiveText": "Abasteça o veículo",
     "TimeLimit": -1,
     "Active": 1,
     "ActionNames": [
-        "ActionGetInTransport"
+        "ActionFillFuel"
     ],
     "AllowedClassNames": [
         "ExpansionUtilityBoat",
@@ -14,6 +14,7 @@
         "ExpansionZodiacBoat_Orange",
         "ExpansionZodiacBoat_Black",
         "ExpansionZodiacBoat_Green",
+        "RHIB",
         "ExpansionLHD"
     ],
     "ExcludedClassNames": [],
