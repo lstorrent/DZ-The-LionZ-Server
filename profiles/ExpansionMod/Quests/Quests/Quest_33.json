@@ -4,7 +4,7 @@
     "Type": 1,
     "Title": "Missão: A um passo de ser mercenário",
     "Descriptions": [
-        "O que vc deve saber: Em uma prisão nao muito distante, anotações importantes sobre o futuro da Green Mountain se perderam. Vc não precisa saber o que tem no livro. Apenas recupere e será muito bem recompensado. Lembre-se, está missão nao sera facil. Vc deve se preparar muito bem para ela. Vai precisar de poder de fogo. Vai precisar de proteção. Posso lhe oferecer algo.",
+        "O que vc deve saber: Em uma prisão nao muito distante, anotações importantes sobre o futuro da Green Mountain se perderam. Vc não precisa saber o que tem no livro. Apenas recupere e será muito bem recompensado. Lembre-se, está missão nao sera facil. Vc deve se preparar muito bem para ela. Vai precisar de poder de fogo. Vou ter fornecer equipamentos necessários para esta missão, vc vai precisar.",
         "Vamos te recompesar!",
         ""
     ],
@@ -44,6 +44,18 @@
         },
         {
             "ClassName": "SparkPlug",
+            "Amount": 1
+        },
+        {
+            "ClassName": "CanisterGasoline",
+            "Amount": 1
+        },
+        {
+            "ClassName": "TruckBattery",
+            "Amount": 1
+        },
+        {
+            "ClassName": "GlowPlug",
             "Amount": 1
         }
 
@@ -85,11 +97,6 @@
             "ConfigVersion": 28,
             "ID": 14,
             "ObjectiveType": 3
-        },
-        {
-            "ConfigVersion": 28,
-            "ID": 5,
-            "ObjectiveType": 10
         },
         {
             "ConfigVersion": 28,
